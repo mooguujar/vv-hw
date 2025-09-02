@@ -1,0 +1,1246 @@
+//@version=5
+strategy("神经网络策略", overlay=true, initial_capital=1000, default_qty_type=strategy.percent_of_equity, default_qty_value=15)
+
+// 时间过滤器设置
+// Time Filter Settings
+//useTimeFilter = input.bool(true, "启用时间过滤器", group="时间设置")
+
+// 时间过滤函数
+// 回测范围
+settingBackTest = "回测范围"
+start1 = input.time(timestamp('2021-01-01T00:00:00'), title='开始', group = settingBackTest)
+finish = input.time(timestamp('2030-12-31T00:00:00'), title='结束', group = settingBackTest)
+timeRang = time >= start1 and time <= finish
+
+
+// 价格线
+price = plot(close, title="收盘价线", color=color.blue, display=display.none)
+
+
+//趋势指标部分
+
+//趋势EMA设置
+tttradetrend = "仅在趋势EMA方向进行买入或卖出订单"
+tradetrendoption = input.bool(false, title="仅顺势交易", tooltip=tttradetrend)
+len111 = input.int(defval=200, minval=0, maxval=2000, title="趋势EMA长度")
+src111 = close
+out111 = ta.ema(src111, len111)
+ma111 = plot(out111, title="EMA 200", linewidth=2, color=color.blue, offset=0)
+mabuy = out111 > out111[1]
+masell = out111 < out111[1]
+
+//5条EMA均线
+len1 = 9
+src1 = close
+out1 = ta.ema(src1, len1)
+ema1color = (out1 > out1[1] ? #00bcd4 : #e91e63)
+ema1 = plot(out1, title="EMA 9", linewidth=3, color=color.new(ema1color, 50), offset=0, display=display.none)
+fill(price, ema1, title="EMA 9 填充", color=color.new(ema1color, 90), editable=true)
+
+len2 = 21
+src2 = close
+out2 = ta.ema(src2, len2)
+ema2color = (out2 > out2[1] ? #00bcd4 : #e91e63)
+ema2 = plot(out2, title="EMA 21", linewidth=3, color=color.new(ema2color, 50), offset=0, display=display.none)
+fill(price, ema2, title="EMA 21 填充", color=color.new(ema2color, 90), editable=true)
+
+len3 = 55
+src3 = close
+out3 = ta.ema(src3, len3)
+ema3color = (out3 > out3[1] ? #00bcd4 : #e91e63)
+ema3 = plot(out3, title="EMA 55", linewidth=3, color=color.new(ema3color, 50), offset=0, display=display.none)
+fill(price, ema3, title="EMA 55 填充", color=color.new(ema3color, 90), editable=true)
+
+len4 = 100
+src4 = close
+out4 = ta.ema(src4, len4)
+ema4color = (out4 > out4[1] ? #00bcd4 : #e91e63)
+ema4 = plot(out4, title="EMA 100", linewidth=3, color=color.new(ema4color, 50), offset=0, display=display.none)
+fill(price, ema4, title="EMA 100 填充", color=color.new(ema4color, 90), editable=true)
+
+len5 = 200
+src5 = close
+out5 = ta.ema(src5, len5)
+ema5color = (out5 > out5[1] ? #00bcd4 : #e91e63)
+ema5 = plot(out5, title="EMA 200", linewidth=3, color=color.new(ema5color, 50), offset=0, display=display.none)
+fill(price, ema5, title="EMA 200 填充", color=color.new(ema5color, 90), editable=true)
+
+//超级趋势指标
+atrPeriod = 10
+factor = 3
+[supertrend, direction] = ta.supertrend(factor, atrPeriod)
+bodyMiddle = plot((open + close) / 2, display=display.none, title="K线中点")
+uptrend = direction < 0 and direction[1] > 0[1] ? supertrend : na
+downtrend = direction > 0 and direction[1] < 0[1] ? supertrend : na
+
+//HMA船体移动平均线
+len6 = 100
+src6 = close
+hma = ta.wma(2*ta.wma(src6, len6/2)-ta.wma(src6, len6), math.floor(math.sqrt(len6)))
+hmacolor = close > hma ? #00bcd4 : #e91e63
+plot(hma, title="HMA线", color=color.new(hmacolor, 25), linewidth=5)
+
+//抛物线SAR
+start = 0.02
+increment = 0.01
+maximum = 0.2
+psar = ta.sar(start, increment, maximum)
+
+//趋势指标结束
+
+//动量指标部分
+
+//RSI背离设置
+len11 = 14
+src11 = close
+lbR11 = 2
+lbL11 = 6
+rangeUpper11 = 60
+rangeLower11 = 5
+plotBull11 = true
+plotHiddenBull11 = false
+plotBear11 = true
+plotHiddenBear11 = false
+bearColor11 = color.red
+bullColor11 = color.green
+hiddenBullColor11 = color.new(color.green, 80)
+hiddenBearColor11 = color.new(color.red, 80)
+textColor11 = color.white
+noneColor11 = color.new(color.white, 100)
+osc11 = ta.rsi(src11, len11)
+
+plFound11 = na(ta.pivotlow(osc11, lbL11, lbR11)) ? false : true
+phFound11 = na(ta.pivothigh(osc11, lbL11, lbR11)) ? false : true
+_inRange11(cond) =>
+    bars11 = ta.barssince(cond == true)
+    rangeLower11 <= bars11 and bars11 <= rangeUpper11
+
+//常规看涨背离
+oscHL11 = osc11[lbR11] > ta.valuewhen(plFound11, osc11[lbR11], 1) and _inRange11(plFound11[1])
+priceLL11 = low[lbR11] < ta.valuewhen(plFound11, low[lbR11], 1)
+bullCond11 = plotBull11 and priceLL11 and oscHL11 and plFound11
+
+//隐藏看涨背离
+oscLL11 = osc11[lbR11] < ta.valuewhen(plFound11, osc11[lbR11], 1) and _inRange11(plFound11[1])
+priceHL11 = low[lbR11] > ta.valuewhen(plFound11, low[lbR11], 1)
+hiddenBullCond11 = plotHiddenBull11 and priceHL11 and oscLL11 and plFound11
+
+//常规看跌背离
+oscLH11 = osc11[lbR11] < ta.valuewhen(phFound11, osc11[lbR11], 1) and _inRange11(phFound11[1])
+priceHH11 = high[lbR11] > ta.valuewhen(phFound11, high[lbR11], 1)
+bearCond11 = plotBear11 and priceHH11 and oscLH11 and phFound11
+
+//隐藏看跌背离
+oscHH11 = osc11[lbR11] > ta.valuewhen(phFound11, osc11[lbR11], 1) and _inRange11(phFound11[1])
+priceLH11 = high[lbR11] < ta.valuewhen(phFound11, high[lbR11], 1)
+hiddenBearCond11 = plotHiddenBear11 and priceLH11 and oscHH11 and phFound11
+
+//MACD背离设置
+fast_length12 = 12
+slow_length12 = 26
+src12 = close
+signal_length12 = 9
+sma_source12 = "EMA"
+sma_signal12 = "EMA"
+
+//MACD计算
+fast_ma12 = sma_source12 == "SMA" ? ta.sma(src12, fast_length12) : ta.ema(src12, fast_length12)
+slow_ma12 = sma_source12 == "SMA" ? ta.sma(src12, slow_length12) : ta.ema(src12, slow_length12)
+macd = fast_ma12 - slow_ma12
+signal = sma_signal12 == "SMA" ? ta.sma(macd, signal_length12) : ta.ema(macd, signal_length12)
+hist = macd - signal
+
+donttouchzero12 = true
+lbR12 = 2
+lbL12 = 6
+rangeUpper12 = 60
+rangeLower12 = 5
+plotBull12 = true
+plotHiddenBull12 = false
+plotBear12 = true
+plotHiddenBear12 = false
+bearColor12 = color.red
+bullColor12 = color.green
+hiddenBullColor12 = color.new(color.green, 80)
+hiddenBearColor12 = color.new(color.red, 80)
+textColor12 = color.white
+noneColor12 = color.new(color.white, 100)
+osc12 = macd
+
+plFound12 = na(ta.pivotlow(osc12, lbL12, lbR12)) ? false : true
+phFound12 = na(ta.pivothigh(osc12, lbL12, lbR12)) ? false : true
+_inRange12(cond) =>
+    bars12 = ta.barssince(cond == true)
+    rangeLower12 <= bars12 and bars12 <= rangeUpper12
+
+//MACD常规看涨背离
+oscHL12 = osc12[lbR12] > ta.valuewhen(plFound12, osc12[lbR12], 1) and _inRange12(plFound12[1]) and osc12[lbR12] < 0
+priceLL12 = low[lbR12] < ta.valuewhen(plFound12, low[lbR12], 1)
+priceHHZero12 = ta.highest(osc12, lbL12+lbR12+5)
+blowzero12 = donttouchzero12 ? priceHHZero12 < 0 : true
+bullCond12 = plotBull12 and priceLL12 and oscHL12 and plFound12 and blowzero12
+
+//MACD隐藏看涨背离
+oscLL12 = osc12[lbR12] < ta.valuewhen(plFound12, osc12[lbR12], 1) and _inRange12(plFound12[1])
+priceHL12 = low[lbR12] > ta.valuewhen(plFound12, low[lbR12], 1)
+hiddenBullCond12 = plotHiddenBull12 and priceHL12 and oscLL12 and plFound12
+
+//MACD常规看跌背离
+oscLH12 = osc12[lbR12] < ta.valuewhen(phFound12, osc12[lbR12], 1) and _inRange12(phFound12[1]) and osc12[lbR12] > 0
+priceLLZero12 = ta.lowest(osc12, lbL12+lbR12+5)
+bearzero12 = donttouchzero12 ? priceLLZero12 > 0 : true
+priceHH12 = high[lbR12] > ta.valuewhen(phFound12, high[lbR12], 1)
+bearCond12 = plotBear12 and priceHH12 and oscLH12 and phFound12 and bearzero12
+
+//MACD隐藏看跌背离
+oscHH12 = osc12[lbR12] > ta.valuewhen(phFound12, osc12[lbR12], 1) and _inRange12(phFound12[1])
+priceLH12 = high[lbR12] < ta.valuewhen(phFound12, high[lbR12], 1)
+hiddenBearCond12 = plotHiddenBear12 and priceLH12 and oscHH12 and phFound12
+
+//波浪趋势背离设置
+n1 = 9
+n2 = 12
+ap = hlc3
+esa = ta.ema(ap, n1)
+d1 = ta.ema(math.abs(ap - esa), n1)
+ci = (ap - esa) / (0.015 * d1)
+tci = ta.ema(ci, n2)
+hline = 0
+wt1 = tci
+wt2 = ta.sma(wt1, 4)
+
+//波浪趋势背离
+lbR13 = 2
+lbL13 = 6
+rangeUpper13 = 60
+rangeLower13 = 5
+plotBull13 = true
+plotHiddenBull13 = false
+plotBear13 = true
+plotHiddenBear13 = false
+bearColor13 = color.red
+bullColor13 = color.green
+hiddenBullColor13 = color.green
+hiddenBearColor13 = color.red
+textColor13 = color.white
+noneColor13 = color.new(color.white, 100)
+k13 = wt1
+d13 = wt2
+osc13 = k13
+
+plFound13 = na(ta.pivotlow(osc13, lbL13, lbR13)) ? false : true
+phFound13 = na(ta.pivothigh(osc13, lbL13, lbR13)) ? false : true
+
+_inRange13(cond) =>
+    bars13 = ta.barssince(cond == true)
+    rangeLower13 <= bars13 and bars13 <= rangeUpper13
+
+//波浪趋势常规看涨
+oscHL13 = osc13[lbR13] > ta.valuewhen(plFound13, osc13[lbR13], 1) and _inRange13(plFound13[1])
+priceLL13 = low[lbR13] < ta.valuewhen(plFound13, low[lbR13], 1)
+bullCond13 = plotBull13 and priceLL13 and oscHL13 and plFound13
+
+//波浪趋势隐藏看涨
+oscLL13 = osc13[lbR13] < ta.valuewhen(plFound13, osc13[lbR13], 1) and _inRange13(plFound13[1])
+priceHL13 = low[lbR13] > ta.valuewhen(plFound13, low[lbR13], 1)
+hiddenBullCond13 = plotHiddenBull13 and priceHL13 and oscLL13 and plFound13
+
+//波浪趋势常规看跌
+oscLH13 = osc13[lbR13] < ta.valuewhen(phFound13, osc13[lbR13], 1) and _inRange13(phFound13[1])
+priceHH13 = high[lbR13] > ta.valuewhen(phFound13, high[lbR13], 1)
+bearCond13 = plotBear13 and priceHH13 and oscLH13 and phFound13
+
+//波浪趋势隐藏看跌
+oscHH13 = osc13[lbR13] > ta.valuewhen(phFound13, osc13[lbR13], 1) and _inRange13(phFound13[1])
+priceLH13 = high[lbR13] < ta.valuewhen(phFound13, high[lbR13], 1)
+hiddenBearCond13 = plotHiddenBear13 and priceLH13 and oscHH13 and phFound13
+
+//随机指标背离设置
+periodK14 = 14
+smoothK14 = 3
+periodD14 = 3
+k14 = ta.sma(ta.stoch(close, high, low, periodK14), smoothK14)
+d14 = ta.sma(k14, periodD14)
+
+//随机指标背离
+lbR14 = 2
+lbL14 = 6
+rangeUpper14 = 60
+rangeLower14 = 5
+plotBull14 = true
+plotHiddenBull14 = false
+plotBear14 = true
+plotHiddenBear14 = false
+bearColor14 = color.red
+bullColor14 = color.green
+hiddenBullColor14 = color.green
+hiddenBearColor14 = color.red
+textColor14 = color.white
+noneColor14 = color.new(color.white, 100)
+osc14 = k14
+
+plFound14 = na(ta.pivotlow(osc14, lbL14, lbR14)) ? false : true
+phFound14 = na(ta.pivothigh(osc14, lbL14, lbR14)) ? false : true
+
+_inRange14(cond) =>
+    bars14 = ta.barssince(cond == true)
+    rangeLower14 <= bars14 and bars14 <= rangeUpper14
+
+//随机指标常规看涨
+oscHL14 = osc14[lbR14] > ta.valuewhen(plFound14, osc14[lbR14], 1) and _inRange14(plFound14[1])
+priceLL14 = low[lbR14] < ta.valuewhen(plFound14, low[lbR14], 1)
+bullCond14 = plotBull14 and priceLL14 and oscHL14 and plFound14
+
+//随机指标隐藏看涨
+oscLL14 = osc14[lbR14] < ta.valuewhen(plFound14, osc14[lbR14], 1) and _inRange14(plFound14[1])
+priceHL14 = low[lbR14] > ta.valuewhen(plFound14, low[lbR14], 1)
+hiddenBullCond14 = plotHiddenBull14 and priceHL14 and oscLL14 and plFound14
+
+//随机指标常规看跌
+oscLH14 = osc14[lbR14] < ta.valuewhen(phFound14, osc14[lbR14], 1) and _inRange14(phFound14[1])
+priceHH14 = high[lbR14] > ta.valuewhen(phFound14, high[lbR14], 1)
+bearCond14 = plotBear14 and priceHH14 and oscLH14 and phFound14
+
+//随机指标隐藏看跌
+oscHH14 = osc14[lbR14] > ta.valuewhen(phFound14, osc14[lbR14], 1) and _inRange14(phFound14[1])
+priceLH14 = high[lbR14] < ta.valuewhen(phFound14, high[lbR14], 1)
+hiddenBearCond14 = plotHiddenBear14 and priceLH14 and oscHH14 and phFound14
+
+//动量指标结束
+
+//波动率指标部分
+
+//布林带设置
+length1 = 20
+src7 = close
+mult1 = 2.0
+basis = ta.sma(src7, length1)
+dev = mult1 * ta.stdev(src7, length1)
+upper = basis + dev
+lower = basis - dev
+offset = 0
+
+//平均真实波幅设置
+length2 = 1
+mult2 = 1.85
+showLabels = true
+useClose = false
+highlightState = false
+
+atr = mult2 * ta.atr(length2)
+
+longStop = (useClose ? ta.highest(close, length2) : ta.highest(length2)) - atr
+longStopPrev = nz(longStop[1], longStop)
+longStop := close[1] > longStopPrev ? math.max(longStop, longStopPrev) : longStop
+
+shortStop = (useClose ? ta.lowest(close, length2) : ta.lowest(length2)) + atr
+shortStopPrev = nz(shortStop[1], shortStop)
+shortStop := close[1] < shortStopPrev ? math.min(shortStop, shortStopPrev) : shortStop
+
+var int dir = 1
+dir := close > shortStopPrev ? 1 : close < longStopPrev ? -1 : dir
+
+var color longColor = color.green
+var color shortColor = color.red
+
+buySignal = dir == 1 and dir[1] == -1
+sellSignal = dir == -1 and dir[1] == 1
+
+//相对波动率指数背离设置
+length15 = 12
+src15 = close
+len15 = 14
+stddev15 = ta.stdev(src15, length15)
+upper15 = ta.ema(ta.change(src15) <= 0 ? 0 : stddev15, len15)
+lower15 = ta.ema(ta.change(src15) > 0 ? 0 : stddev15, len15)
+rvi = upper15 / (upper15 + lower15) * 100
+
+//RVI背离设置
+lbR15 = 2
+lbL15 = 6
+rangeUpper15 = 60
+rangeLower15 = 5
+plotBull15 = true
+plotHiddenBull15 = false
+plotBear15 = true
+plotHiddenBear15 = false
+bearColor15 = color.red
+bullColor15 = color.green
+hiddenBullColor15 = color.green
+hiddenBearColor15 = color.red
+textColor15 = color.white
+noneColor15 = color.new(color.white, 100)
+d15 = rvi
+osc15 = d15
+
+plFound15 = na(ta.pivotlow(osc15, lbL15, lbR15)) ? false : true
+phFound15 = na(ta.pivothigh(osc15, lbL15, lbR15)) ? false : true
+
+_inRange15(cond) =>
+    bars15 = ta.barssince(cond == true)
+    rangeLower15 <= bars15 and bars15 <= rangeUpper15
+
+//RVI常规看涨
+oscHL15 = osc15[lbR15] > ta.valuewhen(plFound15, osc15[lbR15], 1) and _inRange15(plFound15[1])
+priceLL15 = low[lbR15] < ta.valuewhen(plFound15, low[lbR15], 1)
+bullCond15 = plotBull15 and priceLL15 and oscHL15 and plFound15
+
+//RVI隐藏看涨
+oscLL15 = osc15[lbR15] < ta.valuewhen(plFound15, osc15[lbR15], 1) and _inRange15(plFound15[1])
+priceHL15 = low[lbR15] > ta.valuewhen(plFound15, low[lbR15], 1)
+hiddenBullCond15 = plotHiddenBull15 and priceHL15 and oscLL15 and plFound15
+
+//RVI常规看跌
+oscLH15 = osc15[lbR15] < ta.valuewhen(phFound15, osc15[lbR15], 1) and _inRange15(phFound15[1])
+priceHH15 = high[lbR15] > ta.valuewhen(phFound15, high[lbR15], 1)
+bearCond15 = plotBear15 and priceHH15 and oscLH15 and phFound15
+
+//RVI隐藏看跌
+oscHH15 = osc15[lbR15] > ta.valuewhen(phFound15, osc15[lbR15], 1) and _inRange15(phFound15[1])
+priceLH15 = high[lbR15] < ta.valuewhen(phFound15, high[lbR15], 1)
+hiddenBearCond15 = plotHiddenBear15 and priceLH15 and oscHH15 and phFound15
+
+//支撑和阻力设置
+left16 = 200
+right16 = 20
+quick_right16 = 5
+src16 = "Close"
+
+pivot_high16 = src16=="Close" ? ta.pivothigh(close,left16,right16) : ta.pivothigh(high,left16,right16)
+pivot_lows16 = src16=="Close" ? ta.pivotlow(close, left16,right16) : ta.pivotlow(low,left16,right16)
+
+quick_pivot_high16 = src16=="Close" ? ta.pivothigh(close,left16,quick_right16) : ta.pivothigh(high,left16,quick_right16)
+quick_pivot_lows16 = src16=="Close" ? ta.pivotlow(close, left16,quick_right16) : ta.pivotlow(low, left16,quick_right16)
+
+level1 = src16=="Close" ? ta.valuewhen(quick_pivot_high16, close[quick_right16], 0) : ta.valuewhen(quick_pivot_high16, high[quick_right16], 0)
+level2 = src16=="Close" ? ta.valuewhen(quick_pivot_lows16, close[quick_right16], 0) : ta.valuewhen(quick_pivot_lows16, low[quick_right16], 0)
+level3 = src16=="Close" ? ta.valuewhen(pivot_high16, close[right16], 0) : ta.valuewhen(pivot_high16, high[right16], 0)
+level4 = src16=="Close" ? ta.valuewhen(pivot_lows16, close[right16], 0) : ta.valuewhen(pivot_lows16, low[right16], 0)
+level5 = src16=="Close" ? ta.valuewhen(pivot_high16, close[right16], 1) : ta.valuewhen(pivot_high16, high[right16], 1)
+level6 = src16=="Close" ? ta.valuewhen(pivot_lows16, close[right16], 1) : ta.valuewhen(pivot_lows16, low[right16], 1)
+level7 = src16=="Close" ? ta.valuewhen(pivot_high16, close[right16], 2) : ta.valuewhen(pivot_high16, high[right16], 2)
+level8 = src16=="Close" ? ta.valuewhen(pivot_lows16, close[right16], 2) : ta.valuewhen(pivot_lows16, low[right16], 2)
+
+level1_col = close >= level1 ? color.green : color.red
+level2_col = close >= level2 ? color.green : color.red
+level3_col = close >= level3 ? color.green : color.red
+level4_col = close >= level4 ? color.green : color.red
+level5_col = close >= level5 ? color.green : color.red
+level6_col = close >= level6 ? color.green : color.red
+level7_col = close >= level7 ? color.green : color.red
+level8_col = close >= level8 ? color.green : color.red
+
+length17 = 9
+src17 = close
+hma17 = ta.wma(2*ta.wma(src17, length17/2)-ta.wma(src17, length17), math.floor(math.sqrt(length17)))
+
+buy1 = hma17 > level1 and hma17[1] < level1[1] and close > close[2]
+buy2 = hma17 > level2 and hma17[1] < level2[1] and close > close[2]
+buy3 = hma17 > level3 and hma17[1] < level3[1] and close > close[2]
+buy4 = hma17 > level4 and hma17[1] < level4[1] and close > close[2]
+buy5 = hma17 > level5 and hma17[1] < level5[1] and close > close[2]
+buy6 = hma17 > level6 and hma17[1] < level6[1] and close > close[2]
+buy7 = hma17 > level7 and hma17[1] < level7[1] and close > close[2]
+buy8 = hma17 > level8 and hma17[1] < level8[1] and close > close[2]
+
+sell1 = hma17 < level1 and hma17[1] > level1[1] and close < close[2]
+sell2 = hma17 < level2 and hma17[1] > level2[1] and close < close[2]
+sell3 = hma17 < level3 and hma17[1] > level3[1] and close < close[2]
+sell4 = hma17 < level4 and hma17[1] > level4[1] and close < close[2]
+sell5 = hma17 < level5 and hma17[1] > level5[1] and close < close[2]
+sell6 = hma17 < level6 and hma17[1] > level6[1] and close < close[2]
+sell7 = hma17 < level7 and hma17[1] > level7[1] and close < close[2]
+sell8 = hma17 < level8 and hma17[1] > level8[1] and close < close[2]
+
+//波动率指标结束
+
+//成交量指标部分
+
+//OBV背离设置
+len18 = 20
+src18 = close
+lbR18 = 2
+lbL18 = 6
+rangeUpper18 = 60
+rangeLower18 = 5
+plotBull18 = true
+plotHiddenBull18 = false
+plotBear18 = true
+plotHiddenBear18 = false
+
+bearColor18 = color.red
+bullColor18 = color.green
+hiddenBullColor18 = color.green
+hiddenBearColor18 = color.new(color.red, 80)
+textColor18 = color.white
+noneColor18 = color.new(color.white, 100)
+
+csrc = ta.change(src18)
+obv1(src18) => math.sum(ta.change(src18) > 0 ? volume : csrc < 0 ? -volume : 0*volume, 1)
+os = obv1(src18)
+obv_osc = (os - ta.ema(os,len18))
+obc_color=obv_osc > 0 ? color.green : color.red
+
+plFound18 = na(ta.pivotlow(obv_osc, lbL18, lbR18)) ? false : true
+phFound18 = na(ta.pivothigh(obv_osc, lbL18, lbR18)) ? false : true
+
+_inRange(cond) =>
+    bars = ta.barssince(cond == true)
+    rangeLower18 <= bars and bars <= rangeUpper18
+
+// OBV常规看涨
+oscHL18 = obv_osc[lbR18] > ta.valuewhen(plFound18, obv_osc[lbR18], 1) and _inRange(plFound18[1])
+priceLL18 = low[lbR18] < ta.valuewhen(plFound18, low[lbR18], 1)
+bullCond18 = plotBull18 and priceLL18 and oscHL18 and plFound18
+
+// OBV隐藏看涨
+oscLL18 = obv_osc[lbR18] < ta.valuewhen(plFound18, obv_osc[lbR18], 1) and _inRange(plFound18[1])
+priceHL18 = low[lbR18] > ta.valuewhen(plFound18, low[lbR18], 1)
+hiddenBullCond18 = plotHiddenBull18 and priceHL18 and oscLL18 and plFound18
+
+// OBV常规看跌
+oscLH18 = obv_osc[lbR18] < ta.valuewhen(phFound18, obv_osc[lbR18], 1) and _inRange(phFound18[1])
+priceHH18 = high[lbR18] > ta.valuewhen(phFound18, high[lbR18], 1)
+bearCond18 = plotBear18 and priceHH18 and oscLH18 and phFound18
+
+// OBV隐藏看跌
+oscHH18 = obv_osc[lbR18] > ta.valuewhen(phFound18, obv_osc[lbR18], 1) and _inRange(phFound18[1])
+priceLH18 = high[lbR18] < ta.valuewhen(phFound18, high[lbR18], 1)
+hiddenBearCond18 = plotHiddenBear18 and priceLH18 and oscHH18 and phFound18
+
+//蔡金资金流设置
+length19 = 50
+ad19 = close==high and close==low or high==low ? 0 : ((2*close-low-high)/(high-low))*volume
+cmf = math.sum(ad19, length19) / math.sum(volume, length19)
+
+//VWAP设置
+computeVWAP(src20, isNewPeriod, stDevMultiplier) =>
+    var float sumSrcVol = na
+    var float sumVol = na
+    var float sumSrcSrcVol = na
+    
+    sumSrcVol := isNewPeriod ? src20 * volume : src20 * volume + sumSrcVol[1]
+    sumVol := isNewPeriod ? volume : volume + sumVol[1]
+    sumSrcSrcVol := isNewPeriod ? volume * math.pow(src20, 2) : volume * math.pow(src20, 2) + sumSrcSrcVol[1]
+    
+    _vwap = sumSrcVol / sumVol
+    variance = sumSrcSrcVol / sumVol - math.pow(_vwap, 2)
+    variance := variance < 0 ? 0 : variance
+    stDev = math.sqrt(variance)
+    
+    lowerBand20 = _vwap - stDev * stDevMultiplier
+    upperBand20 = _vwap + stDev * stDevMultiplier
+    
+    [_vwap, lowerBand20, upperBand20]
+
+hideonDWM = false
+var anchor = "Session"
+src20 = hlc3
+offset20 = 0
+
+showBands = true
+stdevMult = 1.0
+
+timeChange(period) =>
+    ta.change(time(period))
+
+new_earnings = request.earnings(syminfo.tickerid, earnings.actual, barmerge.gaps_on, barmerge.lookahead_on)
+new_dividends = request.dividends(syminfo.tickerid, dividends.gross, barmerge.gaps_on, barmerge.lookahead_on)
+new_split = request.splits(syminfo.tickerid, splits.denominator, barmerge.gaps_on, barmerge.lookahead_on)
+
+tcD = timeChange("D")
+tcW = timeChange("W")
+tcM = timeChange("M")
+tc3M = timeChange("3M")
+tc12M = timeChange("12M")
+
+isNewPeriod = anchor == "Earnings" ? new_earnings :
+ anchor == "Dividends" ? new_dividends :
+ anchor == "Splits" ? new_split :
+ na(src20[1]) ? true :
+ anchor == "Session" ? tcD :
+ anchor == "Week" ? tcW :
+ anchor == "Month" ? tcM :
+ anchor == "Quarter" ? tc3M :
+ anchor == "Year" ? tc12M :
+ anchor == "Decade" ? tc12M and year % 10 == 0 :
+ anchor == "Century" ? tc12M and year % 100 == 0 :
+ false
+
+float vwapValue = na
+float std = na
+float upperBandValue = na
+float lowerBandValue = na
+
+if not (hideonDWM and timeframe.isdwm)
+    [_vwap, bottom, top] = computeVWAP(src20, isNewPeriod, stdevMult)
+    vwapValue := _vwap
+    upperBandValue := showBands ? top : na
+    lowerBandValue := showBands ? bottom : na
+
+//K线形态设置
+//看涨吞没
+C_DownTrend = true
+C_UpTrend = true
+var trendRule1 = "SMA50"
+var trendRule2 = "SMA50, SMA200"
+var trendRule = trendRule1
+
+if trendRule == trendRule1
+    priceAvg = ta.sma(close, 50)
+    C_DownTrend := close < priceAvg
+    C_UpTrend := close > priceAvg
+
+if trendRule == trendRule2
+    sma200 = ta.sma(close, 200)
+    sma50 = ta.sma(close, 50)
+    C_DownTrend := close < sma50 and sma50 < sma200
+    C_UpTrend := close > sma50 and sma50 > sma200
+
+C_Len = 14 // K线平均长度
+C_ShadowPercent = 5.0 // 影线大小
+C_ShadowEqualsPercent = 100.0
+C_DojiBodyPercent = 5.0
+C_Factor = 2.0 // 影线主导K线实体的倍数
+
+C_BodyHi = math.max(close, open)
+C_BodyLo = math.min(close, open)
+C_Body = C_BodyHi - C_BodyLo
+C_BodyAvg = ta.ema(C_Body, C_Len)
+C_SmallBody = C_Body < C_BodyAvg
+C_LongBody = C_Body > C_BodyAvg
+C_UpShadow = high - C_BodyHi
+C_DnShadow = C_BodyLo - low
+C_HasUpShadow = C_UpShadow > C_ShadowPercent / 100 * C_Body
+C_HasDnShadow = C_DnShadow > C_ShadowPercent / 100 * C_Body
+C_WhiteBody = open < close
+C_BlackBody = open > close
+C_Range = high-low
+C_IsInsideBar = C_BodyHi[1] > C_BodyHi and C_BodyLo[1] < C_BodyLo
+C_BodyMiddle = C_Body / 2 + C_BodyLo
+C_ShadowEquals = C_UpShadow == C_DnShadow or (math.abs(C_UpShadow - C_DnShadow) / C_DnShadow * 100) < C_ShadowEqualsPercent and (math.abs(C_DnShadow - C_UpShadow) / C_UpShadow * 100) < C_ShadowEqualsPercent
+C_IsDojiBody = C_Range > 0 and C_Body <= C_Range * C_DojiBodyPercent / 100
+C_Doji = C_IsDojiBody and C_ShadowEquals
+
+patternLabelPosLow = low - (ta.atr(30) * 0.6)
+patternLabelPosHigh = high + (ta.atr(30) * 0.6)
+
+label_color_bullish = color.blue
+C_EngulfingBullishNumberOfCandles = 2
+C_EngulfingBullish = C_DownTrend and C_WhiteBody and C_LongBody and C_BlackBody[1] and C_SmallBody[1] and close >= open[1] and open <= close[1] and ( close > open[1] or open < close[1] )
+
+//看跌吞没
+label_color_bearish = color.red
+C_EngulfingBearishNumberOfCandles = 2
+C_EngulfingBearish = C_UpTrend and C_BlackBody and C_LongBody and C_WhiteBody[1] and C_SmallBody[1] and close <= open[1] and open >= close[1] and ( close < open[1] or open > close[1] )
+
+//成交量指标结束
+
+//信号评分部分
+
+//交替信号选项
+alternatesignals = input.bool(title="交替信号", defval=true)
+
+//仓位选项
+longpositions = input.bool(title="多头仓位", defval=true)
+shortpositions = input.bool(title="空头仓位", defval=true)
+
+//止损警告选项
+stoplosspercent = input.float(title="止损警告 (%)", defval=-2.5, minval=-50, maxval=0, step=.1) / 100
+
+//评分要求
+stronglongscore = input.int(defval=10, minval=0, maxval=1000, title="强势多头所需评分")
+strongshortscore = input.int(defval=10, minval=0, maxval=1000, title="强势空头所需评分")
+weaklongscore = input.int(defval=8, minval=0, maxval=1000, title="弱势多头所需评分")
+weakshortscore = input.int(defval=8, minval=0, maxval=1000, title="弱势空头所需评分")
+
+//趋势指标信号///////////////////////////////////////////////////////
+
+//EMA信号
+emadirectionimportance = input.int(defval=2, minval=0, maxval=100, title="EMA趋势方向重要性")
+emadirectionup = out5 < close ? emadirectionimportance : 0
+emadirectionupstatus = emadirectionup ? "EMA趋势向上" : na
+emadirectiondown = out5 > close ? emadirectionimportance : 0
+emadirectiondownstatus = emadirectiondown ? "EMA趋势向下" : na
+
+emapushpullimportance = input.int(defval=2, minval=0, maxval=100, title="EMA压力重要性")
+emapushup = out2 > out2[1] and out3 < out3[1] ? emapushpullimportance : 0
+emapushupstatus = emapushup ? "EMA推升" : na
+emapulldown = out2 < out2[1] and out3 > out3[1] ? emapushpullimportance : 0
+emapulldownstatus = emapulldown ? "EMA下拉" : na
+
+//超级趋势信号
+supertrenddirimportance = input.int(defval=0, minval=0, maxval=100, title="超级趋势方向重要性")
+supertrendup = direction < 0 ? supertrenddirimportance : 0
+supertrendupstatus = supertrendup ? "超级趋势向上" : na
+supertrenddown = direction > 0 ? supertrenddirimportance : 0
+supertrenddownstatus = supertrenddown ? "超级趋势向下" : na
+
+supertrendrevimportance = input.int(defval=4, minval=0, maxval=100, title="超级趋势反转重要性")
+supertrendrevup = direction < 0 and direction[1] > 0[1] ? supertrendrevimportance : 0
+supertrendrevupstatus = supertrendrevup ? "超级趋势反转向上" : na
+supertrendrevdown = direction > 0 and direction[1] < 0[1] ? supertrendrevimportance : 0
+supertrendrevdownstatus = supertrendrevdown ? "超级趋势反转向下" : na
+
+//抛物线SAR信号
+psardirimportance = input.int(defval=0, minval=0, maxval=100, title="抛物线SAR方向重要性")
+psardirup = psar < close ? psardirimportance : 0
+psardirupstatus = psardirup ? "PSAR方向向上" : na
+psardirdown = psar > close ? psardirimportance : 0
+psardirdownstatus = psardirdown ? "PSAR方向向下" : na
+
+psarrevimportance = input.int(defval=3, minval=0, maxval=100, title="抛物线SAR反转重要性")
+psarrevup = psar < close and psar[1] > close[1] ? psarrevimportance : 0
+psarrevupstatus = psarrevup ? "PSAR反转向上" : na
+psarrevdown = psar > close and psar[1] < close ? psarrevimportance : 0
+psarrevdownstatus = psarrevdown ? "PSAR反转向下" : na
+
+//HMA信号
+hmacloseposimportance = input.int(defval=1, minval=0, maxval=100, title="HMA趋势方向重要性")
+hmacloseposup = hma < close and hma[1] ? hmacloseposimportance : 0
+hmacloseposupstatus = hmacloseposup ? "价格突破HMA" : na
+hmacloseposdown = hma > close ? hmacloseposimportance : 0
+hmacloseposdownstatus = hmacloseposdown ? "价格跌破HMA" : na
+
+hmapivotimportance = input.int(defval=3, minval=0, maxval=100, title="HMA枢轴重要性")
+hmapivotup = hma > hma[1] and hma[1] < hma[2] ? hmapivotimportance : 0
+hmapivotupstatus = hmapivotup ? "HMA枢轴向上" : na
+hmapivotdown = hma < hma[1] and hma[1] > hma[2] ? hmapivotimportance : 0
+hmapivotdownstatus = hmapivotdown ? "HMA枢轴向下" : na
+
+//动量指标信号////////////////////////////////////////////////////
+
+//RSI信号
+rsidivimportance = input.int(defval=4, minval=0, maxval=100, title="RSI背离重要性")
+rsidivup = bullCond11 or bullCond11[1] or bullCond11[2] ? rsidivimportance : 0
+rsidivupstatus = rsidivup ? "看涨RSI背离" : na
+rsidivdown = bearCond11 or bearCond11[1] or bearCond11[2] ? rsidivimportance : 0
+rsidivdownstatus = rsidivdown ? "看跌RSI背离" : na
+
+rsilevelimportance = input.int(defval=0, minval=0, maxval=100, title="RSI水平重要性")
+rsioversold = osc11 < 30 ? rsilevelimportance : 0
+rsioversoldstatus = rsioversold ? "RSI超卖" : na
+rsioverbought = osc11 > 70 ? rsilevelimportance : 0
+rsioverboughtstatus = rsioverbought ? "RSI超买" : na
+
+rsidirectionimportance = input.int(defval=1, minval=0, maxval=100, title="RSI穿越50线重要性")
+rsicrossup = (osc11 > 50 and osc11[1] < 50) or (osc11 > 50 and osc11[2] < 50) ? rsidirectionimportance : 0
+rsicrossupstatus = rsicrossup ? "RSI上穿50线" : na
+rsicrossdown = (osc11 < 50 and osc11[1] > 50) or (osc11 < 50 and osc11[2] > 50) ? rsidirectionimportance : 0
+rsicrossdownstatus = rsicrossdown ? "RSI下穿50线" : na
+
+//MACD信号
+macddivimportance = input.int(defval=0, minval=0, maxval=100, title="MACD背离重要性")
+macddivup = bullCond12 or bullCond12[1] or bullCond12[2] ? macddivimportance : 0
+macddivupstatus = macddivup ? "看涨MACD背离" : na
+macddivdown = bearCond12 or bearCond12[1] or bearCond12[2] ? macddivimportance : 0
+macddivdownstatus = macddivdown ? "看跌MACD背离" : na
+
+histpivotimportance = input.int(defval=1, minval=0, maxval=100, title="MACD柱状图枢轴重要性")
+histpivotup = hist > hist[1] and hist[1] < hist[2] and hist < 0 ? histpivotimportance : 0
+histpivotupstatus = histpivotup ? "MACD柱状图枢轴向上" : na
+histpivotdown = hist < hist[1] and hist[1] > hist[2] and hist > 0 ? histpivotimportance : 0
+histpivotdownstatus = histpivotdown ? "MACD柱状图枢轴向下" : na
+
+macdcrosssignalimportance = input.int(defval=1, minval=0, maxval=100, title="MACD交叉信号重要性")
+macdcrosssignalup = macd > signal and macd[1] < signal[1] and signal < 0 ? macdcrosssignalimportance : 0
+macdcrosssignalupstatus = macdcrosssignalup ? "MACD上穿信号线" : na
+macdcrosssignaldown = macd < signal and macd[1] > signal[1] and signal > 0 ? macdcrosssignalimportance : 0
+macdcrosssignaldownstatus = macdcrosssignaldown ? "MACD下穿信号线" : na
+
+//波浪趋势信号
+wtdivimportance = input.int(defval=0, minval=0, maxval=100, title="波浪趋势背离重要性")
+wtdivup = bullCond13 or bullCond13[1] or bullCond13[2] ? wtdivimportance : 0
+wtdivupstatus = wtdivup ? "看涨波浪趋势背离" : na
+wtdivdown = bearCond13 or bearCond13[1] or bearCond13[2] ? wtdivimportance : 0
+wtdivdownstatus = wtdivdown ? "看跌波浪趋势背离" : na
+
+wtcrosssignalimportance = input.int(defval=4, minval=0, maxval=100, title="波浪趋势交叉信号重要性")
+wtcrosssignalup = wt1 > wt2 and wt1[1] < wt2[1] and wt2 < -10 ? wtcrosssignalimportance : 0
+wtcrosssignalupstatus = wtcrosssignalup ? "波浪趋势上穿信号" : na
+wtcrosssignaldown = wt1 < wt2 and wt1[1] > wt2[1] and wt2 > 10 ? wtcrosssignalimportance : 0
+wtcrosssignaldownstatus = wtcrosssignaldown ? "波浪趋势下穿信号" : na
+
+//随机指标信号
+sdivimportance = input.int(defval=1, minval=0, maxval=100, title="随机指标背离重要性")
+sdivup = bullCond14 or bullCond14[1] or bullCond14[2] ? sdivimportance : 0
+sdivupstatus = sdivup ? "看涨随机背离" : na
+sdivdown = bearCond14 or bearCond14[1] or bearCond14[2] ? sdivimportance : 0
+sdivdownstatus = sdivdown ? "看跌随机背离" : na
+
+scrosssignalimportance = input.int(defval=1, minval=0, maxval=100, title="随机交叉信号重要性")
+scrosssignalup = k14 > d14 and k14[1] < d14[1] ? scrosssignalimportance : 0
+scrosssignalupstatus = scrosssignalup ? "随机上穿信号" : na
+scrosssignaldown = k14 < d14 and k14[1] > d14[1] ? scrosssignalimportance : 0
+scrosssignaldownstatus = scrosssignaldown ? "随机下穿信号" : na
+
+//波动率指标信号/////////////////////////////////////////////////////////
+
+//布林带信号
+bbcontimportance = input.int(defval=0, minval=0, maxval=100, title="布林带接触重要性")
+bbcontup = close < lower ? bbcontimportance : 0
+bbcontupstatus = bbcontup ? "价格触及下轨" : na
+bbcontdown = open > upper ? bbcontimportance : 0
+bbcontdownstatus = bbcontdown ? "价格触及上轨" : na
+
+//平均真实波幅信号
+atrrevimportance = input.int(defval=1, minval=0, maxval=100, title="ATR反转重要性")
+atrrevup = buySignal ? atrrevimportance : 0
+atrrevupstatus = atrrevup ? "ATR反转向上" : na
+atrrevdown = sellSignal ? atrrevimportance : 0
+atrrevdownstatus = atrrevdown ? "ATR反转向下" : na
+
+//相对波动率指数信号
+rviposimportance = input.int(defval=3, minval=0, maxval=100, title="RVI位置重要性")
+rviposup = rvi > 25 and rvi[1] < 40 ? rviposimportance : 0
+rviposupstatus = rviposup ? "RVI波动性增加" : na
+rviposdown = rvi < 75 and rvi[1] > 60 ? rviposimportance : 0
+rviposdownstatus = rviposdown ? "RVI波动性减少" : na
+
+rvidivimportance = input.int(defval=4, minval=0, maxval=100, title="RVI背离重要性")
+rvidivup = bullCond15 or bullCond15[1] or bullCond15[2] ? rvidivimportance : 0
+rvidivupstatus = rvidivup ? "看涨RVI背离" : na
+rvidivdown = bearCond15 or bearCond15[1] or bearCond15[2] ? rvidivimportance : 0
+rvidivdownstatus = rvidivdown ? "看跌RVI背离" : na
+
+//支撑和阻力信号
+srcrossimportance = input.int(defval=0, minval=0, maxval=100, title="支撑/阻力穿越重要性")
+srcrossup = buy1 or buy2 or buy3 or buy4 or buy5 or buy6 or buy7 or buy8 ? srcrossimportance : 0
+srcrossupstatus = srcrossup ? "上穿关键水平" : na
+srcrossdown = sell1 or sell2 or sell3 or sell4 or sell5 or sell6 or sell7 or sell8 ? srcrossimportance : 0
+srcrossdownstatus = srcrossdown ? "下穿关键水平" : na
+
+//成交量指标信号//////////////////////////////////////////////////////
+
+//OBV背离信号
+obvdivimportance = input.int(defval=0, minval=0, maxval=100, title="OBV背离重要性")
+obvdivup = bullCond18 or bullCond18[1] or bullCond18[2] ? obvdivimportance : 0
+obvdivupstatus = obvdivup ? "看涨OBV背离" : na
+obvdivdown = bearCond18 or bearCond18[1] or bearCond18[2] ? obvdivimportance : 0
+obvdivdownstatus = obvdivdown ? "看跌OBV背离" : na
+
+//蔡金资金流信号
+cmfcrossimportance = input.int(defval=0, minval=0, maxval=100, title="CMF穿越50线重要性")
+cmfcrossup = cmf > 0 and cmf[1] < 0 ? cmfcrossimportance : 0
+cmfcrossupstatus = cmfcrossup ? "CMF上穿50线" : na
+cmfcrossdown = cmf < 0 and cmf[1] > 0 ? cmfcrossimportance : 0
+cmfcrossdownstatus = cmfcrossdown ? "CMF下穿50线" : na
+
+cmflevimportance = input.int(defval=0, minval=0, maxval=100, title="CMF水平重要性")
+cmflevup = cmf > 0 ? cmflevimportance : 0
+cmflevupstatus = cmflevup ? "CMF水平向上" : na
+cmflevdown = cmf < 0 ? cmflevimportance : 0
+cmflevdownstatus = cmflevdown ? "CMF水平向下" : na
+
+//VWAP信号
+vwapcrossimportance = input.int(defval=0, minval=0, maxval=100, title="VWAP穿越HMA重要性")
+vwapcrossup = hma < vwapValue and hma[1] > vwapValue[1] ? vwapcrossimportance : 0
+vwapcrossupstatus = vwapcrossup ? "VWAP穿越HMA上方" : na
+vwapcrossdown = hma > vwapValue and hma[1] < vwapValue[1] ? vwapcrossimportance : 0
+vwapcrossdownstatus = vwapcrossdown ? "VWAP穿越HMA下方" : na
+
+vwaptrendimportance = input.int(defval=0, minval=0, maxval=100, title="VWAP趋势重要性")
+vwaptrendup = out2 > vwapValue ? vwaptrendimportance : 0
+vwaptrendupstatus = vwaptrendup ? "VWAP上升趋势" : na
+vwaptrenddown = out2 < vwapValue ? vwaptrendimportance : 0
+vwaptrenddownstatus = vwaptrenddown ? "VWAP下降趋势" : na
+
+//K线形态信号
+engulfingcandleimportance = input.int(defval=0, minval=0, maxval=100, title="吞没K线重要性")
+bulleng = C_EngulfingBullish ? engulfingcandleimportance : 0
+bullengstatus = bulleng ? "看涨吞没K线" : na
+beareng = C_EngulfingBearish ? engulfingcandleimportance : 0
+bearengstatus = beareng ? "看跌吞没K线" : na
+
+//信号评分结束
+
+//收集信号部分
+
+//分类入场信号
+stronglongentrysignal  = emadirectionup   + emapushup   + supertrendup   + supertrendrevup   + psardirup   + psarrevup   + hmacloseposup   + hmapivotup   + rsidivup   + rsioversold   + rsicrossup   + macddivup   + histpivotup   + macdcrosssignalup   + wtdivup   + wtcrosssignalup   + sdivup   + scrosssignalup   + bbcontup   + atrrevup   + rviposup   + rvidivup   + srcrossup   + obvdivup   + cmfcrossup   + cmflevup   + vwapcrossup   + vwaptrendup   + bulleng >= stronglongscore
+strongshortentrysignal = emadirectiondown + emapulldown + supertrenddown + supertrendrevdown + psardirdown + psarrevdown + hmacloseposdown + hmapivotdown + rsidivdown + rsioverbought + rsicrossdown + macddivdown + histpivotdown + macdcrosssignaldown + wtdivdown + wtcrosssignaldown + sdivdown + scrosssignaldown + bbcontdown + atrrevdown + rviposdown + rvidivdown + srcrossdown + obvdivdown + cmfcrossdown + cmflevdown + vwapcrossdown + vwaptrenddown + beareng >= strongshortscore
+weaklongentrysignal    = emadirectionup   + emapushup   + supertrendup   + supertrendrevup   + psardirup   + psarrevup   + hmacloseposup   + hmapivotup   + rsidivup   + rsioversold   + rsicrossup   + macddivup   + histpivotup   + macdcrosssignalup   + wtdivup   + wtcrosssignalup   + sdivup   + scrosssignalup   + bbcontup   + atrrevup   + rviposup   + rvidivup   + srcrossup   + obvdivup   + cmfcrossup   + cmflevup   + vwapcrossup   + vwaptrendup   + bulleng >= weaklongscore
+weakshortentrysignal   = emadirectiondown + emapulldown + supertrenddown + supertrendrevdown + psardirdown + psarrevdown + hmacloseposdown + hmapivotdown + rsidivdown + rsioverbought + rsicrossdown + macddivdown + histpivotdown + macdcrosssignaldown + wtdivdown + wtcrosssignaldown + sdivdown + scrosssignaldown + bbcontdown + atrrevdown + rviposdown + rvidivdown + srcrossdown + obvdivdown + cmfcrossdown + cmflevdown + vwapcrossdown + vwaptrenddown + beareng >= weakshortscore
+
+longentrysignal    = emadirectionup   + emapushup   + supertrendup   + supertrendrevup   + psardirup   + psarrevup   + hmacloseposup   + hmapivotup   + rsidivup   + rsioversold   + rsicrossup   + macddivup   + histpivotup   + macdcrosssignalup   + wtdivup   + wtcrosssignalup   + sdivup   + scrosssignalup   + bbcontup   + atrrevup   + rviposup   + rvidivup   + srcrossup   + obvdivup   + cmfcrossup   + cmflevup   + vwapcrossup   + vwaptrendup   + bulleng  
+shortentrysignal   = emadirectiondown + emapulldown + supertrenddown + supertrendrevdown + psardirdown + psarrevdown + hmacloseposdown + hmapivotdown + rsidivdown + rsioverbought + rsicrossdown + macddivdown + histpivotdown + macdcrosssignaldown + wtdivdown + wtcrosssignaldown + sdivdown + scrosssignaldown + bbcontdown + atrrevdown + rviposdown + rvidivdown + srcrossdown + obvdivdown + cmfcrossdown + cmflevdown + vwapcrossdown + vwaptrenddown + beareng  
+
+//交替入场信号
+var pos = 0
+if stronglongentrysignal and pos <= 0
+    pos := 1
+if strongshortentrysignal and pos >= 0
+    pos := -1
+longentry = pos == 1 and (pos != 1)[1]
+shortentry = pos == -1 and (pos != -1)[1]
+alternatelong  = alternatesignals ? longentry  : stronglongentrysignal
+alternateshort = alternatesignals ? shortentry : strongshortentrysignal
+
+//收集信号结束
+
+//绘制信号部分
+
+plotshape(tradetrendoption ? alternatelong and mabuy : alternatelong, title="强势多头标签", style=shape.labelup, location=location.belowbar, color=#00bcd4, text="多头", textcolor=color.white, size=size.small)
+plotshape(tradetrendoption ? alternateshort and masell : alternateshort, title="强势空头标签", style=shape.labeldown, location=location.abovebar, color=#e91e63, text="空头", textcolor=color.white, size=size.small)
+plotshape(weaklongentrysignal, title="弱势多头三角", style=shape.triangleup, location=location.belowbar, color=color.new(#00bcd4, 50), size=size.tiny)
+plotshape(weakshortentrysignal, title="弱势空头三角", style=shape.triangledown, location=location.abovebar, color=color.new(#e91e63, 50), size=size.tiny)
+
+//绘制信号结束
+
+//状态面板部分
+
+var table statuswindow = table.new(position.top_right, 100, 100, border_width=2)
+
+//趋势状态//////////////////////////////////////////////////////////////////
+
+txt1 = "🡇            趋势             🡇"
+table.cell(statuswindow, 3, 0, text=txt1, bgcolor=color.new(#000000, 50), text_color=color.white, text_size=size.small)
+
+//EMA状态
+if emadirectionup
+    table.cell(statuswindow, 3, 1, text=str.tostring(emadirectionupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if emadirectiondown
+    table.cell(statuswindow, 3, 1, text=str.tostring(emadirectiondownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if emapushup ? 1 : na
+    table.cell(statuswindow, 3, 2, text=str.tostring(emapushupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if emapushup ? na : 1
+    table.clear(statuswindow, 3, 2)
+if emapulldown ? 1 : na
+    table.cell(statuswindow, 3, 3, text=str.tostring(emapulldownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if emapulldown ? na : 1
+    table.clear(statuswindow, 3, 3)
+
+//超级趋势状态
+if supertrendup
+    table.cell(statuswindow, 3, 4, text=str.tostring(supertrendupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if supertrenddown
+    table.cell(statuswindow, 3, 4, text=str.tostring(supertrenddownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if supertrendrevup ? 1 : na
+    table.cell(statuswindow, 3, 5, text=str.tostring(supertrendrevupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if supertrendrevup ? na : 1
+    table.clear(statuswindow, 3, 5)
+if supertrendrevdown ? 1 : na
+    table.cell(statuswindow, 3, 6, text=str.tostring(supertrendrevdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if supertrendrevdown ? na : 1
+    table.clear(statuswindow, 3, 6)
+    
+//抛物线SAR状态
+if psardirup
+    table.cell(statuswindow, 3, 7, text=str.tostring(psardirupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if psardirdown
+    table.cell(statuswindow, 3, 7, text=str.tostring(psardirdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if psarrevup ? 1 : na
+    table.cell(statuswindow, 3, 8, text=str.tostring(psarrevupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if psarrevup ? na : 1
+    table.clear(statuswindow, 3, 8)
+if psarrevdown ? 1 : na
+    table.cell(statuswindow, 3, 9, text=str.tostring(psarrevdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if psarrevdown ? na : 1
+    table.clear(statuswindow, 3, 9)
+
+//HMA状态
+if hmacloseposup
+    table.cell(statuswindow, 3, 10, text=str.tostring(hmacloseposupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if hmacloseposdown
+    table.cell(statuswindow, 3, 10, text=str.tostring(hmacloseposdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if hmapivotup ? 1 : na
+    table.cell(statuswindow, 3, 11, text=str.tostring(hmapivotupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if hmapivotup ? na : 1
+    table.clear(statuswindow, 3, 11)
+if hmapivotdown ? 1 : na
+    table.cell(statuswindow, 3, 12, text=str.tostring(hmapivotdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if hmapivotdown ? na : 1
+    table.clear(statuswindow, 3, 12)
+
+//动量状态///////////////////////////////////////////////////////////////
+
+txt2 = "🡇          动量          🡇"
+table.cell(statuswindow, 2, 0, text=txt2, bgcolor=color.new(#000000, 50), text_color=color.white, text_size=size.small)
+    
+//RSI状态
+if rsidivup ? 1 : na
+    table.cell(statuswindow, 2, 1, text=str.tostring(rsidivupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if rsidivup ? na : 1
+    table.clear(statuswindow, 2, 1)
+if rsidivdown ? 1 : na
+    table.cell(statuswindow, 2, 2, text=str.tostring(rsidivdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if rsidivdown ? na : 1
+    table.clear(statuswindow, 2, 2)
+if rsioversold ? 1 : na
+    table.cell(statuswindow, 2, 3, text=str.tostring(rsioversoldstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if rsioversold ? na : 1
+    table.clear(statuswindow, 2, 3)
+if rsioverbought ? 1 : na
+    table.cell(statuswindow, 2, 4, text=str.tostring(rsioverboughtstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if rsioverbought ? na : 1
+    table.clear(statuswindow, 2, 4)
+if rsicrossup ? 1 : na
+    table.cell(statuswindow, 2, 5, text=str.tostring(rsicrossupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if rsicrossup ? na : 1
+    table.clear(statuswindow, 2, 5)
+if rsicrossdown ? 1 : na
+    table.cell(statuswindow, 2, 6, text=str.tostring(rsicrossdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if rsicrossdown ? na : 1
+    table.clear(statuswindow, 2, 6)
+
+//MACD状态
+if macddivup ? 1 : na
+    table.cell(statuswindow, 2, 7, text=str.tostring(macddivupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if macddivup ? na : 1
+    table.clear(statuswindow, 2, 7)
+if macddivdown ? 1 : na
+    table.cell(statuswindow, 2, 8, text=str.tostring(macddivdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if macddivdown ? na : 1
+    table.clear(statuswindow, 2, 8)
+if histpivotup ? 1 : na
+    table.cell(statuswindow, 2, 9, text=str.tostring(histpivotupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if histpivotup ? na : 1
+    table.clear(statuswindow, 2, 9)
+if histpivotdown ? 1 : na
+    table.cell(statuswindow, 2, 10, text=str.tostring(histpivotdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if histpivotdown ? na : 1
+    table.clear(statuswindow, 2, 10)
+if macdcrosssignalup ? 1 : na
+    table.cell(statuswindow, 2, 11, text=str.tostring(macdcrosssignalupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if macdcrosssignalup ? na : 1
+    table.clear(statuswindow, 2, 11)
+if macdcrosssignaldown ? 1 : na
+    table.cell(statuswindow, 2, 12, text=str.tostring(macdcrosssignaldownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if macdcrosssignaldown ? na : 1
+    table.clear(statuswindow, 2, 12)
+
+//波浪趋势状态
+if wtdivup ? 1 : na
+    table.cell(statuswindow, 2, 13, text=str.tostring(wtdivupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if wtdivup ? na : 1
+    table.clear(statuswindow, 2, 13)
+if wtdivdown ? 1 : na
+    table.cell(statuswindow, 2, 14, text=str.tostring(wtdivdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if wtdivdown ? na : 1
+    table.clear(statuswindow, 2, 14)
+if wtcrosssignalup ? 1 : na
+    table.cell(statuswindow, 2, 15, text=str.tostring(wtcrosssignalupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if wtcrosssignalup ? na : 1
+    table.clear(statuswindow, 2, 15)
+if wtcrosssignaldown ? 1 : na
+    table.cell(statuswindow, 2, 16, text=str.tostring(wtcrosssignaldownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if wtcrosssignaldown ? na : 1
+    table.clear(statuswindow, 2, 16)
+    
+//随机指标状态
+if sdivup ? 1 : na
+    table.cell(statuswindow, 2, 17, text=str.tostring(sdivupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if sdivup ? na : 1
+    table.clear(statuswindow, 2, 17)
+if sdivdown ? 1 : na
+    table.cell(statuswindow, 2, 18, text=str.tostring(sdivdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if sdivdown ? na : 1
+    table.clear(statuswindow, 2, 18)
+if scrosssignalup ? 1 : na
+    table.cell(statuswindow, 2, 19, text=str.tostring(scrosssignalupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if scrosssignalup ? na : 1
+    table.clear(statuswindow, 2, 19)
+if scrosssignaldown ? 1 : na
+    table.cell(statuswindow, 2, 20, text=str.tostring(scrosssignaldownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if scrosssignaldown ? na : 1
+    table.clear(statuswindow, 2, 20)
+
+    
+//波动率状态/////////////////////////////////////////////////////////////////
+
+txt3 = "🡇         波动率         🡇"
+table.cell(statuswindow, 1, 0, text=txt3, bgcolor=color.new(#000000, 50), text_color=color.white, text_size=size.small)
+
+//布林带状态
+if bbcontup ? 1 : na
+    table.cell(statuswindow, 1, 1, text=str.tostring(bbcontupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if bbcontup ? na : 1
+    table.clear(statuswindow, 1, 1)
+if bbcontup ? 1 : na
+    table.cell(statuswindow, 1, 2, text=str.tostring(bbcontdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if bbcontdown ? na : 1
+    table.clear(statuswindow, 1, 2)
+    
+//ATR状态
+if atrrevup ? 1 : na
+    table.cell(statuswindow, 1, 3, text=str.tostring(atrrevupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if atrrevup ? na : 1
+    table.clear(statuswindow, 1, 3)
+if atrrevdown ? 1 : na
+    table.cell(statuswindow, 1, 4, text=str.tostring(atrrevdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if atrrevdown ? na : 1
+    table.clear(statuswindow, 1, 4)
+    
+//RVI状态
+if rviposup ? 1 : na
+    table.cell(statuswindow, 1, 5, text=str.tostring(rviposupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if rviposup ? na : 1
+    table.clear(statuswindow, 1, 5)
+if rviposdown ? 1 : na
+    table.cell(statuswindow, 1, 6, text=str.tostring(rviposdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if rviposdown ? na : 1
+    table.clear(statuswindow, 1, 6)
+if rvidivup ? 1 : na
+    table.cell(statuswindow, 1, 7, text=str.tostring(rvidivupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if rvidivup ? na : 1
+    table.clear(statuswindow, 1, 7)
+if rvidivdown ? 1 : na
+    table.cell(statuswindow, 1, 8, text=str.tostring(rvidivdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if rvidivdown ? na : 1
+    table.clear(statuswindow, 1, 8)
+
+//支撑和阻力状态
+if srcrossup ? 1 : na
+    table.cell(statuswindow, 1, 9, text=str.tostring(srcrossupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if srcrossup ? na : 1
+    table.clear(statuswindow, 1, 9)
+if srcrossdown ? 1 : na
+    table.cell(statuswindow, 1, 10, text=str.tostring(srcrossdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if srcrossdown ? na : 1
+    table.clear(statuswindow, 1, 10)
+
+
+//Volume Status/////////////////////////////////////////////////////////////////
+
+txt4 = "🡇           VOLUME           🡇"
+table.cell(statuswindow, 0, 0, text=txt4, bgcolor=color.new(#000000, 50), text_color=color.white, text_size=size.small)
+
+//On Balance Volume Status
+if obvdivup ? 1 : na
+    table.cell(statuswindow, 0, 1, text=str.tostring(obvdivupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if obvdivup ? na : 1
+    table.clear(statuswindow, 0, 1)
+if obvdivdown ? 1 : na
+    table.cell(statuswindow, 0, 2, text=str.tostring(obvdivdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if obvdivdown ? na : 1
+    table.clear(statuswindow, 0, 2)
+    
+//Chaikin Money Flow Status
+if cmfcrossup ? 1 : na
+    table.cell(statuswindow, 0, 3, text=str.tostring(cmfcrossupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if cmfcrossup ? na : 1
+    table.clear(statuswindow, 0, 3)
+if cmfcrossdown ? 1 : na
+    table.cell(statuswindow, 0, 4, text=str.tostring(cmfcrossdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if cmfcrossdown ? na : 1
+    table.clear(statuswindow, 0, 4)
+if cmflevup ? 1 : na
+    table.cell(statuswindow, 0,5, text=str.tostring(cmflevupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if cmflevdown ? 1 : na
+    table.cell(statuswindow, 0, 5, text=str.tostring(cmflevdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+    
+//VWAP Status
+if vwapcrossup ? 1 : na
+    table.cell(statuswindow, 0, 6, text=str.tostring(vwapcrossupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if vwapcrossup ? na : 1
+    table.clear(statuswindow, 0, 6)
+if vwapcrossdown ? 1 : na
+    table.cell(statuswindow, 0, 7, text=str.tostring(vwapcrossdownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if vwapcrossdown ? na : 1
+    table.clear(statuswindow, 0, 7)
+if vwaptrendup ? 1 : na
+    table.cell(statuswindow, 0,8, text=str.tostring(vwaptrendupstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if vwaptrenddown ? 1 : na
+    table.cell(statuswindow, 0, 8, text=str.tostring(vwaptrenddownstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+    
+//Candle Pattern Status
+if bulleng ? 1 : na
+    table.cell(statuswindow, 0, 9, text=str.tostring(bullengstatus), bgcolor=color.new(#00bcd4, 50), text_color=color.white, text_size=size.small)
+if bulleng ? na : 1
+    table.clear(statuswindow, 0, 9)
+if beareng ? 1 : na
+    table.cell(statuswindow, 0, 10, text=str.tostring(bearengstatus), bgcolor=color.new(#e91e63, 50), text_color=color.white, text_size=size.small)
+if beareng ? na : 1
+    table.clear(statuswindow, 0, 10)
+
+
+//END
+
+//STOP LOSS WARNINGS
+
+//Stop Loss Criteria
+longstoploss = strategy.position_avg_price * (1 + stoplosspercent)
+shortstoploss = strategy.position_avg_price * (1 - stoplosspercent)
+printstoplong = longstoploss > close and longstoploss[1] < close[1] and strategy.position_size > 0
+printstopshort = shortstoploss < close and shortstoploss[1] > close[1] and strategy.position_size < 0
+
+//Stop Loss Lines
+plot(strategy.position_size > 0 ? longstoploss : na, style=plot.style_line, color=color.new(color.yellow, 50), linewidth=1, title="Stop Long Line", display=display.none)
+plot(strategy.position_size < 0 ? shortstoploss : na, style=plot.style_line, color=color.new(color.yellow, 50), linewidth=1, title="Stop Short Line", display=display.none)
+
+//Stop Loss Labels
+plotshape(printstoplong, title="Stop Long Label", style=shape.labelup, location=location.belowbar, color=color.yellow, text="𝐒𝐓𝐎𝐏", textcolor=color.black, size=size.tiny)
+plotshape(printstopshort, title="Stop Short Label", style=shape.labeldown, location=location.abovebar, color=color.yellow, text="𝐒𝐓𝐎𝐏", textcolor=color.black, size=size.tiny)
+
+
+//END
+
+//STRATEGY TESTER
+
+//Long
+if tradetrendoption ? alternatelong and mabuy and longpositions : alternatelong and longpositions and timeRang
+	strategy.entry("longposition", strategy.long, comment="Long Entry")
+if (shortentry or printstoplong) and longpositions
+	strategy.close("longposition", comment="Long Exit")
+
+//Short
+if tradetrendoption ? alternateshort and masell and shortpositions : alternateshort and shortpositions and timeRang
+	strategy.entry("shortposition", strategy.short, comment=" Short Entry")
+if (longentry or printstopshort) and shortpositions
+	strategy.close("shortposition", comment="Short Exit")
+
+
+
+// === 在右上角添加趋势标签，每分钟更新一次 ===
+// 获取当前分钟
+currentMinute = minute(time)
+var int lastMinute = -1
+
+// 确定当
+
+// 标签管理
+var label trendLabel = na
+
+//更新标签
+if currentMinute != lastMinute
+    lastMinute := currentMinute
+
+    // 删除前一个标签
+    if not na(trendLabel)
+        label.delete(trendLabel)
+
+    // 创建标签文本
+    labelText = "多: " +str.tostring(longentrysignal) + " | 空: " +str.tostring(shortentrysignal) +  '-'   
+
+    // 右上角位置计算 - 使用当前高点加上固定距离
+    price_range = ta.tr * 3   // 使用真实波动范围来计算适当的标签位置
+    label_x = bar_index
+    label_y = high + 0.15 + price_range
+
+    // 根据趋势设置颜色
+    labelColor = color.blue
+     
+
+    // 创建新标签并存储ID
+    trendLabel := label.new(  x=label_x,   y=label_y,   text=labelText,   color=color.new(labelColor, 20),   style=label.style_label_right,  textcolor=color.white,   size=size.normal)
+
+//Alerts
+ttbuystring  = "Input your custom alert message here. In the Alert settings, choose \"Neural Network\" and \"Alert() functionc calls only\"\nIf you're using a 3Commas Bot, make sure to format your message correctly with forward slashes in front of each quotation, you can find videos about how to do this on YouTube. Or ask 3Commas support about how to format the message for PineScript."
+ttsellstring = "Input your custom alert message here. In the Alert settings, choose \"Neural Network\" and \"Alert() functionc calls only\"\nIf you're using a 3Commas Bot, make sure to format your message correctly with forward slashes in front of each quotation, you can find videos about how to do this on YouTube. Or ask 3Commas support about how to format the message for PineScript."
+ttstopstring = "Input your custom alert message here. In the Alert settings, choose \"Neural Network\" and \"Alert() functionc calls only\"\nIf you're using a 3Commas Bot, make sure to format your message correctly with forward slashes in front of each quotation, you can find videos about how to do this on YouTube. Or ask 3Commas support about how to format the message for PineScript."
+usebuyalert = input(defval=true, title="Use BUY Alert", group="Alert Messages")
+buystring  = input(title="Buy Alert Message",  defval="BUY",    group="Alert Messages", tooltip=ttbuystring)
+usesellalert = input(defval=true, title="Use SELL Alert", group="Alert Messages")
+sellstring = input(title="Sell Alert Message", defval="SELL",   group="Alert Messages", tooltip=ttsellstring)
+usestopalert = input(defval=true, title="Use STOP Alert", group="Alert Messages")
+stopstring = input(title="Stop Alert Message", defval="STOP",   group="Alert Messages", tooltip=ttstopstring)
+
+if longentry and longpositions and usebuyalert
+    alert(buystring, alert.freq_once_per_bar)
+if shortentry and shortpositions and usesellalert
+    alert(sellstring, alert.freq_once_per_bar)
+if printstoplong or printstopshort and usestopalert
+    alert(stopstring, alert.freq_once_per_bar)
+
+//END
+
