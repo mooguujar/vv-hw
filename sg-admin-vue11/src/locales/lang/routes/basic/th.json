@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "basic": {
+      "errorLogList": "รายการบันทึกข้อผิดพลาด",
+      "errorNoData": "",
+      "login": "ล็อกอิน"
+    }
+  }
+}

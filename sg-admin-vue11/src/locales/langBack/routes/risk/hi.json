@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "संबंधित विवरण",
+      "black_list": "IP ब्लैकलिस्ट",
+      "fight_monitor": "आर्बिट्रेज मोन",
+      "high_bonus": "उच्च भुगतान",
+      "link_records": "संबंधित रिकॉर्ड्स",
+      "low_multiple": "कम दांव टर्नओवर",
+      "profit_list": "लाभ लीडरबोर्ड",
+      "risk": "जोखिम",
+      "win_top": "लाभ लीडरबोर्ड"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": "विज्ञापन जोड़ें"
+    },
+    "finance": {
+      "pre_payment_management_1": "भुगतान एजेंट"
+    },
+    "promotion": {
+      "ad_grouping_1": "ROI समूहीकरण",
+      "ad_grouping_2": "ROI मैनेजमेंट",
+      "month_price_roi": "Mo. Ad ROI(Stat.)",
+      "statics_channel": "चैनल सांख्यिकी",
+      "statics_code": "सांख्यिकी कोड",
+      "Promotional_effectiveness": "प्रमोशन प्रभाव",
+      "live_analysis": "दैनिक गतिविधि विश्लेषण"
+    },
+    "system": {
+      "chatroom_sys": "चैटरूम"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": "PWA (H5 पर पुनर्निर्देशित करें)"
+      }
+    }
+  }
+}

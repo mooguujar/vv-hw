@@ -1,0 +1,20 @@
+{
+  "modalForm": {
+    "system": {
+      "app_boot_download_cfg_footer": ""
+    }
+  },
+  "v": {
+    "report": {
+      "comprehensiveReport": {
+        "category_overview": "ภาพรวมหมวดหมู่",
+        "commission_issuance": "การแจกคอมมิชชั่น",
+        "deposit_classification": "หมวดหมู่การฝากเงิน",
+        "online_user_count": "ผู้เล่นที่ออนไลน์",
+        "operations_overview": "ภาพรวมการดำเนินงาน",
+        "some_people": "{0} คน",
+        "withdrawal_classification": "หมวดหมู่การถอนเงิน"
+      }
+    }
+  }
+}

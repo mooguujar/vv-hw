@@ -1,0 +1,19 @@
+{
+  "search": {
+    "finance": {
+      "finance_commission": "Komisi",
+      "finance_commission_choose": "Pilih jenis bisnis",
+      "finance_commission_choose_text": "Silakan pilih jenis bisnis",
+      "finance_commission_chosen": "Dipilih",
+      "finance_commission_chosen_lenth": "Jenis Bisnis",
+      "finance_discount": "Promosi",
+      "finance_refresh": "Segarkan",
+      "finance_withdraw": "Penarikan"
+    }
+  },
+  "table": {
+    "advertise": {
+      "table_grouping_p_1": "Silakan masukkan nama grup"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "Ad Grouping",
+      "buried_point": "Page Tracking",
+      "PromotionalManagement": "Promo",
+      "channel_management": "Channel",
+      "google_management": "Google Page",
+      "promotion": "Promo Center",
+      "race_price_roi": "Bidding ROI(OS)"
+    }
+  }
+}

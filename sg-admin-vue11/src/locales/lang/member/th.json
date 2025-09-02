@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": "สถานะ"
+    },
+    "vip": {
+      "TransactionRebate": "โบนัสเงินสำหรับคืนสมาชิก",
+      "TransactionVIPDay": "โบนัส VIP รายวัน",
+      "TransactionVIPMonthly": "โบนัส VIP รายเดือน",
+      "TransactionVIPUpgrade": "โบนัสเลื่อนระดับ VIP",
+      "TransactionVIPWeek": "โบนัส VIP รายสัปดาห์",
+      "TransactionVIpBirthday": "โบนัส VIP วันเกิด",
+      "daily_bonus": "โบนัสรายวัน",
+      "monthly_bonus": "โบนัสรายเดือน",
+      "promotion_bonus": "โบนัสเลื่อนระดับ",
+      "rebate_configuration": "ปรับแต่งโบนัสเงินคืน",
+      "weekly_bonus": "โบนัสรายสัปดาห์"
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "",
+      "member_name_tip1": "",
+      "member_name_tip_text": ""
+    },
+    "system": {
+      "commsision_tip_11": "ค่าคอมมิชชั่นที่ตัวแทนได้จากสมาชิก"
+    }
+  }
+}

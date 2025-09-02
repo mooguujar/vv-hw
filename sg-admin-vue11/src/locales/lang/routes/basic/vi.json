@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "basic": {
+      "errorLogList": "Danh sách nhật ký lỗi",
+      "errorNoData": "Không có số liệu",
+      "login": "Đăng nhập"
+    }
+  }
+}

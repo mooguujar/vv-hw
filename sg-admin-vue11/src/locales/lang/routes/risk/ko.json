@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "",
+      "black_list": "",
+      "fight_monitor": "",
+      "high_bonus": "",
+      "link_records": "",
+      "low_multiple": "",
+      "profit_list": "",
+      "risk": "",
+      "win_top": ""
+    }
+  }
+}

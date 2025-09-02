@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "agent": {
+      "agent": "代理管理",
+      "agentList": "代理列表",
+      "agentPlan": "代理方案",
+      "commissionList": "佣金列表",
+      "recordsManagement": "记录管理"
+    }
+  },
+  "table": {
+    "promotion": {
+      "promotion_package_apk_p": "请输入APK地址"
+    },
+    "system": {
+      "longin_single": "登录密钥"
+    }
+  }
+}

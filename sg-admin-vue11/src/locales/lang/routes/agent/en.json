@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "agent": {
+      "agent": "Agent Management",
+      "agentList": "Agent List",
+      "agentPlan": "Agent Plan",
+      "commissionList": "Commission List",
+      "recordsManagement": "Record Management"
+    }
+  },
+  "table": {
+    "promotion": {
+      "promotion_package_apk_p": ""
+    },
+    "system": {
+      "longin_single": ""
+    }
+  }
+}

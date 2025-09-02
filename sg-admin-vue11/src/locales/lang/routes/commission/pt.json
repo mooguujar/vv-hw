@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "Gerenciamento de agente",
+      "commissionCollect": "Resumo",
+      "commissionConfig": "Configuração de comissão",
+      "commissionDetail": "Detalhes da comissão",
+      "commissionRecord": "Registro de liberação",
+      "commissionReview": "Revisão de comissão"
+    }
+  }
+}

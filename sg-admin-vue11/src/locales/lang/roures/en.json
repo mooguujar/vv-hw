@@ -1,0 +1,21 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": ""
+    },
+    "promotion": {
+      "month_price_roi": "",
+      "statics_code": ""
+    },
+    "system": {
+      "chatroom_sys": ""
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": ""
+      }
+    }
+  }
+}

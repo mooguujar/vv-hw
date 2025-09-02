@@ -1,0 +1,47 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "कमीशन दांव लगाना"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "पहुँच क्षेत्र",
+      "account_list": "खाता सूची",
+      "add_announcement": "घोषणा जोड़ें",
+      "add_banner": "कैरोसेल छवि जोड़ें",
+      "add_marquee": "मार्की जोड़ें",
+      "apppackaging": "App पैकेजिंग",
+      "authority_management": "पहुँच",
+      "banner_setting": "बैनर",
+      "brand_setting": "ब्रांड सेटिंग्स",
+      "chart_setting": "चैटरूम मैनेजमेंट",
+      "commission_plan": "कमीशन योजना",
+      "customer_feedback": "उपयोगकर्ता फीडबैक",
+      "domain_name_manage": "डोमेन सेटिंग्स",
+      "edit_announcement": "घोषणा एडिट करें",
+      "game_list": "खेल सूची",
+      "game_manage": "खेल सेटिंग्स",
+      "game_sort": "खेल सॉर्टिंग",
+      "information_center": "सूचना केन्द्र",
+      "ip_whitelist": "IP श्वेतसूची",
+      "login_manage": "लॉगिन लॉग",
+      "operate_log": "ऑपरेशन लॉग",
+      "platform_manage": "वेन्यू",
+      "site_announcement": "साइट सूचना",
+      "site_config": "साइट कॉन्फ़िगरेशन",
+      "site_manage": "साइट",
+      "site_settings": "साइट सेटिंग्स",
+      "system_manage": "सिस्टम",
+      "three_party_login": "तृतीय पक्ष लॉगिन",
+      "user_manage": "उपयोगकर्ता मैनेजमेंट",
+      "website_letter": "आंतरिक संदेश",
+      "website_letter_info": "आंतरिक संदेश विवरण"
+    }
+  },
+  "sys": {
+    "login": {
+      "download": "डाउनलोड"
+    }
+  }
+}

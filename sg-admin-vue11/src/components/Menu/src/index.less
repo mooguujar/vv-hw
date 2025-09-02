@@ -1,0 +1,159 @@
+@basic-menu-prefix-cls: ~'@{namespace}-basic-menu';
+
+.app-top-menu-popup {
+  min-width: 150px;
+}
+
+.@{basic-menu-prefix-cls} {
+  width: 100%;
+
+  .ant-menu-item {
+    transition: unset;
+  }
+
+  .ant-menu-item::after,
+  .ant-menu-submenu::after {
+    border-bottom: 2px solid transparent !important;
+  }
+
+  &__sidebar-hor {
+    &.ant-menu-horizontal {
+      display: flex;
+      align-items: center;
+      overflow-x: scroll;
+
+      &.ant-menu-dark {
+        background-color: transparent;
+
+        .ant-menu-submenu:hover,
+        .ant-menu-item-open,
+        .ant-menu-submenu-open,
+        .ant-menu-item-selected,
+        .ant-menu-submenu-selected,
+        .ant-menu-item:hover,
+        .ant-menu-item-active,
+        .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+        .ant-menu-submenu-active,
+        .ant-menu-submenu-title:hover {
+          //background-color: @top-menu-active-bg-color !important;
+          background-color: transparent !important; //头部导航的选中颜色
+          color: #fff;
+          font-size: 20px !important;
+        }
+
+        .ant-menu-item:hover,
+        .ant-menu-item-active,
+        .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+        .ant-menu-submenu-active,
+        .ant-menu-submenu-title:hover {
+          background-color: @top-menu-active-bg-color;
+        }
+
+        .@{basic-menu-prefix-cls}-item__level1 {
+          background-color: transparent;
+
+          &.ant-menu-item-selected,
+          &.ant-menu-submenu-selected {
+            background-color: @top-menu-active-bg-color !important;
+          }
+        }
+
+        .ant-menu-item,
+        .ant-menu-submenu {
+          &.@{basic-menu-prefix-cls}-item__level1,
+          .ant-menu-submenu-title {
+            height: @header-height;
+            line-height: @header-height;
+          }
+          .ant-menu-title-content span svg {
+            margin-bottom: 5px;
+          }
+        }
+        .ant-menu-submenu {
+          .ant-menu-title-content span svg {
+            margin-bottom: 0px;
+          }
+        }
+        .ant-menu-item {
+          //border:1px solid red!important;
+          color: #b1bad3;
+          transition: transform 0.3s ease-in-out;
+          -webkit-transition: transform 0.3s ease-in-out;
+        }
+        .ant-menu-item:hover,
+        .ant-menu-item-selected {
+          .content-text {
+            font-size: 20px !important;
+          }
+        }
+      }
+
+      &.ant-menu-light {
+        background-color: transparent;
+
+        .ant-menu-submenu:hover,
+        .ant-menu-item-open,
+        .ant-menu-submenu-open,
+        .ant-menu-item-selected,
+        .ant-menu-submenu-selected,
+        .ant-menu-item:hover,
+        .ant-menu-item-active,
+        .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+        .ant-menu-submenu-active,
+        .ant-menu-submenu-title:hover {
+          background-color: @item-actived !important;
+          // background-color: fade(@primary-color, 12)!important;
+          color: @primary-color;
+        }
+
+        .ant-menu-item:hover,
+        .ant-menu-item-active,
+        .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+        .ant-menu-submenu-active,
+        .ant-menu-submenu-title:hover {
+          background-color: @item-actived !important;
+        }
+
+        .@{basic-menu-prefix-cls}-item__level1 {
+          background-color: transparent;
+
+          &.ant-menu-item-selected,
+          &.ant-menu-submenu-selected {
+            background-color: @item-actived !important;
+          }
+        }
+
+        .ant-menu-item,
+        .ant-menu-submenu {
+          &.@{basic-menu-prefix-cls}-item__level1,
+          .ant-menu-submenu-title {
+            height: @header-height;
+            line-height: @header-height;
+          }
+          .ant-menu-title-content span svg {
+            margin-bottom: 5px;
+          }
+        }
+        .ant-menu-submenu {
+          .ant-menu-title-content span svg {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-menu-submenu,
+  .ant-menu-submenu-inline {
+    transition: unset;
+  }
+
+  .ant-menu-inline.ant-menu-sub {
+    transition: unset;
+    box-shadow: unset !important;
+  }
+}
+
+.ant-menu-overflow-item-rest {
+  display: none !important;
+}

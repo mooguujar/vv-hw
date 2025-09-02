@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "Phân nhóm quảng cáo",
+      "buried_point": "Nhúng trang",
+      "PromotionalManagement": "Quản lý quảng cáo",
+      "channel_management": "Quản lý kênh",
+      "google_management": "Trang đích Google",
+      "promotion": "Quảng cáo",
+      "race_price_roi": "ROI đấu thầu"
+    }
+  }
+}

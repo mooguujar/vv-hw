@@ -1,0 +1,19 @@
+{
+  "search": {
+    "finance": {
+      "finance_commission": "Hoa hồng",
+      "finance_commission_choose": "Chọn loại hình kinh doanh",
+      "finance_commission_choose_text": "Vui lòng chọn loại hình kinh doanh",
+      "finance_commission_chosen": "Đã chọn",
+      "finance_commission_chosen_lenth": "Loại hình kinh doanh",
+      "finance_discount": "Ưu đãi",
+      "finance_refresh": "Làm mới",
+      "finance_withdraw": "Rút tiền"
+    }
+  },
+  "table": {
+    "advertise": {
+      "table_grouping_p_1": "Vui lòng nhập tên nhóm"
+    }
+  }
+}

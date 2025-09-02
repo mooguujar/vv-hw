@@ -1,0 +1,44 @@
+node_modules/
+.DS_Store
+.cache
+.turbo
+internal/vite-config/dist/
+internal/eslint-config/dist/
+internal/stylelint-config/dist/
+internal/ts-config/node_modules/
+internal/vite-config/node_modules/
+internal/eslint-config/node_modules/
+internal/stylelint-config/node_modules/
+
+tests/server/static
+tests/server/static/upload
+.local
+# local env files
+.env.local
+.env.*.local
+.eslintcache
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+package-lock.json
+pnpm-lock.yaml
+
+.history
+node_modules
+/dist
+R.md
+src/router/routes/basic.ts
+/temp

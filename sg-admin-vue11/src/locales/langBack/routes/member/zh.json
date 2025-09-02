@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "会员列表",
+      "accountChanges": "场馆帐变",
+      "addMoney": "加款减款",
+      "analysis": "新增会员",
+      "cardLine": "出款卡管理",
+      "create": "会员新增",
+      "details": "会员详情",
+      "editMember": "会员编辑",
+      "grade": "会员层级",
+      "member": "会员管理",
+      "memberActive": "在线会员",
+      "memberList": "会员列表",
+      "memberLog": "会员日志",
+      "online_detail": "在线会员详情",
+      "vipGrade": "VIP等级"
+    },
+    "vip_center": "返水中心"
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "申请金额",
+      "member_apply_number": "申请笔数"
+    }
+  }
+}

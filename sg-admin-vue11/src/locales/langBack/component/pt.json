@@ -1,0 +1,153 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "Nenhum resultado encontrado",
+      "toNavigate": "Alternar",
+      "toSearch": "Confirmar"
+    },
+    "banner": {
+      "alliance_center": "Programa de afiliados",
+      "banner1": "Pop-up de registro",
+      "banner2": "Baixar aplicativo pop-up",
+      "banner3": "Definir informações de contato",
+      "custom": "Personalizar",
+      "deposit_page": "Página de depósito",
+      "deposit_page_deposit": "Pop-up de depósito",
+      "entertainment_city": "Cassino",
+      "physical_education": "Esportes",
+      "physical_education_money": "Carteira",
+      "physical_education_vip": "Interface VIP",
+      "physical_vip_rebate": "Desconto VIP",
+      "promotions": "Promoções",
+      "promotions_kf": "Atendimento online",
+      "banner14": "Link do evento"
+    },
+    "countdown": {
+      "normalText": "Obter código de verificação",
+      "sendText": "{0} seg. para obter novamente"
+    },
+    "cropper": {
+      "btn_reset": "Redefinir",
+      "btn_rotate_left": "Girar no sentido anti-horário",
+      "btn_rotate_right": "Girar no sentido horário",
+      "btn_scale_x": "Inverter horizontalmente",
+      "btn_scale_y": "Inverter verticalmente",
+      "btn_zoom_in": "Ampliar",
+      "btn_zoom_out": "Reduzir",
+      "modalTitle": "Enviar avatar",
+      "okText": "Confirmar e enviar",
+      "preview": "Pré-visualização",
+      "selectImage": "Selecionar imagem",
+      "uploadSuccess": "Enviado com sucesso"
+    },
+    "drawer": {
+      "cancelText": "Fechar",
+      "loadingText": "Carregando...",
+      "okText": "Confirmar"
+    },
+    "excel": {
+      "exportModalTitle": "Exportar dados",
+      "fileName": "Nome do arquivo",
+      "fileType": "Tipo de arquivo"
+    },
+    "form": {
+      "apiSelectNotFound": "Por favor, aguarde o envio dos dados...",
+      "maxTip": "O número de caracteres deve ser menor que {0}",
+      "putAway": "Ocultar",
+      "unfold": "Expandir"
+    },
+    "icon": {
+      "copy": "Ícone copiado com sucesso!",
+      "placeholder": "Clique para selecionar ícone",
+      "search": "Pesquisar ícone"
+    },
+    "menu": {
+      "search": "Pesquisar menu"
+    },
+    "modal": {
+      "cancelText": "Fechar",
+      "close": "Fechar",
+      "maximize": "Maximizar",
+      "okText": "Confirmar",
+      "restore": "Restaurar"
+    },
+    "table": {
+      "index": "Número",
+      "settingColumn": "Configuração de colunas",
+      "settingColumnShow": "Exibição de colunas",
+      "settingDens": "Densidade",
+      "settingDensDefault": "Padrão",
+      "settingDensMiddle": "Média",
+      "settingDensSmall": "Compacto",
+      "settingFixedLeft": "Fixar à esquerda",
+      "settingFixedRight": "Fixar à direita",
+      "settingFullScreen": "Tela cheia",
+      "settingIndexColumnShow": "Número de colunas",
+      "settingSelectColumnShow": "Verificar coluna",
+      "total": "Total de {total} dados"
+    },
+    "time": {
+      "after": "Voltar",
+      "before": "Avançar",
+      "days": "Dias",
+      "hours": "Horas",
+      "just": "Agora",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    },
+    "tree": {
+      "checkStrictly": "Associação de níveis",
+      "checkUnStrictly": "Independência de nível",
+      "expandAll": "Expandir tudo",
+      "selectAll": "Selecionar tudo",
+      "unExpandAll": "Ocultar tudo",
+      "unSelectAll": "Cancelar seleção"
+    },
+    "unit": {
+      "people": "Pessoas",
+      "sum": "Transação",
+      "tem_thousand": "Dez mil",
+      "unit": "Unidades"
+    },
+    "upload": {
+      "accept": "Suporta formato {0}",
+      "acceptUpload": "Só é possível enviar arquivos no formato {0}",
+      "choose": "Selecionar arquivo",
+      "del": "Excluir",
+      "download": "Baixar",
+      "fileName": "Nome do arquivo",
+      "fileSize": "Tamanho do arquivo",
+      "fileStatue": "Status",
+      "imgUpload": "Envio de imagem",
+      "legend": "Miniatura",
+      "maxNumber": "Só é possível carregar até {0} arquivos",
+      "maxSize": "Cada arquivo não pode ultrapassar {0}MB",
+      "maxSizeMultiple": "Só é possível enviar arquivos de até {0}MB!",
+      "operating": "Operação",
+      "preview": "Pré-visualização",
+      "reUploadFailed": "Reenviar arquivos com falha",
+      "save": "Salvar",
+      "saveError": "Nenhum arquivo enviado com sucesso, não é possível salvar!",
+      "saveWarn": "Aguarde o envio dos arquivos para salvar!",
+      "startUpload": "Iniciar envio",
+      "upload": "Enviar",
+      "uploadError": "Falha no envio",
+      "uploadSuccess": "Enviado com sucesso",
+      "uploadWait": "Aguarde o fim do envio para realizar operações",
+      "uploaded": "Enviado",
+      "uploading": "Enviando"
+    },
+    "verify": {
+      "dragText": "Segure o controle deslizante e arraste",
+      "error": "Falha na verificação!",
+      "redoTip": "Clique na imagem para atualizar",
+      "successText": "Verificação aprovada",
+      "time": "Verificado com sucesso em {time} segundos!"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": "Duplicação de marca"
+    }
+  }
+}

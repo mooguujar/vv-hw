@@ -1,0 +1,47 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "ยอดเดิมพันโบนัส"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "ข้อจำกัดภูมิภาค",
+      "account_list": "รายการบัญชี",
+      "add_announcement": "เพิ่มประกาศใหม่",
+      "add_banner": "เพิ่มรูปภาพใหม่",
+      "add_marquee": "เพิ่มไฟวิ่งใหม่",
+      "apppackaging": "บรรจุ APP",
+      "authority_management": "การจัดการสิทธิ์",
+      "banner_setting": "การจัดการ Banner",
+      "brand_setting": "",
+      "chart_setting": "",
+      "commission_plan": "แผนค่าคอมมิชชั่น",
+      "customer_feedback": "ข้อเสนอแนะของผู้ใช้",
+      "domain_name_manage": "การจัดการโดเมน",
+      "edit_announcement": "แก้ไขป้ายประกาศ",
+      "game_list": "รายการเกม",
+      "game_manage": "การจัดการเกม",
+      "game_sort": "เรียงลำดับเกม",
+      "information_center": "ศูนย์ข้อมูล",
+      "ip_whitelist": "รายการ IP ที่ปลอดภัย",
+      "login_manage": "บันทึกการล็อกอิน",
+      "operate_log": "บันทึกการดำเนินการ",
+      "platform_manage": "การจัดการแพลตฟอร์ม",
+      "site_announcement": "ประกาศหน้าเว็บ",
+      "site_config": "ปรับแต่งหน้าเว็บไซต์",
+      "site_manage": "การจัดการเว็บไซต์",
+      "site_settings": "ตั้งค่าเว็บไซต์",
+      "system_manage": "การจัดการระบบ",
+      "three_party_login": "ล็อกอินผ่านช่องทางอื่น",
+      "user_manage": "การจัดการผู้ใช้งาน",
+      "website_letter": "ข้อความเว็บไซต์",
+      "website_letter_info": "รายละเอียดข้อความเว็บไซต์"
+    }
+  },
+  "sys": {
+    "login": {
+      "download": ""
+    }
+  }
+}

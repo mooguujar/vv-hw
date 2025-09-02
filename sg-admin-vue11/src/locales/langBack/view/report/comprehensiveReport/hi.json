@@ -1,0 +1,20 @@
+{
+  "modalForm": {
+    "system": {
+      "app_boot_download_cfg_footer": "होमपेज के नीचे पॉप-अप ऐप डाउनलोड"
+    }
+  },
+  "v": {
+    "report": {
+      "comprehensiveReport": {
+        "category_overview": "श्रेणी अवलोकन",
+        "commission_issuance": "कमीशन वितरण",
+        "deposit_classification": "जमा श्रेणी",
+        "online_user_count": "ऑनलाइन उपयोगकर्ता",
+        "operations_overview": "आपरेशनल अवलोकन",
+        "some_people": "{0} लोग",
+        "withdrawal_classification": "निकासी श्रेणी"
+      }
+    }
+  }
+}

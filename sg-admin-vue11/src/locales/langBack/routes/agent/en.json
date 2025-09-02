@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "agent": {
+      "agent": "Agent",
+      "agentList": "Agent List",
+      "agentPlan": "Agent Plan",
+      "commissionList": "Commission List",
+      "recordsManagement": "Record Management"
+    }
+  },
+  "table": {
+    "promotion": {
+      "promotion_package_apk_p": "Please enter APK address"
+    },
+    "system": {
+      "longin_single": "Login secret key"
+    }
+  }
+}

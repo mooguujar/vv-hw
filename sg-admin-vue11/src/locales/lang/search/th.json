@@ -1,0 +1,19 @@
+{
+  "search": {
+    "finance": {
+      "finance_commission": "ค่าคอมมิชชั่น",
+      "finance_commission_choose": "เลือกประเภทธุรกรรม",
+      "finance_commission_choose_text": "โปรดเลือกประเภทธุรกรรม",
+      "finance_commission_chosen": "เลือกแล้ว",
+      "finance_commission_chosen_lenth": "รายงานประเภทธุรกรรม",
+      "finance_discount": "โบนัสเติมเงิน",
+      "finance_refresh": "รีเฟรช",
+      "finance_withdraw": "ถอนเงิน"
+    }
+  },
+  "table": {
+    "advertise": {
+      "table_grouping_p_1": ""
+    }
+  }
+}

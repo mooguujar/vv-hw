@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "Deposit and withdrawal settings",
+      "system_cate_des": "",
+      "system_min_deposit": "Minimum commission withdrawal",
+      "system_sort_add_show": "",
+      "system_sort_sliader_side": "",
+      "system_sort_sliader_side_all": "",
+      "system_sort_sliader_side_all_lei": "",
+      "system_sort_sliader_side_site_1": "",
+      "system_sort_sliader_side_site_2": ""
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "URL cache clearance",
+        "blackGold": "Black gold version",
+        "blueBlack": "Blue-black version",
+        "cleat_warning": "By default, each account can refresh 10,000 URLs per day, with a maximum of 1,000 URLs submitted each time",
+        "directory_clear": "Directory cache clearance",
+        "firstAgent": "Primary agent",
+        "fresh_now": "Refresh now",
+        "url_adds": "URL address",
+        "url_clear_tip": "Please enter the URL to refresh, one URL per line"
+      }
+    }
+  }
+}

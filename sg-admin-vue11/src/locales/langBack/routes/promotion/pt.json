@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "Grupo de anúincios",
+      "buried_point": "Rastreamento",
+      "PromotionalManagement": "Promoção",
+      "channel_management": "Canal",
+      "google_management": "Página do Google",
+      "promotion": "Promoções gerais",
+      "race_price_roi": "ROI (OS)"
+    }
+  }
+}

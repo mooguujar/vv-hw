@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": "Status"
+    },
+    "vip": {
+      "TransactionRebate": "User Rebate",
+      "TransactionVIPDay": "VIP D. Red Envelope",
+      "TransactionVIPMonthly": "VIP M. Red Envelope",
+      "TransactionVIPUpgrade": "VIP promotion bonus",
+      "TransactionVIPWeek": "VIP W. Red Envelope",
+      "TransactionVIpBirthday": "VIP birthday bonus",
+      "daily_bonus": "Daily bonus",
+      "monthly_bonus": "Monthly bonus",
+      "promotion_bonus": "Promotion bonus",
+      "rebate_configuration": "Return Cofiguration",
+      "weekly_bonus": "Weekly bonus"
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "Lottery Game",
+      "member_name_tip1": "Real name cannot be a number",
+      "member_name_tip_text": "Must be more than 2 characters"
+    },
+    "system": {
+      "commsision_tip_11": "Commission contributed by the current member to the current agent"
+    }
+  }
+}

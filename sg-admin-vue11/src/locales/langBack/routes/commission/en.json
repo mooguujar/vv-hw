@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "Agent",
+      "commissionCollect": "Summary",
+      "commissionConfig": "Configuration",
+      "commissionDetail": "Details",
+      "commissionRecord": "Record",
+      "commissionReview": "Review"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop_1": "All Pages"
+      }
+    }
+  }
+}

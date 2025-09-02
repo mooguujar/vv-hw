@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "Detalhes relacionados",
+      "black_list": "Lista negra de IP",
+      "fight_monitor": "Arbitragem",
+      "high_bonus": "Altos pagamentos",
+      "link_records": "Registros",
+      "low_multiple": "Aposta baixa",
+      "profit_list": "Ranking de Lucros",
+      "risk": "Riscos",
+      "win_top": "Ranking de Lucros"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "Bảng biểu hội viên",
+      "accountChanges": "Giao dịch sảnh game",
+      "addMoney": "Tăng giảm tiền",
+      "analysis": "Thêm hội viên mới",
+      "cardLine": "Quản lý thẻ xuất khoản",
+      "create": "Hội viên tăng thêm",
+      "details": "Chi tiết hội viên",
+      "editMember": "Chỉnh sửa hội viên",
+      "grade": "Cấp bậc hội viên",
+      "member": "Quản lý hội viên",
+      "memberActive": "Hội viên trực tuyến",
+      "memberList": "Bảng biểu hội viên",
+      "memberLog": "Lịch sử hội viên",
+      "online_detail": "Thành viên trực tuyến",
+      "vipGrade": "Cấp bậc VIP"
+    }
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "Số tiền đăng ký",
+      "member_apply_number": "Số lần đăng ký"
+    }
+  }
+}

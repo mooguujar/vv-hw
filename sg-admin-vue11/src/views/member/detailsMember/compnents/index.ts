@@ -1,0 +1,22 @@
+import { withInstall } from '/@/utils';
+import Title_Box from './src/Title.vue';
+import Basic_Info from './src/basicInfo.vue';
+import Betting_Info from './src/Betting.vue';
+import Funding_Log from './src/FundingLog.vue';
+import Account_Changes from './src/AccountChanges.vue';
+import Link_Account from './src/LinkAccount.vue';
+import Operation_log from './src/Operationlog.vue';
+import Login_Log from './src/LoginLog.vue';
+import venueLog_list from './src/venueLogList.vue';
+import rebateLog_list from './src/rebateLogList.vue';
+
+export const Title = withInstall(Title_Box);
+export const BasicInfo = withInstall(Basic_Info);
+export const Betting = withInstall(Betting_Info);
+export const FundingLog = withInstall(Funding_Log);
+export const AccountChanges = withInstall(Account_Changes);
+export const LinkAccount = withInstall(Link_Account);
+export const Operationlog = withInstall(Operation_log);
+export const LoginLog = withInstall(Login_Log);
+export const venueLogList = withInstall(venueLog_list);
+export const rebateLogList = withInstall(rebateLog_list);

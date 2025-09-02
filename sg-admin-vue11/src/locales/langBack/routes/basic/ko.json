@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "basic": {
+      "errorLogList": "",
+      "errorNoData": "",
+      "login": ""
+    }
+  }
+}

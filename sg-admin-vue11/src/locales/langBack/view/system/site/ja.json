@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "",
+      "system_cate_des": "",
+      "system_min_deposit": "",
+      "system_sort_add_show": "",
+      "system_sort_sliader_side": "",
+      "system_sort_sliader_side_all": "",
+      "system_sort_sliader_side_all_lei": "",
+      "system_sort_sliader_side_site_1": "",
+      "system_sort_sliader_side_site_2": ""
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "",
+        "blackGold": "",
+        "blueBlack": "",
+        "cleat_warning": "",
+        "directory_clear": "",
+        "firstAgent": "",
+        "fresh_now": "",
+        "url_adds": "",
+        "url_clear_tip": ""
+      }
+    }
+  }
+}

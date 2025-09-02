@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "ตั้งค่าการฝากถอนเงิน",
+      "system_cate_des": "",
+      "system_min_deposit": "ถอนค่าคอมมิชชั่นขั้นต่ำ",
+      "system_sort_add_show": "",
+      "system_sort_sliader_side": "",
+      "system_sort_sliader_side_all": "",
+      "system_sort_sliader_side_all_lei": "",
+      "system_sort_sliader_side_site_1": "",
+      "system_sort_sliader_side_site_2": ""
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "ล้างแคชและคุกกี้ URL",
+        "blackGold": "โหมดสีทอง/ดำ",
+        "blueBlack": "โหมดสีน้ำเงิน/ดำ",
+        "cleat_warning": "โดยค่าเริ่มต้น 10,000 URL จะถูกรีเฟรชต่อวันสำหรับแต่ละบัญชีและส่งได้สูงสุด 1,000 URL ต่อครั้ง",
+        "directory_clear": "ไดเรกทอรีทำความสะอาดแคช",
+        "firstAgent": "ตัวแทนระดับแรก",
+        "fresh_now": "รีเฟรชตอนนี้",
+        "url_adds": "ที่อยู่ URL",
+        "url_clear_tip": "โปรดป้อน URL ที่จะรีเฟรชและป้อน URL ต่อบรรทัด"
+      }
+    }
+  }
+}

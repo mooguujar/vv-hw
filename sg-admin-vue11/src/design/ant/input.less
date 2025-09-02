@@ -1,0 +1,58 @@
+@import (reference) '../color.less';
+
+// input
+.ant-input {
+  &-number,
+  &-number-group-wrapper {
+    width: 100% !important;
+    min-width: 110px;
+    max-width: 100%;
+  }
+}
+
+.ant-input-affix-wrapper .ant-input-suffix {
+  right: 9px;
+}
+
+.ant-input-clear-icon {
+  margin-right: 5px;
+}
+
+.ant-input-affix-wrapper-textarea-with-clear-btn {
+  padding: 0 !important;
+
+  textarea.ant-input {
+    padding: 4px;
+  }
+}
+
+.ant-input-group.ant-input-group-compact > *:first-child,
+.ant-input-group.ant-input-group-compact > .ant-select-auto-complete:first-child .ant-input, 
+.ant-input-group.ant-input-group-compact > .ant-cascader-picker:first-child .ant-input {
+  border-top-left-radius: 6px !important;
+  border-bottom-left-radius: 6px !important;
+}
+
+.ant-input-group.ant-input-group-compact > .ant-select:first-child > .ant-select-selector {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+
+.ant-input-group.ant-input-group-compact > *:last-child,
+.ant-input-group.ant-input-group-compact > .ant-cascader-picker:last-child .ant-input, 
+.ant-input-group.ant-input-group-compact > .ant-cascader-picker-focused:last-child .ant-input {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+/** form size */
+.ant-picker-large {
+  padding: 8px 11px 8px !important;
+}
+.ant-picker-large .ant-picker-input > input,
+.ant-input-affix-wrapper > input.ant-input,
+.ant-input-lg,
+.ant-select-lg {
+  font-size: 14px !important;
+}
+

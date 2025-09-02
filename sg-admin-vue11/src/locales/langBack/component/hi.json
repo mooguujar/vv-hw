@@ -1,0 +1,153 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "कोई खोज परिणाम नहीं",
+      "toNavigate": "स्विच",
+      "toSearch": "पुष्टि"
+    },
+    "banner": {
+      "alliance_center": "एफिलिएट कार्यक्रम",
+      "banner1": "पंजीकरण पॉपअप",
+      "banner2": "ऐप पॉपअप डाउनलोड करें",
+      "banner3": "संपर्क जानकारी सेट करें",
+      "custom": "कस्टम",
+      "deposit_page": "जमा पृष्ठ",
+      "deposit_page_deposit": "जमा पॉपअप",
+      "entertainment_city": "कैसीनो",
+      "physical_education": "स्पोर्ट्स",
+      "physical_education_money": "वॉलेट",
+      "physical_education_vip": "VIP इंटरफ़ेस",
+      "physical_vip_rebate": "VIP छूट",
+      "promotions": "प्रचार",
+      "promotions_kf": "ऑनलाइन समर्थन",
+      "banner14": "इवेंट लिंक"
+    },
+    "countdown": {
+      "normalText": "सत्यापन कोड प्राप्त करें",
+      "sendText": "पुनः प्राप्त करने के लिए {0} सेकंड"
+    },
+    "cropper": {
+      "btn_reset": "रीसेट",
+      "btn_rotate_left": "वामावर्त दिशा में घुमाएँ",
+      "btn_rotate_right": "दक्षिणावर्त घुमाएँ",
+      "btn_scale_x": "हॉरिज़ॉन्टली फ्लिप",
+      "btn_scale_y": "फ्लिप वर्टिकली",
+      "btn_zoom_in": "ज़ूम इन",
+      "btn_zoom_out": "ज़ूम आउट",
+      "modalTitle": "अवतार अपलोड",
+      "okText": "पुष्टि तथा अपलोड करें",
+      "preview": "पूर्वावलोकन",
+      "selectImage": "छवि चुनें",
+      "uploadSuccess": "अपलोड सफल"
+    },
+    "drawer": {
+      "cancelText": "बंद",
+      "loadingText": "लोड हो रहा है...",
+      "okText": "पुष्टि"
+    },
+    "excel": {
+      "exportModalTitle": "निर्यात डेटा",
+      "fileName": "फ़ाइल का नाम",
+      "fileType": "फ़ाइल प्रकार"
+    },
+    "form": {
+      "apiSelectNotFound": "कृपया डेटा लोड होने तक प्रतीक्षा करें...",
+      "maxTip": "अक्षरो की संख्या {0} से कम होनी चाहिए",
+      "putAway": "छिपा",
+      "unfold": "विस्तार"
+    },
+    "icon": {
+      "copy": "आइकन कॉपी सफल!",
+      "placeholder": "आइकन चुनने के लिए क्लिक करें",
+      "search": "खोजें आइकन"
+    },
+    "menu": {
+      "search": "मेनू खोज"
+    },
+    "modal": {
+      "cancelText": "बंद",
+      "close": "बंद",
+      "maximize": "अधिकतम",
+      "okText": "पुष्टि",
+      "restore": "पुनर्स्थापित"
+    },
+    "table": {
+      "index": "संख्या",
+      "settingColumn": "कॉलम सेटिंग्स",
+      "settingColumnShow": "कॉलम डिस्प्ले",
+      "settingDens": "घनत्व",
+      "settingDensDefault": "डिफ़ॉल्ट",
+      "settingDensMiddle": "मीडियम",
+      "settingDensSmall": "कॉम्पैक्ट",
+      "settingFixedLeft": "बाईं ओर पिन करें",
+      "settingFixedRight": "दांयी ओर पिन करें",
+      "settingFullScreen": "फ़ुल स्क्रीन",
+      "settingIndexColumnShow": "सीरियल कॉलम",
+      "settingSelectColumnShow": "कॉलम जांचें",
+      "total": "कुल {total} डेटा"
+    },
+    "time": {
+      "after": "पीछे",
+      "before": "आगे",
+      "days": "दिन",
+      "hours": "घंटे",
+      "just": "अभी अभी",
+      "minutes": "मिनट",
+      "seconds": "सेकंड"
+    },
+    "tree": {
+      "checkStrictly": "स्तर एसोसिएशन",
+      "checkUnStrictly": "स्तर स्वतंत्रता",
+      "expandAll": "सभी का विस्तार",
+      "selectAll": "सभी चुनें",
+      "unExpandAll": "सभी छिपाएँ",
+      "unSelectAll": "अचयनित"
+    },
+    "unit": {
+      "people": "लोग",
+      "sum": "लेन-देन",
+      "tem_thousand": "दस हजार",
+      "unit": "यूनिट्स"
+    },
+    "upload": {
+      "accept": "{0} फॉर्मेट का समर्थन करता है",
+      "acceptUpload": "केवल {0} प्रारूप फ़ाइलें अपलोड की जा सकती हैं",
+      "choose": "फ़ाइल चुनें",
+      "del": "हटाएं",
+      "download": "डाउनलोड",
+      "fileName": "फ़ाइल का नाम",
+      "fileSize": "फ़ाइल का साइज़",
+      "fileStatue": "स्थिति",
+      "imgUpload": "छवि अपलोड",
+      "legend": "थंबनेल",
+      "maxNumber": "अधिकतम {0} फ़ाइलें ही अपलोड की जा सकती हैं",
+      "maxSize": "एकल फ़ाइल {0} MB से अधिक नहीं होनी चाहिए",
+      "maxSizeMultiple": "केवल {0} MB तक की फ़ाइलें ही अपलोड की जा सकती हैं!",
+      "operating": "ऑपरेशन",
+      "preview": "पूर्वावलोकन",
+      "reUploadFailed": "विफल फ़ाइलें दोबारा अपलोड करें",
+      "save": "सहेजें",
+      "saveError": "कोई भी फ़ाइल सफलतापूर्वक अपलोड नहीं हुई, सहेजी नहीं जा सकती!",
+      "saveWarn": "कृपया सहेजने से पहले फ़ाइल अपलोड होने तक प्रतीक्षा करें!",
+      "startUpload": "अपलोड शुरू",
+      "upload": "अपलोड",
+      "uploadError": "अपलोड विफल",
+      "uploadSuccess": "अपलोड सफल",
+      "uploadWait": "कृपया आगे बढ़ने से पहले फ़ाइल अपलोड पूरा होने तक प्रतीक्षा करें",
+      "uploaded": "अपलोड किया गया",
+      "uploading": "अपलोडिंग"
+    },
+    "verify": {
+      "dragText": "कृपया स्लाइडर को दबाकर रखें और खींचें",
+      "error": "सत्यापन विफल!",
+      "redoTip": "रीफ़्रेश करने के लिए छवि पर क्लिक करें",
+      "successText": "सत्यापन पास",
+      "time": "सत्यापन {time} सेकंड में सफल हो गया!"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": "ब्रांड डुप्लिकेशन"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "सदस्य सूची",
+      "accountChanges": "वेन्यू लेन-देन",
+      "addMoney": "जोड़ें निकालें",
+      "analysis": "सदस्य जोड़ें",
+      "cardLine": "निकासी कार्ड",
+      "create": "नया सदस्य जोड़ें",
+      "details": "सदस्य विवरण",
+      "editMember": "सदस्य एडिट करें",
+      "grade": "सदस्य स्तर",
+      "member": "सदस्यों",
+      "memberActive": "ऑनलाइन सदस्य",
+      "memberList": "सदस्य सूची",
+      "memberLog": "सदस्य लॉग",
+      "online_detail": "ऑनलाइन सदस्य विवरण",
+      "vipGrade": "VIP स्तर"
+    },
+    "vip_center": "छूट केंद्र"
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "आवेदन राशि",
+      "member_apply_number": "आवेदन संख्या"
+    }
+  }
+}

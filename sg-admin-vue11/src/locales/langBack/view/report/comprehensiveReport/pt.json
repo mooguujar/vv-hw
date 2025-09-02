@@ -1,0 +1,20 @@
+{
+  "modalForm": {
+    "system": {
+      "app_boot_download_cfg_footer": "Pop-up de download do aplicativo pop-up na parte inferior da página inicial"
+    }
+  },
+  "v": {
+    "report": {
+      "comprehensiveReport": {
+        "category_overview": "Visão geral das categorias",
+        "commission_issuance": "Distribuição de comissões",
+        "deposit_classification": "Classificação de depósitos",
+        "online_user_count": "Usuários online",
+        "operations_overview": "Visão geral de operação",
+        "some_people": "{0} pessoa(s)",
+        "withdrawal_classification": "Categoria de retiradas"
+      }
+    }
+  }
+}

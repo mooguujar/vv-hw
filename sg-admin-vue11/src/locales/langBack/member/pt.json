@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": "Status"
+    },
+    "vip": {
+      "TransactionRebate": "Cashback de usuários",
+      "TransactionVIPDay": "Envelope vermelho diário VIP",
+      "TransactionVIPMonthly": "Envelope vermelho mensal VIP",
+      "TransactionVIPUpgrade": "Bônus de promoção VIP",
+      "TransactionVIPWeek": "Envelope vermelho semanal VIP",
+      "TransactionVIpBirthday": "Bônus de aniversário VIP",
+      "daily_bonus": "Bônus diário",
+      "monthly_bonus": "Bônus mensal",
+      "promotion_bonus": "Bônus promocional",
+      "rebate_configuration": "Voltar à configuração",
+      "weekly_bonus": "Bônus semanal"
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "Jogo de loteria",
+      "member_name_tip1": "Nome real não pode ser um número",
+      "member_name_tip_text": "Obrigatório ser mais de 2 caracteres"
+    },
+    "system": {
+      "commsision_tip_11": "Comissão gerada pelo membro atual para o agente atual"
+    }
+  }
+}

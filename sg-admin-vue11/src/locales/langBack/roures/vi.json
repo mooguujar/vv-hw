@@ -1,0 +1,29 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": "Thêm quảng cáo"
+    },
+    "finance": {
+      "pre_payment_management_1": "Xuất khoản hộ"
+    },
+    "promotion": {
+      "ad_grouping_1": "ROI phân tổ",
+      "ad_grouping_2": "Quản lý ROI",
+      "month_price_roi": "ROI QC tháng",
+      "statics_channel": "Thống kê kênh",
+      "statics_code": "Mã số thống kê",
+      "Promotional_effectiveness": "Hiệu quả",
+      "live_analysis": "Phân tích"
+    },
+    "system": {
+      "chatroom_sys": "Phòng chat"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": "PWA (chuyển tới H5)"
+      }
+    }
+  }
+}

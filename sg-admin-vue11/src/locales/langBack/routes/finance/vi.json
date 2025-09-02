@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "Thêm cấu hình thanh toán",
+      "add_deposit_card": "Thêm thẻ nạp",
+      "add_pre_payment_management": "Thêm thanh toán hộ",
+      "commission_withdrawal": "Rút tiền hoa hoa hồng",
+      "company_deposit": "Nạp tiền công ty",
+      "currency_deposit": "Tiền tệ nhập khoản",
+      "currency_withdrawal": "Tiền tệ xuất khoản",
+      "deposit_card_management": "Thẻ nạp tiền",
+      "deposit_summary": "Tóm tắt nạp rút",
+      "edit_deposit_card": "Sửa thẻ nhập khoản",
+      "edit_pre_payment_management": "Sửa thanh toán hộ",
+      "member_account_history": "Lịch sử biến động hội viên",
+      "moduleName": "Quản lí tài vụ",
+      "online_payment": "Hỗ trợ trực tuyến",
+      "online_withdrawal": "Rút tiền trực tuyến",
+      "payment_management": "Quản lý thanh toán",
+      "pre_payment_management": "Quản lý xuất khoản",
+      "venue_transfer_records": "Giao dịch sảnh game",
+      "withdrawal_config": "Cài đặt thanh toán"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "การจัดการตัวแทน",
+      "commissionCollect": "ทั้งหมด",
+      "commissionConfig": "ปรับแต่งค่าคอมมิชชั่น",
+      "commissionDetail": "",
+      "commissionRecord": "บันทึกการจ่ายออก",
+      "commissionReview": "ตรวจสอบค่าคอมมิชชั่น"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop_1": ""
+      }
+    }
+  }
+}

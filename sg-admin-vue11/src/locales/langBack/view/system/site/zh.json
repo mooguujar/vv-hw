@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "存取款设置",
+      "system_cate_des": "要展示更多分类,请将\"游戏分类\"或\"品牌类型\"拖拽此处",
+      "system_min_deposit": "佣金最低取款",
+      "system_sort_add_show": "展示品牌",
+      "system_sort_sliader_side": "分类排数",
+      "system_sort_sliader_side_all": "分类全部游戏",
+      "system_sort_sliader_side_all_lei": "内页热门推荐",
+      "system_sort_sliader_side_site_1": "品牌名称",
+      "system_sort_sliader_side_site_2": "品牌类型"
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "URL清理缓存",
+        "blackGold": "黑金版本",
+        "blueBlack": "蓝黑版本",
+        "cleat_warning": "默认情况下，每一个账号每日可刷新 URL 10000 条，每次最多可提交 1000 条",
+        "directory_clear": "目录清理缓存",
+        "firstAgent": "一级代理",
+        "fresh_now": "立即刷新",
+        "url_adds": "URL地址",
+        "url_clear_tip": "请输入代刷新的URL，每行输入一个URL"
+      }
+    }
+  }
+}

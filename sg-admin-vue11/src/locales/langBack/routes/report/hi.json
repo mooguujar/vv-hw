@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "report": {
+      "activityReport": "प्रमोशन रिपोर्ट",
+      "agentReport": "एजेंट रिपोर्ट",
+      "betInfo": "सट्टेबाजी विवरण",
+      "bettingReport": "बेट रिकॉर्ड्स",
+      "comprehensiveReport": "सारांश रिपोर्ट",
+      "dailyReport": "दैनिक रिपोर्ट",
+      "dataReport": "डेटा रिपोर्ट डैशबोर्ड",
+      "firstDepositReport": "प्रथम जमा",
+      "gameReport": "प्लेटफ़ॉर्म रिपोर्ट",
+      "memberReport": "सदस्य रिपोर्ट",
+      "member_detail": "सदस्य रिपोर्ट",
+      "oneHourInfo": "प्रति घंटा रिपोर्ट विवरण",
+      "oneHourReport": "प्रति घंटा रिपोर्ट",
+      "operationalReport": "परिचालन डेटा रिपोर्ट",
+      "platformReport": "प्लेटफ़ॉर्म रिपोर्ट",
+      "promotionReport": "प्रमोशन पंजीकरण रिपोर्ट",
+      "report": "रिपोर्टों",
+      "retainReport": "अवधारण रिपोर्ट",
+      "venueReport": "वेन्यू डेटा रिपोर्ट"
+    }
+  },
+  "table": {
+    "promotion": {
+      "link_type": "चैनल प्रकार"
+    }
+  }
+}

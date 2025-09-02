@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "report": {
+      "activityReport": "Laporan Promosi",
+      "agentReport": "Laporan Agen",
+      "betInfo": "Detail Taruhan",
+      "bettingReport": "Catatan Taruhan",
+      "comprehensiveReport": "Laporan Ringkasan",
+      "dailyReport": "Laporan Harian",
+      "dataReport": "Dashboard Laporan Data",
+      "firstDepositReport": "Laporan Deposit Pertama",
+      "gameReport": "Laporan Platform",
+      "memberReport": "Laporan Anggota",
+      "member_detail": "Laporan Anggota",
+      "oneHourInfo": "Detail Laporan Per Jam",
+      "oneHourReport": "Laporan Per Jam",
+      "operationalReport": "Laporan Data Operasional",
+      "platformReport": "Laporan Platform",
+      "promotionReport": "Laporan Registrasi Promosi",
+      "report": "Manajemen Laporan",
+      "retainReport": "Laporan Retensi",
+      "venueReport": "Laporan Data Venue"
+    }
+  },
+  "table": {
+    "promotion": {
+      "link_type": "Jenis Saluran"
+    }
+  }
+}

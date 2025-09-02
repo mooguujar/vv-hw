@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "รายการสมาชิก",
+      "accountChanges": "",
+      "addMoney": "ปรับแต่งการเงิน",
+      "analysis": "เพิ่มสมาชิกใหม่",
+      "cardLine": "จัดการข้อมูลบัญชีเงินออก",
+      "create": "เพิ่มสมาชิกใหม่",
+      "details": "รายละเอียดสมาชิก",
+      "editMember": "แก้ไขข้อมูลสมาชิก",
+      "grade": "ระดับชั้นสมาชิก",
+      "member": "",
+      "memberActive": "สมาชิกที่ออนไลน์",
+      "memberList": "รายการสมาชิก",
+      "memberLog": "บันทึกสมาชิก",
+      "online_detail": "รายละเอียดสมาชิกที่ออนไลน์",
+      "vipGrade": "ระดับ VIP"
+    },
+    "vip_center": ""
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "จำนวนเงินที่ยื่นเรื่อง",
+      "member_apply_number": "จำนวนรอบที่ยื่นเรื่อง"
+    }
+  }
+}

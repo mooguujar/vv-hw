@@ -1,0 +1,19 @@
+{
+  "search": {
+    "finance": {
+      "finance_commission": "कमीशन",
+      "finance_commission_choose": "व्यवसाय का प्रकार चुनें",
+      "finance_commission_choose_text": "कृपया व्यवसाय का प्रकार चुनें",
+      "finance_commission_chosen": "चयनित",
+      "finance_commission_chosen_lenth": "व्यापार के प्रकार",
+      "finance_discount": "प्रमोशन",
+      "finance_refresh": "रीफ़्रेश",
+      "finance_withdraw": "निकासी"
+    }
+  },
+  "table": {
+    "advertise": {
+      "table_grouping_p_1": "कृपया समूह का नाम दर्ज करें"
+    }
+  }
+}

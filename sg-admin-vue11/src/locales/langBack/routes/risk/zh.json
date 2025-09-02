@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "关联详情",
+      "black_list": "IP黑名单",
+      "fight_monitor": "对打监控",
+      "high_bonus": "高倍爆奖",
+      "link_records": "关联记录",
+      "low_multiple": "低倍打码",
+      "profit_list": "盈利榜单",
+      "risk": "风控管理",
+      "win_top": "盈利榜单"
+    }
+  }
+}

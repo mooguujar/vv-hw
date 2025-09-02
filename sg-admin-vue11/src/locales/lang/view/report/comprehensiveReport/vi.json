@@ -1,0 +1,15 @@
+{
+  "v": {
+    "report": {
+      "comprehensiveReport": {
+        "category_overview": "Phân loại tổng quan",
+        "commission_issuance": "Phát tiền hoa hồng",
+        "deposit_classification": "Loại hình nạp tiền",
+        "online_user_count": "Số lượng người trực tuyến",
+        "operations_overview": "Vận hành tổng quan",
+        "some_people": "{0} người",
+        "withdrawal_classification": "Loại hình rút tiền"
+      }
+    }
+  }
+}

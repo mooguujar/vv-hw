@@ -1,0 +1,48 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "佣金打码"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "区域限制",
+      "account_list": "账号列表",
+      "add_announcement": "新增公告",
+      "add_banner": "新增轮播图",
+      "add_marquee": "新增跑马灯",
+      "apppackaging": "app打包",
+      "authority_management": "权限管理",
+      "banner_setting": "Banner管理",
+      "brand_setting": "品牌设置",
+      "chart_setting": "聊天室管理",
+      "commission_plan": "佣金方案",
+      "customer_feedback": "用户反馈",
+      "domain_name_manage": "域名管理",
+      "edit_announcement": "编辑公告",
+      "game_list": "游戏列表",
+      "game_manage": "游戏管理",
+      "game_sort": "游戏排序",
+      "information_center": "信息中心",
+      "ip_whitelist": "IP白名单",
+      "login_manage": "登录日志",
+      "operate_log": "操作日志",
+      "platform_manage": "场馆管理",
+      "role_manage": "角色管理",
+      "site_announcement": "站内公告",
+      "site_config": "站点配置",
+      "site_manage": "站点管理",
+      "site_settings": "站点设置",
+      "system_manage": "系统管理",
+      "three_party_login": "三方登录",
+      "user_manage": "用户管理",
+      "website_letter": "发站内信",
+      "website_letter_info": "站内信息详情"
+    }
+  },
+  "sys": {
+    "login": {
+      "download": "下载"
+    }
+  }
+}

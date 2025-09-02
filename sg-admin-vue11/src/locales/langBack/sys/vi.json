@@ -1,0 +1,113 @@
+{
+  "sys": {
+    "api": {
+      "apiRequestFailed": "Yêu cầu lỗi, vui lòng thử lại sau",
+      "apiTimeoutMessage": "Cổng yêu cầu quá hạn, vui lòng làm mới trang và thử lại!",
+      "errMsg401": "Người dùng không có quyền (Lệnh, Tên người dùng, Mật khẩu sai)!",
+      "errMsg403": "Người dùng được cấp quyền, nhưng bị cấm truy cập!",
+      "errMsg404": "Lỗi yêu cầu mạng, không tìm thấy nguồn này!",
+      "errMsg405": "Lỗi yêu cầu mạng, phương pháp yêu cầu không cho phép!",
+      "errMsg408": "Mạng yêu cầu hết giờ!",
+      "errMsg500": "Lỗi máy chủ, vui lòng liên hệ với quản trị viên!",
+      "errMsg501": "Mạng chưa triển khai!",
+      "errMsg502": "Lỗi mạng!",
+      "errMsg503": "Dịch vụ không khả dụng, máy chủ tạm thời quá tải hoặc đang bảo trì!",
+      "errMsg504": "Mạng hết giờ!",
+      "errMsg505": "Bản http không hỗ trợ yêu cầu!",
+      "errMsg506": "Cổng vào sai",
+      "errMsgIp": "Vui lòng liên kết ip",
+      "errorMessage": "Thao tác thất bại, hệ thống bất thường!",
+      "errorTip": "Lỗi gợi ý",
+      "export_success": "Xuất ra thành công ",
+      "export_error": "Xuất ra thất bại",
+      "loginErrorTip": "Đăng nhập thất bại",
+      "networkException": "Mạng lỗi",
+      "networkExceptionMsg": "Mạng lỗi, vui lòng kiểm tra kết nối của bạn!",
+      "operationFailed": "Thao tác thất bại",
+      "operationSuccess": "Thao tác thành công",
+      "successTip": "Thành công hiển thị",
+      "timeoutMessage": "Hết thời gian đăng nhập, vui lòng đăng nhập lại!"
+    },
+    "app": {
+      "logoutMessage": "Xác nhận thoát khỏi hệ thống?",
+      "logoutTip": "Nhắc nhở",
+      "menuLoading": "Đang tải danh sách ..."
+    },
+    "errorLog": {
+      "enableMessage": "Chỉ ở ` / SRC/Settings/projectSetting. Ts ` useErrorHandle = true có hiệu lực.",
+      "fireAjaxError": "Nhấn kích hoạt lỗi ajax",
+      "fireResourceError": "Nhấn kích hoạt lỗi tải tài nguyên",
+      "fireVueError": "Nhấn kích hoạt lỗi vue",
+      "modalTitle": "Chi tiết sai",
+      "tableActionDesc": "Chi tiết",
+      "tableColumnDate": "Thời gian",
+      "tableColumnFile": "Tập tin",
+      "tableColumnMsg": "Thông tin sai",
+      "tableColumnStackMsg": "Stack thông tin",
+      "tableColumnType": "Loại hình",
+      "tableTitle": "Lỗi danh sách đăng ký"
+    },
+    "exception": {
+      "backHome": "Trở về trang chủ",
+      "backLogin": "Trở về đăng nhập",
+      "networkErrorSubTitle": "Xin lỗi, kết nối mạng của bạn đã bị ngắt, vui lòng kiểm tra mạng của bạn!",
+      "networkErrorTitle": "Lỗi mạng",
+      "noDataTitle": "Không có dữ liệu trên trang hiện hành",
+      "subTitle403": "Xin lỗi, bạn không có quyền truy cập trang này.",
+      "subTitle404": "Xin lỗi, trang truy cập không tồn tại.",
+      "subTitle500": "Xin lỗi, máy chủ báo lỗi.",
+      "pls_sel_save": "Vui lòng chọn lưu"
+    },
+    "lock": {
+      "alert": "Mật khẩu khoá màn hình sai",
+      "backToLogin": "Trở về đăng nhập",
+      "entry": "Vào hệ thống",
+      "placeholder": "Vui lòng nhập mật khẩu màn hình khóa hoặc mật khẩu người dùng",
+      "unlock": "Nhấn để mở khóa"
+    },
+    "login": {
+      "accountPlaceholder": "Vui lòng nhập tài khoản",
+      "backSignIn": "Trở về",
+      "confirmPassword": "Xác nhận mật khẩu",
+      "diffPwd": "Hai lần nhập mật khẩu không nhất quán",
+      "email": "Email",
+      "forgetFormTitle": "Đặt lại mật khẩu",
+      "forgetPassword": "Quên mật khẩu?",
+      "loginButton": "Đăng nhập",
+      "loginSuccessDesc": "Chào mừng trở lại",
+      "loginSuccessTitle": "Đăng nhập thành công",
+      "mobile": "Số điện thoại",
+      "mobilePlaceholder": "Vui lòng nhập số điện thoại",
+      "mobileSignInFormTitle": "Đăng nhập điện thoại",
+      "otherSignIn": "Cách đăng nhập khác",
+      "password": "Mật khẩu",
+      "policy": "Tôi đồng ý với chính sách bảo mật của XXX",
+      "policyPlaceholder": "Đánh dấu trước khi đăng ký",
+      "qrSignInFormTitle": "Đăng nhập bằng mã QR",
+      "registerButton": "Đăng ký",
+      "rememberMe": "Ghi nhớ tôi",
+      "scanSign": "Sau khi quét mã, nhấn \"Xác nhận\" để hoàn thành đăng nhập",
+      "signInDesc": "Vui lòng nhập thông tin cá nhân của bạn để bắt đầu sử dụng!",
+      "signInFormTitle": "Đăng nhập",
+      "signInTitle": "Hệ thống quản lý trung gian và hậu cần sẵn sàng sử dụng",
+      "signUpFormTitle": "Đăng ký",
+      "smsCode": "Mã xác minh SMS",
+      "smsPlaceholder": "Vui lòng nhập mã xác minh gồm 6 số",
+      "userName": "Tài khoản",
+      "verification_code": "Vui lòng nhập mã xác minh Google"
+    }
+  },
+  "table": {
+    "system": {
+      "app_btn_bg": "Nút đường viền"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop": "Khung nạp đầu",
+        "firstDepositPop_select": "Vui lòng chọn cửa sổ bật lên đầu tiên"
+      }
+    }
+  }
+}

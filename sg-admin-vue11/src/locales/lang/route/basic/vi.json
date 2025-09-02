@@ -1,0 +1,10 @@
+{
+  "table": {
+    "promotion": {
+      "apkAddress": "Địa chỉ tải APK"
+    },
+    "race_price": {
+      "form_ad_romain": "Số lượng tên miền dự phòng"
+    }
+  }
+}

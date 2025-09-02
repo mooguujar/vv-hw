@@ -1,0 +1,21 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": "Thêm quảng cáo"
+    },
+    "promotion": {
+      "month_price_roi": "Tháng quảng cáo ROI (thống kê)",
+      "statics_code": "统计代码"
+    },
+    "system": {
+      "chatroom_sys": "Quản lý phòng chat"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": "PWA (chuyển tới H5)"
+      }
+    }
+  }
+}

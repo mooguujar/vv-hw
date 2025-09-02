@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "report": {
+      "activityReport": "",
+      "agentReport": "Agent Report",
+      "betInfo": "Betting Details",
+      "bettingReport": "Betting Records",
+      "comprehensiveReport": "Comprehensive Report",
+      "dailyReport": "Daily Report",
+      "dataReport": "Data Report Dashboard",
+      "firstDepositReport": "First Deposit Report",
+      "gameReport": "Platform Report",
+      "memberReport": "Member Report",
+      "member_detail": "",
+      "oneHourInfo": "Hourly Report Details",
+      "oneHourReport": "Hourly Report",
+      "operationalReport": "Operational Data Report",
+      "platformReport": "Platform Report",
+      "promotionReport": "Promotion Registration Report",
+      "report": "Report Management",
+      "retainReport": "Retention Report",
+      "venueReport": "Venue Data Report"
+    }
+  },
+  "table": {
+    "promotion": {
+      "link_type": ""
+    }
+  }
+}

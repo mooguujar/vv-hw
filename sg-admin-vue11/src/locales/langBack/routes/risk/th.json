@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "รายละเอียดที่เกี่ยวข้อง",
+      "black_list": "รายการ blacklist",
+      "fight_monitor": "การตรวจสอบการแทงสวน",
+      "high_bonus": "รางวัล High Explosion Award",
+      "link_records": "บันทึกความเกี่ยวข้อง",
+      "low_multiple": "จำนวนเทิร์นโอเวอร์ตำ่สุด",
+      "profit_list": "",
+      "risk": "",
+      "win_top": ""
+    }
+  }
+}

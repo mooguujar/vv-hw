@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "Member List",
+      "accountChanges": "Venue Transaction",
+      "addMoney": "Add Withdraw",
+      "analysis": "Add Member",
+      "cardLine": "Withdrawal Card",
+      "create": "Add Member",
+      "details": "Member Details",
+      "editMember": "Edit Member",
+      "grade": "Member Levels",
+      "member": "Members",
+      "memberActive": "Online Members",
+      "memberList": "Member List",
+      "memberLog": "Member Log",
+      "online_detail": "Online Member Details",
+      "vipGrade": "VIP Level"
+    },
+    "vip_center": "Rebate Center"
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "Requested Amount",
+      "member_apply_number": "Requested Count"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "Commission Bet"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "Access Area",
+      "account_list": "Account List",
+      "add_announcement": "Add Announcement",
+      "add_banner": "Add Carousel Image",
+      "add_marquee": "Add Marquee",
+      "apppackaging": "App Packaging",
+      "authority_management": "Access",
+      "banner_setting": "Banner",
+      "brand_setting": "Brand Settings",
+      "chart_setting": "Chatroom Management",
+      "commission_plan": "Commission Scheme",
+      "customer_feedback": "User Feedback",
+      "domain_name_manage": "Domain Settings",
+      "edit_announcement": "Edit Announcement",
+      "game_list": "Game List",
+      "game_manage": "Game Settings",
+      "game_sort": "Game Sorting",
+      "information_center": "Info Center",
+      "ip_whitelist": "IP Whitelist",
+      "login_manage": "Login Logs",
+      "operate_log": "Operation Logs",
+      "platform_manage": "Venue",
+      "site_announcement": "Site Notice",
+      "site_config": "Site Config",
+      "site_manage": "Site",
+      "site_settings": "Site Settings",
+      "system_manage": "System",
+      "three_party_login": "3rd-Party Login",
+      "user_manage": "User Management",
+      "website_letter": "Internal Message",
+      "website_letter_info": "Internal Message Details"
+    }
+  },
+  "sys": {
+    "login": {
+      "download": "Download"
+    }
+  }
+}

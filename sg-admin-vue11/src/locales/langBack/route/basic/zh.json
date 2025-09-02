@@ -1,0 +1,17 @@
+{
+  "table": {
+    "promotion": {
+      "apkAddress": "APK下载地址"
+    },
+    "race_price": {
+      "form_ad_romain": "备用域名数量"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "type_fs_ty": "活动分类"
+      }
+    }
+  }
+}

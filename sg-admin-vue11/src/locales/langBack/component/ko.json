@@ -1,0 +1,153 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "",
+      "toNavigate": "",
+      "toSearch": ""
+    },
+    "banner": {
+      "alliance_center": "",
+      "banner1": "",
+      "banner2": "",
+      "banner3": "",
+      "custom": "",
+      "deposit_page": "",
+      "deposit_page_deposit": "",
+      "entertainment_city": "",
+      "physical_education": "",
+      "physical_education_money": "",
+      "physical_education_vip": "",
+      "physical_vip_rebate": "",
+      "promotions": "",
+      "promotions_kf": "",
+      "banner14": ""
+    },
+    "countdown": {
+      "normalText": "",
+      "sendText": ""
+    },
+    "cropper": {
+      "btn_reset": "",
+      "btn_rotate_left": "",
+      "btn_rotate_right": "",
+      "btn_scale_x": "",
+      "btn_scale_y": "",
+      "btn_zoom_in": "",
+      "btn_zoom_out": "",
+      "modalTitle": "",
+      "okText": "",
+      "preview": "",
+      "selectImage": "",
+      "uploadSuccess": ""
+    },
+    "drawer": {
+      "cancelText": "",
+      "loadingText": "",
+      "okText": ""
+    },
+    "excel": {
+      "exportModalTitle": "",
+      "fileName": "",
+      "fileType": ""
+    },
+    "form": {
+      "apiSelectNotFound": "",
+      "maxTip": "",
+      "putAway": "",
+      "unfold": ""
+    },
+    "icon": {
+      "copy": "",
+      "placeholder": "",
+      "search": ""
+    },
+    "menu": {
+      "search": ""
+    },
+    "modal": {
+      "cancelText": "",
+      "close": "",
+      "maximize": "",
+      "okText": "",
+      "restore": ""
+    },
+    "table": {
+      "index": "",
+      "settingColumn": "",
+      "settingColumnShow": "",
+      "settingDens": "",
+      "settingDensDefault": "",
+      "settingDensMiddle": "",
+      "settingDensSmall": "",
+      "settingFixedLeft": "",
+      "settingFixedRight": "",
+      "settingFullScreen": "",
+      "settingIndexColumnShow": "",
+      "settingSelectColumnShow": "",
+      "total": ""
+    },
+    "time": {
+      "after": "",
+      "before": "",
+      "days": "",
+      "hours": "",
+      "just": "",
+      "minutes": "",
+      "seconds": ""
+    },
+    "tree": {
+      "checkStrictly": "",
+      "checkUnStrictly": "",
+      "expandAll": "",
+      "selectAll": "",
+      "unExpandAll": "",
+      "unSelectAll": ""
+    },
+    "unit": {
+      "people": "",
+      "sum": "",
+      "tem_thousand": "",
+      "unit": ""
+    },
+    "upload": {
+      "accept": "",
+      "acceptUpload": "",
+      "choose": "",
+      "del": "",
+      "download": "",
+      "fileName": "",
+      "fileSize": "",
+      "fileStatue": "",
+      "imgUpload": "",
+      "legend": "",
+      "maxNumber": "",
+      "maxSize": "",
+      "maxSizeMultiple": "",
+      "operating": "",
+      "preview": "",
+      "reUploadFailed": "",
+      "save": "",
+      "saveError": "",
+      "saveWarn": "",
+      "startUpload": "",
+      "upload": "",
+      "uploadError": "",
+      "uploadSuccess": "",
+      "uploadWait": "",
+      "uploaded": "",
+      "uploading": ""
+    },
+    "verify": {
+      "dragText": "",
+      "error": "",
+      "redoTip": "",
+      "successText": "",
+      "time": ""
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": ""
+    }
+  }
+}

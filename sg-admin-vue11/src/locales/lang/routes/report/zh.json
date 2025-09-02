@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "report": {
+      "activityReport": "优惠报表",
+      "agentReport": "代理报表",
+      "betInfo": "投注详情",
+      "bettingReport": "投注记录",
+      "comprehensiveReport": "综合报表",
+      "dailyReport": "每日报表",
+      "dataReport": "数据报表看板",
+      "firstDepositReport": "首存报表",
+      "gameReport": "平台报表",
+      "memberReport": "会员报表",
+      "member_detail": "会员报表",
+      "oneHourInfo": "小时报表详情",
+      "oneHourReport": "小时报表",
+      "operationalReport": "运营数据报表",
+      "platformReport": "平台报表",
+      "promotionReport": "推广注册报表",
+      "report": "报表管理",
+      "retainReport": "留存报表",
+      "venueReport": "场馆数据报表"
+    }
+  },
+  "table": {
+    "promotion": {
+      "link_type": "渠道类型"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "agent": {
+      "agent": "Agen",
+      "agentList": "Daftar Agen",
+      "agentPlan": "Rencana Agen",
+      "commissionList": "Daftar Komisi",
+      "recordsManagement": "Manajemen Catatan"
+    }
+  },
+  "table": {
+    "promotion": {
+      "promotion_package_apk_p": "Silakan masukkan alamat APK"
+    },
+    "system": {
+      "longin_single": "Kunci Rahasia Masuk"
+    }
+  }
+}

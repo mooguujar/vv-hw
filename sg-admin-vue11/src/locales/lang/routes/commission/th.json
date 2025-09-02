@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "การจัดการตัวแทน",
+      "commissionCollect": "ทั้งหมด",
+      "commissionConfig": "ปรับแต่งค่าคอมมิชชั่น",
+      "commissionDetail": "รายละเอียดค่าคอมมิชชั่นแบบละเอียด",
+      "commissionRecord": "บันทึกการจ่ายออก",
+      "commissionReview": "ตรวจสอบค่าคอมมิชชั่น"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "agent": {
+      "agent": "Quản lý đại lý",
+      "agentList": "Danh sách đại lý",
+      "agentPlan": "Phương án đại lý",
+      "commissionList": "Biểu trả hoa hồng",
+      "recordsManagement": "Ghi chép quản lý"
+    }
+  },
+  "table": {
+    "promotion": {
+      "promotion_package_apk_p": "Vui lòng nhập địa chỉ APK"
+    },
+    "system": {
+      "longin_single": "Mã đăng nhập"
+    }
+  }
+}

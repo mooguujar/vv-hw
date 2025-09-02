@@ -1,0 +1,148 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "ไม่มีผลการค้นหา",
+      "toNavigate": "สลับ",
+      "toSearch": "ยืนยัน"
+    },
+    "banner": {
+      "alliance_center": "โปรแกรมพันธมิตร",
+      "custom": "การปรับแต่ง",
+      "deposit_page": "",
+      "entertainment_city": "คาสิโน",
+      "physical_education": "กีฬา",
+      "physical_education_money": "กระเป๋าเงิน",
+      "physical_education_vip": "VIP",
+      "physical_vip_rebate": "",
+      "promotions": "กิจกรรมโปรโมชั่น",
+      "promotions_kf": "ฝ่ายบริการลูกค้าออนไลน์"
+    },
+    "countdown": {
+      "normalText": "รับรหัสยืนยัน",
+      "sendText": "รับใหม่อีกครั้งหลังจาก {0} วินาที"
+    },
+    "cropper": {
+      "btn_reset": "รีเซ็ต",
+      "btn_rotate_left": "หมุนทวนเข็มนาฬิกา",
+      "btn_rotate_right": "หมุนตามเข็มนาฬิกา",
+      "btn_scale_x": "พลิกภาพแนวนอน",
+      "btn_scale_y": "พลิกภาพแนวตั้ง",
+      "btn_zoom_in": "ขยายภาพ",
+      "btn_zoom_out": "ย่อ/ขยาย",
+      "modalTitle": "อัพโหลดภาพ",
+      "okText": "ยืนยันและอัปโหลด",
+      "preview": "แสดงตัวอย่าง",
+      "selectImage": "เลือกรูปภาพ",
+      "uploadSuccess": "อัปโหลดเรียบร้อยแล้ว"
+    },
+    "drawer": {
+      "cancelText": "ปิด",
+      "loadingText": "กำลังโหลด...",
+      "okText": "ยืนยัน"
+    },
+    "excel": {
+      "exportModalTitle": "ส่งออกข้อมูล",
+      "fileName": "ชื่อไฟล์",
+      "fileType": "ประเภทไฟล์"
+    },
+    "form": {
+      "apiSelectNotFound": "โปรดรอให้โหลดข้อมูลเสร็จสิ้น...",
+      "maxTip": "จำนวนอักษรควรน้อยกว่า {0} ตัว",
+      "putAway": "แสดงน้อยลง",
+      "unfold": "แสดงเพิ่มเติม"
+    },
+    "icon": {
+      "copy": "คัดลอก Icon สำเร็จ !",
+      "placeholder": "คลิกเลือกที่ Icon",
+      "search": "ค้นหา Icon"
+    },
+    "menu": {
+      "search": "เมนูค้นหา"
+    },
+    "modal": {
+      "cancelText": "ปิด",
+      "close": "ปิด",
+      "maximize": "ขยายสูงสุด",
+      "okText": "ยืนยัน",
+      "restore": "เรียกคืน"
+    },
+    "table": {
+      "index": "หมายเลขซีเรียล",
+      "settingColumn": "ตั้งค่าคอลัมน์",
+      "settingColumnShow": "แสดงคอลัมน์",
+      "settingDens": "ความหนาแน่น",
+      "settingDensDefault": "ค่าเริ่มต้น",
+      "settingDensMiddle": "ระดับกลาง",
+      "settingDensSmall": "ขนาดกะทัดรัด",
+      "settingFixedLeft": "ล็อคไปจนถึงด้านซ้าย",
+      "settingFixedRight": "ล็อคไปจนถึงด้านขวา",
+      "settingFullScreen": "เต็มจอ",
+      "settingIndexColumnShow": "แสดงหมายเลขซีเรียลคอลัมน์",
+      "settingSelectColumnShow": "เลือกคอลัมน์",
+      "total": "ข้อมูลแถบทั้งหมด {total}"
+    },
+    "time": {
+      "after": "หลัง",
+      "before": "ก่อน",
+      "days": "วัน",
+      "hours": "ชั่วโมง",
+      "just": "เมื่อสักครู่",
+      "minutes": "นาที",
+      "seconds": "วินาที"
+    },
+    "tree": {
+      "checkStrictly": "ระดับชั้นแบบเชื่อมโยง",
+      "checkUnStrictly": "ระดับชั้นแบบอิสระ",
+      "expandAll": "ขยายทั้งหมด",
+      "selectAll": "เลือกทั้งหมด",
+      "unExpandAll": "พับลงทั้งหมด",
+      "unSelectAll": "ยกเลิกการเลือก"
+    },
+    "unit": {
+      "people": "คน",
+      "sum": "รอบ",
+      "tem_thousand": "หมื่น",
+      "unit": "หน่วย"
+    },
+    "upload": {
+      "accept": "รองรับรูปแบบ {0}",
+      "acceptUpload": "อัปโหลดไฟล์เฉพาะรูปแบบ {0} เท่านั้น",
+      "choose": "เลือกไฟล์",
+      "del": "ลบ",
+      "download": "ดาวน์โหลด",
+      "fileName": "ชื่อไฟล์",
+      "fileSize": "ขนาดไฟล์",
+      "fileStatue": "สถานะ",
+      "imgUpload": "อัปโหลดรูปภาพ",
+      "legend": "ภาพขนาดย่อ",
+      "maxNumber": "อัปโหลดได้สูงสุด {0} ไฟล์เท่านั้น",
+      "maxSize": "ไฟล์เดียวไม่เกิน {0}MB",
+      "maxSizeMultiple": "ไฟล์อัปโหลดได้ไม่เกิน {0}MB !",
+      "operating": "ดำเนินการ",
+      "preview": "แสดงตัวอย่าง",
+      "reUploadFailed": "อัปโหลดไฟล์ล้มเหลว อัปโหลดอีกครั้ง",
+      "save": "บันทึก",
+      "saveError": "ไม่มีไฟล์ที่อัปโหลดสำเร็จและไม่สามารถบันทึกได้!",
+      "saveWarn": "โปรดรอไฟล์อัปโหลดและบันทึกสักครู่ !",
+      "startUpload": "เริ่มการอัปโหลด",
+      "upload": "Upload",
+      "uploadError": "อัปโหลดล้มเหลว",
+      "uploadSuccess": "อัปโหลดสำเร็จ",
+      "uploadWait": "โปรดรอจนกว่าไฟล์จะอัพโหลดเสร็จสิ้น",
+      "uploaded": "อัปโหลดแล้ว",
+      "uploading": "กำลังอัปโหลด"
+    },
+    "verify": {
+      "dragText": "โปรดกดแถบเลื่อนค้างไว้แล้วลาก",
+      "error": "การตรวจสอบล้มเหลว！",
+      "redoTip": "คลิก ที่รูปภาพเพื่อรีเฟรช",
+      "successText": "การตรวจสอบถูกอนุมัติ",
+      "time": "ใช้เวลาตรวจสอบและยืนยัน {time} วินาที !"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": ""
+    }
+  }
+}

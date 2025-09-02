@@ -1,0 +1,31 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "Member List",
+      "accountChanges": "Venue Account Changes",
+      "addMoney": "Add/Subtract Funds",
+      "analysis": "Add Member",
+      "cardLine": "Withdrawal Card Management",
+      "create": "Add New Member",
+      "details": "Member Details",
+      "editMember": "Edit Member",
+      "grade": "Member Levels",
+      "member": "Member Management",
+      "memberActive": "Online Members",
+      "memberList": "Member List",
+      "memberLog": "Member Log",
+      "online_detail": "Online Member Details",
+      "vipGrade": "VIP Level"
+    }
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "Application Amount",
+      "member_apply_number": "Application Count",
+      "account": "Account",
+      "accountType": "Account Type",
+      "amount": "Amount",
+      "balance": "Balance"
+    }
+  }
+}

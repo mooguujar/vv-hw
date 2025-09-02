@@ -1,0 +1,47 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "Comissão de aposta"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "Área de acesso",
+      "account_list": "Lista de contas",
+      "add_announcement": "Adicionar anúncio",
+      "add_banner": "Adicionar imagem de carrossel",
+      "add_marquee": "Adicionar letreiro",
+      "apppackaging": "Embalagem de aplicativo",
+      "authority_management": "Acesso",
+      "banner_setting": "Banner",
+      "brand_setting": "Config marca",
+      "chart_setting": "Gerenciamento de sala de bate-papo",
+      "commission_plan": "Plano de comissão",
+      "customer_feedback": "Feedback",
+      "domain_name_manage": "Ajustes do domínio",
+      "edit_announcement": "Editar anúncio",
+      "game_list": "Lista de jogos",
+      "game_manage": "Ajustes do jogo",
+      "game_sort": "Ordenar jogos",
+      "information_center": "Informações gerais",
+      "ip_whitelist": "Permissões de IP",
+      "login_manage": "Registros de acesso",
+      "operate_log": "Log de operações",
+      "platform_manage": "Local",
+      "site_announcement": "Aviso do site",
+      "site_config": "Configuração do site",
+      "site_manage": "Site",
+      "site_settings": "Config do site",
+      "system_manage": "Sistema",
+      "three_party_login": "Acesso de terceiros",
+      "user_manage": "Gerenciamento de usuários",
+      "website_letter": "Mensagem interna",
+      "website_letter_info": "Detalhes da mensagem interna"
+    }
+  },
+  "sys": {
+    "login": {
+      "download": "Baixar"
+    }
+  }
+}

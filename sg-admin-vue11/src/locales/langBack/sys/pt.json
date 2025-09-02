@@ -1,0 +1,113 @@
+{
+  "sys": {
+    "api": {
+      "apiRequestFailed": "Erro na solicitação, por favor tente novamente mais tarde",
+      "apiTimeoutMessage": "A solicitação de interface expirou. Atualize a página e tente novamente!",
+      "errMsg401": "O usuário não tem permissão (token, nome de usuário ou senha incorretos)!",
+      "errMsg403": "Usuário autorizado, mas acesso proibido",
+      "errMsg404": "Erro de solicitação de rede, recurso não encontrado",
+      "errMsg405": "Erro de solicitação de rede, método não permitido",
+      "errMsg408": "Tempo de solicitação de rede esgotado",
+      "errMsg500": "Erro no servidor, por favor contate o administrador",
+      "errMsg501": "Rede não implementada",
+      "errMsg502": "Erro de rede",
+      "errMsg503": "Serviço indisponível, servidor ocupado ou em manutenção",
+      "errMsg504": "Tempo de rede esgotado",
+      "errMsg505": "Versão HTTP não suporta a solicitação",
+      "errMsg506": "Erro API",
+      "errMsgIp": "Por favor vincule o IP",
+      "errorMessage": "Falha na operação, exceção do sistema",
+      "errorTip": "Aviso de erro",
+      "export_success": "Exportação bem-sucedida",
+      "export_error": "Exportação falhou",
+      "loginErrorTip": "Falha no login",
+      "networkException": "Exceção de rede",
+      "networkExceptionMsg": "Erro de rede, verifique se sua conexão com a internet está estável!",
+      "operationFailed": "Falha na operação",
+      "operationSuccess": "Operação bem-sucedida",
+      "successTip": "Aviso de sucesso",
+      "timeoutMessage": "Tempo de acesso esgotado, por favor acesse novamente"
+    },
+    "app": {
+      "logoutMessage": "Você confirma que deseja sair do sistema?",
+      "logoutTip": "Lembrete gentil",
+      "menuLoading": "Carregando menu..."
+    },
+    "errorLog": {
+      "enableMessage": "Eficaz somente com useErrorHandle=true em /src/settings/projectSetting.ts",
+      "fireAjaxError": "Clique em erro AJAX",
+      "fireResourceError": "Clique em erro de carregamento de recurso",
+      "fireVueError": "Clique em erro vue",
+      "modalTitle": "Detalhes do erro",
+      "tableActionDesc": "Detalhes",
+      "tableColumnDate": "Tempo",
+      "tableColumnFile": "Arquivo",
+      "tableColumnMsg": "Mensagemm de erro",
+      "tableColumnStackMsg": "Informações da pilha",
+      "tableColumnType": "Tipo",
+      "tableTitle": "Lista de logs de erro"
+    },
+    "exception": {
+      "backHome": "Voltar para o inicio",
+      "backLogin": "Voltar para o acesso",
+      "networkErrorSubTitle": "Desculpe, sua conexão de rede foi perdida, por favor verifique sua rede",
+      "networkErrorTitle": "Erro de rede",
+      "noDataTitle": "Não há dados disponíveis nesta página",
+      "subTitle403": "Desculpe, você não tem permissão para acessar esta página",
+      "subTitle404": "Desculpe, a página que você está tentando acessar não existe.",
+      "subTitle500": "Desculpe, o servidor reportou um erro",
+      "pls_sel_save": "Por favor, selecione Salvar"
+    },
+    "lock": {
+      "alert": "Senha de bloqueio incorreta",
+      "backToLogin": "Voltar para o acesso",
+      "entry": "Entrar no sistema",
+      "placeholder": "Por favor insira a senha de bloqueio ou senha do usuário",
+      "unlock": "Clique para desbloquear"
+    },
+    "login": {
+      "accountPlaceholder": "Por favor, insira a conta",
+      "backSignIn": "Voltar",
+      "confirmPassword": "Confirmar senha",
+      "diffPwd": "As senhas não coincidem",
+      "email": "Email",
+      "forgetFormTitle": "Redefinir senha",
+      "forgetPassword": "Esqueceu a senha",
+      "loginButton": "Acessar",
+      "loginSuccessDesc": "Bem-vindo de volta",
+      "loginSuccessTitle": "Acesso bem-sucedido",
+      "mobile": "Telefone",
+      "mobilePlaceholder": "Por favor, insira o telefone",
+      "mobileSignInFormTitle": "Acesso por telefone",
+      "otherSignIn": "Outras formas de acesso",
+      "password": "Senha",
+      "policy": "Eu concordo com a política de privacidade xxx",
+      "policyPlaceholder": "Marque esta caixa antes de registrar",
+      "qrSignInFormTitle": "Acesso por QRCode",
+      "registerButton": "Registrar",
+      "rememberMe": "Lembrar-me",
+      "scanSign": "Digitalize e clique em 'Confirmar' para concluir acessar",
+      "signInDesc": "Insira seus dados pessoais para começar a usar!",
+      "signInFormTitle": "Acesso",
+      "signInTitle": "Sistema de gerenciamento de back-end pronto para uso",
+      "signUpFormTitle": "Registrar",
+      "smsCode": "Código por SMS",
+      "smsPlaceholder": "Por favor, insira o código de 6 dígitos",
+      "userName": "Conta",
+      "verification_code": "Por favor, insira o código de 2 fatores"
+    }
+  },
+  "table": {
+    "system": {
+      "app_btn_bg": "Borda de botão"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop": "Pop up de 1º depósito",
+        "firstDepositPop_select": "Selecione o primeiro pop-up de depósito"
+      }
+    }
+  }
+}

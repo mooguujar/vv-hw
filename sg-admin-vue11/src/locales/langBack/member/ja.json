@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": ""
+    },
+    "vip": {
+      "TransactionRebate": "",
+      "TransactionVIPDay": "",
+      "TransactionVIPMonthly": "",
+      "TransactionVIPUpgrade": "",
+      "TransactionVIPWeek": "",
+      "TransactionVIpBirthday": "",
+      "daily_bonus": "",
+      "monthly_bonus": "",
+      "promotion_bonus": "",
+      "rebate_configuration": "",
+      "weekly_bonus": ""
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "",
+      "member_name_tip1": "",
+      "member_name_tip_text": ""
+    },
+    "system": {
+      "commsision_tip_11": ""
+    }
+  }
+}

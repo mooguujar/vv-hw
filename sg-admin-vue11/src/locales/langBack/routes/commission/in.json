@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "Agen",
+      "commissionCollect": "Ringkasan",
+      "commissionConfig": "Konfigurasi Komisi",
+      "commissionDetail": "Detail",
+      "commissionRecord": "Catatan",
+      "commissionReview": "Tinjauan"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop_1": "Semua Halaman"
+      }
+    }
+  }
+}

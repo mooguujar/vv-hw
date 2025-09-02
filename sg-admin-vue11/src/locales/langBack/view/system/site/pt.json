@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "Configurações de dep/ret.",
+      "system_cate_des": "Para exibir mais categorias, arraste 'Categorias de jogos' ou 'Tipos de marca' aqui",
+      "system_min_deposit": "Retirada mínima de comissão",
+      "system_sort_add_show": "Mostrar marcas",
+      "system_sort_sliader_side": "Classificação por categorias",
+      "system_sort_sliader_side_all": "Todos os jogos na categoria",
+      "system_sort_sliader_side_all_lei": "Escolhas recomendadas",
+      "system_sort_sliader_side_site_1": "Nome da marca",
+      "system_sort_sliader_side_site_2": "Tipo de marca"
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "Limpar cache de URL",
+        "blackGold": "Versão preta e dourada",
+        "blueBlack": "Versão azul e preta",
+        "cleat_warning": "Por padrão, cada conta pode atualizar 10.000 URLs por dia, com no máximo 1.000 URLs por envio de cada vez",
+        "directory_clear": "Limpar cache de diretório",
+        "firstAgent": "Agente primário",
+        "fresh_now": "Atualizar agora",
+        "url_adds": "Endereço URL",
+        "url_clear_tip": "Insira os URLs a serem atualizados, um URL por linha"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "",
+      "add_deposit_card": "",
+      "add_pre_payment_management": "",
+      "commission_withdrawal": "",
+      "company_deposit": "",
+      "currency_deposit": "",
+      "currency_withdrawal": "",
+      "deposit_card_management": "",
+      "deposit_summary": "",
+      "edit_deposit_card": "",
+      "edit_pre_payment_management": "",
+      "member_account_history": "",
+      "moduleName": "",
+      "online_payment": "",
+      "online_withdrawal": "",
+      "payment_management": "",
+      "pre_payment_management": "",
+      "venue_transfer_records": "",
+      "withdrawal_config": ""
+    }
+  }
+}

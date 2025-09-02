@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "agent": {
+      "agent": "การจัดการตัวแทน",
+      "agentList": "รายชื่อตัวแทน",
+      "agentPlan": "แผนงานตัวแทน",
+      "commissionList": "รายการค่าคอมมิชชั่น",
+      "recordsManagement": "การจัดการบันทึก"
+    }
+  },
+  "table": {
+    "promotion": {
+      "promotion_package_apk_p": ""
+    },
+    "system": {
+      "longin_single": ""
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": "Status"
+    },
+    "vip": {
+      "TransactionRebate": "Cashback anggota",
+      "TransactionVIPDay": "Amplop merah harian VIP",
+      "TransactionVIPMonthly": "Amplop merah bulanan VIP",
+      "TransactionVIPUpgrade": "Bonus promosi VIP",
+      "TransactionVIPWeek": "Amplop merah mingguan VIP",
+      "TransactionVIpBirthday": "Bonus ulang tahun VIP",
+      "daily_bonus": "Bonus harian",
+      "monthly_bonus": "Bonus bulanan",
+      "promotion_bonus": "Bonus promosi",
+      "rebate_configuration": "Kembali ke konfigurasi",
+      "weekly_bonus": "Bonus mingguan"
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "Permainan lotre",
+      "member_name_tip1": "Nama asli tidak boleh berupa angka",
+      "member_name_tip_text": "Harus lebih dari 2 karakter"
+    },
+    "system": {
+      "commsision_tip_11": "Komisi yang diberikan oleh anggota saat ini kepada agen saat ini"
+    }
+  }
+}

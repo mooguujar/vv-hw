@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "เพิ่มการปรับแต่งการชำระเงิน",
+      "add_deposit_card": "เพิ่มบัญชีฝากเงิน",
+      "add_pre_payment_management": "เพิ่มการชำระเงิน (Payment gateway)",
+      "commission_withdrawal": "ถอนค่าคอมมิชชั่น",
+      "company_deposit": "ฝากระบบธนาคาร",
+      "currency_deposit": "ฝากระบบคริปโต",
+      "currency_withdrawal": "ถอนระบบคริปโต",
+      "deposit_card_management": "",
+      "deposit_summary": "ภาพรวมการฝาก/ถอน",
+      "edit_deposit_card": "แก้ไขข้อมูลบัญชีเงินเข้า",
+      "edit_pre_payment_management": "แก้ไขการชำระเงิน (Payment gateway)",
+      "member_account_history": "บันทึกการเปลี่ยนแปลงบัญชีสมาชิก",
+      "moduleName": "การจัดการการเงิน",
+      "online_payment": "ชำระเงินออนไลน์",
+      "online_withdrawal": "การถอนเงินออนไลน์",
+      "payment_management": "จัดการการชำระเงิน",
+      "pre_payment_management": "จัดการการชำระเงิน (Payment gateway)",
+      "venue_transfer_records": "บันทึกการโอนเงินของแพลตฟอร์ม",
+      "withdrawal_config": "ปรับแต่งการชำระเงิน"
+    }
+  }
+}

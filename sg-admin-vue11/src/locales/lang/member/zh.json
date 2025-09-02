@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": "状态"
+    },
+    "vip": {
+      "TransactionRebate": "会员返水",
+      "TransactionVIPDay": "vip日红包",
+      "TransactionVIPMonthly": "vip月红包",
+      "TransactionVIPUpgrade": "vip晋级礼金",
+      "TransactionVIPWeek": "vip周红包",
+      "TransactionVIpBirthday": "vip生日礼金",
+      "daily_bonus": "每日礼金",
+      "monthly_bonus": "每月礼金",
+      "promotion_bonus": "晋级礼金",
+      "rebate_configuration": "返回配置",
+      "weekly_bonus": "每周礼金"
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "彩票游戏",
+      "member_name_tip1": "真实姓名不能为数字",
+      "member_name_tip_text": "必须大于2个字符串"
+    },
+    "system": {
+      "commsision_tip_11": "当前会员给当前代理贡献的佣金"
+    }
+  }
+}

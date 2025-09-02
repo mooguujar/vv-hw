@@ -1,0 +1,148 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "Nenhum resultado encontrado",
+      "toNavigate": "Alternar",
+      "toSearch": "Confirmar"
+    },
+    "banner": {
+      "alliance_center": "Afiliados",
+      "custom": "Personalizar",
+      "deposit_page": "",
+      "entertainment_city": "Cassino",
+      "physical_education": "Esportes",
+      "physical_education_money": "Carteira",
+      "physical_education_vip": "VIP",
+      "physical_vip_rebate": "",
+      "promotions": "Promoções",
+      "promotions_kf": "Atendimento online"
+    },
+    "countdown": {
+      "normalText": "Obter código de verificação",
+      "sendText": "{0} seg. para obter novamente"
+    },
+    "cropper": {
+      "btn_reset": "Redefinir",
+      "btn_rotate_left": "Girar no sentido anti-horário",
+      "btn_rotate_right": "Girar no sentido horário",
+      "btn_scale_x": "Inverter horizontalmente",
+      "btn_scale_y": "Inverter verticalmente",
+      "btn_zoom_in": "Ampliar",
+      "btn_zoom_out": "Reduzir",
+      "modalTitle": "Enviar avatar",
+      "okText": "Confirmar e enviar",
+      "preview": "Pré-visualização",
+      "selectImage": "Selecionar imagem",
+      "uploadSuccess": "Carregado com sucesso"
+    },
+    "drawer": {
+      "cancelText": "Fechar",
+      "loadingText": "Carregando...",
+      "okText": "Confirmar"
+    },
+    "excel": {
+      "exportModalTitle": "Exportar dados",
+      "fileName": "Nome do arquivo",
+      "fileType": "Tipo de arquivo"
+    },
+    "form": {
+      "apiSelectNotFound": "Por favor, aguarde o carregamento dos dados...",
+      "maxTip": "O número de caracteres deve ser menor que {0}",
+      "putAway": "Recolher",
+      "unfold": "Expandir"
+    },
+    "icon": {
+      "copy": "Ícone copiado com sucesso!",
+      "placeholder": "Clique para selecionar ícone",
+      "search": "Pesquisar ícone"
+    },
+    "menu": {
+      "search": "Pesquisar menu"
+    },
+    "modal": {
+      "cancelText": "Fechar",
+      "close": "Fechar",
+      "maximize": "Maximizar",
+      "okText": "Confirmar",
+      "restore": "Restaurar"
+    },
+    "table": {
+      "index": "Número",
+      "settingColumn": "Configuração de colunas",
+      "settingColumnShow": "Exibição de colunas",
+      "settingDens": "Densidade",
+      "settingDensDefault": "Padrão",
+      "settingDensMiddle": "Média",
+      "settingDensSmall": "Compacto",
+      "settingFixedLeft": "Fixar à esquerda",
+      "settingFixedRight": "Fixar à direita",
+      "settingFullScreen": "Tela cheia",
+      "settingIndexColumnShow": "Coluna de número",
+      "settingSelectColumnShow": "Selecionar colunas",
+      "total": "Total de {total} dados"
+    },
+    "time": {
+      "after": "Depois",
+      "before": "Antes",
+      "days": "Dia",
+      "hours": "Hora",
+      "just": "Agora",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    },
+    "tree": {
+      "checkStrictly": "Associação de níveis",
+      "checkUnStrictly": "Níveis independentes",
+      "expandAll": "Expandir tudo",
+      "selectAll": "Selecionar tudo",
+      "unExpandAll": "Recolher tudo",
+      "unSelectAll": "Cancelar seleção"
+    },
+    "unit": {
+      "people": "Pessoas",
+      "sum": "Transações",
+      "tem_thousand": "Dez mil",
+      "unit": "Unidade"
+    },
+    "upload": {
+      "accept": "Suporta formato {0}",
+      "acceptUpload": "Só é possível enviar arquivos no formato {0}",
+      "choose": "Selecionar arquivo",
+      "del": "Excluir",
+      "download": "Baixar",
+      "fileName": "Nome do arquivo",
+      "fileSize": "Tamanho do arquivo",
+      "fileStatue": "Status",
+      "imgUpload": "Envio de imagem",
+      "legend": "Miniatura",
+      "maxNumber": "Máximo de {0} arquivos",
+      "maxSize": "Cada arquivo não pode ultrapassar {0}MB",
+      "maxSizeMultiple": "Só é possível enviar arquivos de até {0}MB!",
+      "operating": "Operação",
+      "preview": "Pré-visualização",
+      "reUploadFailed": "Reenviar arquivos com falha",
+      "save": "Salvar",
+      "saveError": "Nenhum arquivo enviado com sucesso, não é possível salvar!",
+      "saveWarn": "Aguarde o envio dos arquivos para salvar!",
+      "startUpload": "Iniciar envio",
+      "upload": "Enviar",
+      "uploadError": "Falha no envio",
+      "uploadSuccess": "Enviado com sucesso",
+      "uploadWait": "Aguarde o fim do envio para realizar operações",
+      "uploaded": "Enviado",
+      "uploading": "Enviando"
+    },
+    "verify": {
+      "dragText": "Por favor, arraste o controle deslizante",
+      "error": "Falha na verificação!",
+      "redoTip": "Clique na imagem para atualizar",
+      "successText": "Verificação aprovada",
+      "time": "Verificado com sucesso em {time} segundos!"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": ""
+    }
+  }
+}

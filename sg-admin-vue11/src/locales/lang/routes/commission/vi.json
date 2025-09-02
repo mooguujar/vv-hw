@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "Quản lý đại lý",
+      "commissionCollect": "Tổng hợp",
+      "commissionConfig": "Cấu hình hoa hồng",
+      "commissionDetail": "Chi tiết hoa hồng",
+      "commissionRecord": "Nhật ký phát",
+      "commissionReview": "Xét duyệt hoa hồng"
+    }
+  }
+}

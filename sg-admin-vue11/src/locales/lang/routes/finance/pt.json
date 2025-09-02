@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "Adicionar configuração de pagamento",
+      "add_deposit_card": "Adicionar cartão de depósito",
+      "add_pre_payment_management": "Adicionar pagamento de comissão",
+      "commission_withdrawal": "Retirada de comissão",
+      "company_deposit": "Depósito da empresa",
+      "currency_deposit": "Depósito em moeda",
+      "currency_withdrawal": "Retirada em moeda",
+      "deposit_card_management": "Gerenciamento de cartão de depósito",
+      "deposit_summary": "Resumo de depósito e saque",
+      "edit_deposit_card": "Editar cartão de depósito",
+      "edit_pre_payment_management": "Editar pagamento de comissão",
+      "member_account_history": "Registro de mudanças dos membros",
+      "moduleName": "Gerenciamento financeiro",
+      "online_payment": "Pagamento online",
+      "online_withdrawal": "Retirada online",
+      "payment_management": "Gerenciamento de pagamento",
+      "pre_payment_management": "Gerenciamento de pagamento de comissão",
+      "venue_transfer_records": "Registro de transferência de estádios",
+      "withdrawal_config": "Configuração de pagamento"
+    }
+  }
+}

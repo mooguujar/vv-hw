@@ -1,0 +1,43 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "Commission coding"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "Regional Restriction",
+      "account_list": "Account List",
+      "add_announcement": "Add Announcement",
+      "add_banner": "Add Carousel Image",
+      "add_marquee": "Add Marquee",
+      "apppackaging": "App Packaging",
+      "authority_management": "Permissions Management",
+      "banner_setting": "Banner Management",
+      "brand_setting": "Brand Settings",
+      "chart_setting": "",
+      "commission_plan": "Commission Scheme",
+      "customer_feedback": "User Feedback",
+      "domain_name_manage": "Domain Management",
+      "edit_announcement": "Edit Announcement",
+      "game_list": "Game List",
+      "game_manage": "Game Management",
+      "game_sort": "Game Sorting",
+      "information_center": "Information Center",
+      "ip_whitelist": "IP Whitelist",
+      "login_manage": "Login Logs",
+      "operate_log": "Operation Logs",
+      "platform_manage": "Venue Management",
+      "role_manage": "Role Management",
+      "site_announcement": "Site Announcement",
+      "site_config": "Site Configuration",
+      "site_manage": "Site Management",
+      "site_settings": "Site Settings",
+      "system_manage": "System Management",
+      "three_party_login": "Third-Party Login",
+      "user_manage": "User Management",
+      "website_letter": "Send Site Message",
+      "website_letter_info": "Site Message Details"
+    }
+  }
+}

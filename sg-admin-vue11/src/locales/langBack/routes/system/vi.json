@@ -1,0 +1,47 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "Tiền cược hoa hồng"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "Hạn chế khu vực",
+      "account_list": "Danh sách",
+      "add_announcement": "Thêm thông báo",
+      "add_banner": "Thêm ảnh",
+      "add_marquee": "Thêm hiệu ứng led",
+      "apppackaging": "Gói app",
+      "authority_management": "Quyền hạn",
+      "banner_setting": "Quản lý Banner",
+      "brand_setting": "Cài đặt sản phẩm",
+      "chart_setting": "Quản lí chat",
+      "commission_plan": "Phương án hoa hồng",
+      "customer_feedback": "Phản hồi",
+      "domain_name_manage": "Quản lý khu vực",
+      "edit_announcement": "Sửa thông báo",
+      "game_list": "Bảng trò chơi",
+      "game_manage": "Quản lý trò chơi",
+      "game_sort": "Thứ tự trò chơi",
+      "information_center": "Thông tin",
+      "ip_whitelist": "Danh sách trắng IP",
+      "login_manage": "Lịch sử đăng nhập",
+      "operate_log": "Lịch sử thao tác",
+      "platform_manage": "Quản lí sảnh",
+      "site_announcement": "Thông báo trang",
+      "site_config": "Cấu hình trang",
+      "site_manage": "Quản lí trang",
+      "site_settings": "Cài đặt trang",
+      "system_manage": "Quản lí hệ thống",
+      "three_party_login": "Đăng nhập bên thứ ba",
+      "user_manage": "Quản lý người chơi",
+      "website_letter": "Phát tin nội bộ",
+      "website_letter_info": "Chi tiết tin nội bộ"
+    }
+  },
+  "sys": {
+    "login": {
+      "download": "Tải xuống"
+    }
+  }
+}

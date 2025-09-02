@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "एजेंट",
+      "commissionCollect": "सारांश",
+      "commissionConfig": "कॉन्फ़िगरेशन",
+      "commissionDetail": "विवरण",
+      "commissionRecord": "रिकॉर्ड",
+      "commissionReview": "समीक्षा"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop_1": "सभी पृष्ठ"
+      }
+    }
+  }
+}

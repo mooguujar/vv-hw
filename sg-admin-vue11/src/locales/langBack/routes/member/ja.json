@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "",
+      "accountChanges": "",
+      "addMoney": "",
+      "analysis": "",
+      "cardLine": "",
+      "create": "",
+      "details": "",
+      "editMember": "",
+      "grade": "",
+      "member": "",
+      "memberActive": "",
+      "memberList": "",
+      "memberLog": "",
+      "online_detail": "",
+      "vipGrade": ""
+    },
+    "vip_center": ""
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "",
+      "member_apply_number": ""
+    }
+  }
+}

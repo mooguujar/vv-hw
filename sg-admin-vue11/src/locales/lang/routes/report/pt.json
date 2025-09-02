@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "report": {
+      "activityReport": "",
+      "agentReport": "Relatório de agente",
+      "betInfo": "Detalhes da aposta",
+      "bettingReport": "Registro de aposta",
+      "comprehensiveReport": "Relatório abrangente",
+      "dailyReport": "Relatório diário",
+      "dataReport": "Painel de relatórios de dados",
+      "firstDepositReport": "Relatório de primeiro depósito",
+      "gameReport": "Relatório da plataforma",
+      "memberReport": "Relatório de membros",
+      "member_detail": "",
+      "oneHourInfo": "Detalhes do relatório por hora",
+      "oneHourReport": "Relatório por hora",
+      "operationalReport": "Relatório de dados operacionais",
+      "platformReport": "Relatório da plataforma",
+      "promotionReport": "Relatório de registro de promoção",
+      "report": "Gerenciamento de relatórios",
+      "retainReport": "Relatório de retenção",
+      "venueReport": "Relatório de dados da arena"
+    }
+  },
+  "table": {
+    "promotion": {
+      "link_type": ""
+    }
+  }
+}

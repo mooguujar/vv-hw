@@ -1,0 +1,17 @@
+{
+  "table": {
+    "promotion": {
+      "apkAddress": "Link tải APK"
+    },
+    "race_price": {
+      "form_ad_romain": "Số lượng tên miền dự phòng"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "type_fs_ty": "Loại hình sự kiện"
+      }
+    }
+  }
+}

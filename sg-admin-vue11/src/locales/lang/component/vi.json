@@ -1,0 +1,148 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "Không có kết quả tìm kiếm",
+      "toNavigate": "Chuyển đổi",
+      "toSearch": "Xác nhận"
+    },
+    "banner": {
+      "alliance_center": "Liên kết",
+      "custom": "Tuỳ chỉnh",
+      "deposit_page": "Trang nạp tiền",
+      "entertainment_city": "Casino",
+      "physical_education": "Thể thao",
+      "physical_education_money": "Ví",
+      "physical_education_vip": "VIP",
+      "physical_vip_rebate": "Giảm giá VIP",
+      "promotions": "Sự kiện khuyến mãi",
+      "promotions_kf": "Chăm sóc khách hàng"
+    },
+    "countdown": {
+      "normalText": "Nhận được mã xác minh",
+      "sendText": "{0} Quay lại trong vài giây nữa"
+    },
+    "cropper": {
+      "btn_reset": "Đặt lại",
+      "btn_rotate_left": "Quay ngược chiều kim đồng hồ",
+      "btn_rotate_right": "Xoay theo chiều kim đồng hồ",
+      "btn_scale_x": "Lật ngang",
+      "btn_scale_y": "Lật dọc",
+      "btn_zoom_in": "Phóng to",
+      "btn_zoom_out": "Thu nhỏ",
+      "modalTitle": "Tải lên avarta",
+      "okText": "Xác nhận và tải lên",
+      "preview": "Ô xem thử",
+      "selectImage": "Chọn hình ảnh",
+      "uploadSuccess": "Tải lên thành công"
+    },
+    "drawer": {
+      "cancelText": "Đóng",
+      "loadingText": "Đang tải...",
+      "okText": "Xác nhận"
+    },
+    "excel": {
+      "exportModalTitle": "Xuất dữ liệu",
+      "fileName": "Tên tập tin",
+      "fileType": "Kiểu tập tin"
+    },
+    "form": {
+      "apiSelectNotFound": "Vui lòng chờ dữ liệu được tải xong...",
+      "maxTip": "Số ký tự nên ít hơn {0} vị trí",
+      "putAway": "Thu lại",
+      "unfold": "Mở rộng"
+    },
+    "icon": {
+      "copy": "Sao chép biểu tượng thành công!",
+      "placeholder": "Nhấp vào để chọn biểu tượng",
+      "search": "Tìm kiếm biểu tượng"
+    },
+    "menu": {
+      "search": "Tìm kiếm trình đơn"
+    },
+    "modal": {
+      "cancelText": "Đóng",
+      "close": "Đóng",
+      "maximize": "Tối đa hóa",
+      "okText": "Xác nhận",
+      "restore": "Phục hồi"
+    },
+    "table": {
+      "index": "Số thứ tự",
+      "settingColumn": "Cài đặt cột",
+      "settingColumnShow": "Cột hiển thị",
+      "settingDens": "Mật độ",
+      "settingDensDefault": "Mặc định",
+      "settingDensMiddle": "Trung bình",
+      "settingDensSmall": "Ngắn gọn",
+      "settingFixedLeft": "Cố định bên trái",
+      "settingFixedRight": "Cố định bên phải",
+      "settingFullScreen": "Toàn màn hình",
+      "settingIndexColumnShow": "Cột số thứ tự",
+      "settingSelectColumnShow": "Đánh dấu các cột",
+      "total": "Chung {total} dữ liệu"
+    },
+    "time": {
+      "after": "Sau đó",
+      "before": "Trước đó",
+      "days": "Ngày",
+      "hours": "Giờ",
+      "just": "Vừa mới",
+      "minutes": "Phút",
+      "seconds": "Giây"
+    },
+    "tree": {
+      "checkStrictly": "Liên kết cấp bậc",
+      "checkUnStrictly": "Độc lập cấp bậc",
+      "expandAll": "Mở rộng toàn bộ",
+      "selectAll": "Chọn toàn bộ",
+      "unExpandAll": "Thụ gọn toàn bộ",
+      "unSelectAll": "Bỏ chọn"
+    },
+    "unit": {
+      "people": "Người",
+      "sum": "Khoản",
+      "tem_thousand": "Mười nghìn",
+      "unit": "Đơn vị"
+    },
+    "upload": {
+      "accept": "Hỗ trợ {0} định dạng",
+      "acceptUpload": "Chỉ có thể tải lên {0} tập tin định dạng",
+      "choose": "Chọn tập tin",
+      "del": "Xoá bỏ",
+      "download": "Tải về",
+      "fileName": "Tên tập tin",
+      "fileSize": "Kích thước tập tin",
+      "fileStatue": "Trạng thái",
+      "imgUpload": "Hình ảnh được tải lên",
+      "legend": "Hình ảnh ngắn gọn",
+      "maxNumber": "Chỉ có thể tải lên nhiều nhất {0} tập tin",
+      "maxSize": "Một tập tin không vượt quá {0}MB",
+      "maxSizeMultiple": "Chỉ có thể tải lên không vượt quá {0}MB của tập tin",
+      "operating": "Thao tác",
+      "preview": "Ô xem thử",
+      "reUploadFailed": "Tải lại tập tin bị lỗi",
+      "save": "Bảo tồn",
+      "saveError": "Tải lên tập tin không thành công, không thể lưu lại!",
+      "saveWarn": "Vui lòng chờ tập tin tải lên thành công, lưu lại!",
+      "startUpload": "Bắt đầu tải lên",
+      "upload": "Tải lên",
+      "uploadError": "Tải lên thất bại",
+      "uploadSuccess": "Tải lên thành công",
+      "uploadWait": "Vui lòng chờ tập tin tải lên thành công sau đó kết thúc thao tác",
+      "uploaded": "Đã tải lên",
+      "uploading": "Đang tải"
+    },
+    "verify": {
+      "dragText": "Vui lòng giữ thanh trượt và kéo",
+      "error": "Xác minh thất bại！",
+      "redoTip": "Nhấn vào hình ảnh để làm mới",
+      "successText": "Xác minh thông qua",
+      "time": "Xác minh thành công, mất thời gian {time} giây！"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": "Thương hiệu trùng lặp"
+    }
+  }
+}

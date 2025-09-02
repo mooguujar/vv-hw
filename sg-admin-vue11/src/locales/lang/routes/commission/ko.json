@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "",
+      "commissionCollect": "",
+      "commissionConfig": "",
+      "commissionDetail": "",
+      "commissionRecord": "",
+      "commissionReview": ""
+    }
+  }
+}

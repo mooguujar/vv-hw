@@ -1,0 +1,43 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "Hoa hồng tiền vòng cược"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "Hạn chế khu vực",
+      "account_list": "Danh sách tài khoản",
+      "add_announcement": "Thêm thông báo mới",
+      "add_banner": "Thêm Banner",
+      "add_marquee": "Thêm hiệu ứng led",
+      "apppackaging": "Gói app",
+      "authority_management": "Quyền hạn quản lý",
+      "banner_setting": "Quản lý Banner",
+      "brand_setting": "Cài đặt sản phẩm",
+      "chart_setting": "Quản lý phòng chat",
+      "commission_plan": "Phương án hoa hồng",
+      "customer_feedback": "Phản hồi người chơi",
+      "domain_name_manage": "Quản lý khu vực",
+      "edit_announcement": "Chỉnh sửa thông báo",
+      "game_list": "Bảng biểu trò chơi",
+      "game_manage": "Quản lý trò chơi",
+      "game_sort": "Thứ tự trò chơi",
+      "information_center": "Trung tâm tin nhắn",
+      "ip_whitelist": "Danh sách IP hợp lệ",
+      "login_manage": "Lịch sử đăng nhập",
+      "operate_log": "Lịch sử thao tác",
+      "platform_manage": "Quản lý sảnh game",
+      "role_manage": "Quản lý vai trò",
+      "site_announcement": "Thông báo trang",
+      "site_config": "Cấu hình trang",
+      "site_manage": "Quản lý trang",
+      "site_settings": "Thiết lập trang web",
+      "system_manage": "Hệ thống",
+      "three_party_login": "Đăng nhập bên thứ ba",
+      "user_manage": "Quản lý người chơi",
+      "website_letter": "Thư của trang",
+      "website_letter_info": "Chi tiết thư trang"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "Agent Management",
+      "commissionCollect": "Summary",
+      "commissionConfig": "Commission Configuration",
+      "commissionDetail": "Commission Details",
+      "commissionRecord": "Disbursement Records",
+      "commissionReview": "Commission Review"
+    }
+  }
+}

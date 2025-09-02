@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "report": {
+      "activityReport": "Hoa hồng báo cáo",
+      "agentReport": "Bảng báo cáo đại lý",
+      "betInfo": "Chi tiết đặt cược",
+      "bettingReport": "Lịch sử đặt cược",
+      "comprehensiveReport": "báo cáo tổng hợp",
+      "dailyReport": "Bảng báo cáo hàng ngày",
+      "dataReport": "Bảng báo cáo dữ liệu",
+      "firstDepositReport": "Bảng báo cáo nạp tiền",
+      "gameReport": "Bảng báo cáo nền tảng",
+      "memberReport": "Bảng báo cáo hội viên",
+      "member_detail": "Báo cáo hội viên",
+      "oneHourInfo": "Chi tiết biểu theo giờ",
+      "oneHourReport": "Bảng biểu theo giờ",
+      "operationalReport": "Bảng biểu dữ liệu",
+      "platformReport": "Bảng báo cáo nền tảng",
+      "promotionReport": "Bảng biểu đại lý đăng ký",
+      "report": "Báo cáo",
+      "retainReport": "Bảng báo cáo duy trì nạp",
+      "venueReport": "Bảng biểu số liệu sảnh game"
+    }
+  },
+  "table": {
+    "promotion": {
+      "link_type": "Loại hình kênh"
+    }
+  }
+}

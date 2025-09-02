@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "basic": {
+      "errorLogList": "Daftar Log Kesalahan",
+      "errorNoData": "Tidak ada data",
+      "login": "Login"
+    }
+  }
+}

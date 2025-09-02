@@ -1,0 +1,153 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "Tạm không có kết quả tìm kiếm",
+      "toNavigate": "Chuyển đổi",
+      "toSearch": "Xác nhận"
+    },
+    "banner": {
+      "alliance_center": "Liên kết",
+      "banner1": "Cửa sổ đăng ký",
+      "banner2": "Cửa sổ tải APP",
+      "banner3": "Thiết lập thông tin liên lạc",
+      "custom": "Tuỳ chỉnh",
+      "deposit_page": "Trang nạp tiền",
+      "deposit_page_deposit": "Cửa sổ nạp tiền",
+      "entertainment_city": "Casino",
+      "physical_education": "Thể Thao",
+      "physical_education_money": "Ví",
+      "physical_education_vip": "VIP",
+      "physical_vip_rebate": "Giảm giá VIP",
+      "promotions": "Sự kiện ưu đãi",
+      "promotions_kf": "CSKH",
+      "banner14": "Link sự kiện"
+    },
+    "countdown": {
+      "normalText": "Nhận mã xác minh",
+      "sendText": "Quay lại trong {0} giây"
+    },
+    "cropper": {
+      "btn_reset": "Đặt lại",
+      "btn_rotate_left": "Quay ngược chiều kim đồng hồ",
+      "btn_rotate_right": "Quay theo chiều kim đồng hồ",
+      "btn_scale_x": "Lật ngang",
+      "btn_scale_y": "Lật dọc",
+      "btn_zoom_in": "Phóng to",
+      "btn_zoom_out": "Thu nhỏ",
+      "modalTitle": "Tải lên avarta",
+      "okText": "Xác nhận và tải lên",
+      "preview": "Xem trước",
+      "selectImage": "Chọn hình ảnh",
+      "uploadSuccess": "Tải lên thành công"
+    },
+    "drawer": {
+      "cancelText": "Đóng",
+      "loadingText": "Đang tải...",
+      "okText": "Xác nhận"
+    },
+    "excel": {
+      "exportModalTitle": "Xuất dữ liệu",
+      "fileName": "Tên tập tin",
+      "fileType": "Loại tập tin"
+    },
+    "form": {
+      "apiSelectNotFound": "Vui lòng chờ tải xong dữ liệu...",
+      "maxTip": "Số ký tự nên nhỏ hơn {0} vị trí",
+      "putAway": "Thu lại",
+      "unfold": "Mở rộng"
+    },
+    "icon": {
+      "copy": "Sao chép biểu tượng thành công!",
+      "placeholder": "Nhấn để chọn biểu tượng",
+      "search": "Tìm kiếm biểu tượng"
+    },
+    "menu": {
+      "search": "Tìm kiếm trình đơn"
+    },
+    "modal": {
+      "cancelText": "Đóng",
+      "close": "Đóng",
+      "maximize": "Tối đa hóa",
+      "okText": "Xác nhận",
+      "restore": "Phục hồi"
+    },
+    "table": {
+      "index": "Số thứ tự",
+      "settingColumn": "Cài đặt cột",
+      "settingColumnShow": "Cột hiển thị",
+      "settingDens": "Mật độ",
+      "settingDensDefault": "Mặc định",
+      "settingDensMiddle": "Trung bình",
+      "settingDensSmall": "Ngắn gọn",
+      "settingFixedLeft": "Cố định bên trái",
+      "settingFixedRight": "Cố định bên phải",
+      "settingFullScreen": "Toàn màn hình",
+      "settingIndexColumnShow": "Thứ tự cột",
+      "settingSelectColumnShow": "Kiểm tra cột",
+      "total": "Chung {total} dữ liệu"
+    },
+    "time": {
+      "after": "Sau",
+      "before": "Trước",
+      "days": "Ngày",
+      "hours": "Giờ",
+      "just": "Vừa mới",
+      "minutes": "Phút",
+      "seconds": "Giây"
+    },
+    "tree": {
+      "checkStrictly": "Cấp bậc liên kết",
+      "checkUnStrictly": "Cấp bậc độc lập",
+      "expandAll": "Mở rộng toàn bộ",
+      "selectAll": "Chọn toàn bộ",
+      "unExpandAll": "Thụ gọn toàn bộ",
+      "unSelectAll": "Bỏ chọn"
+    },
+    "unit": {
+      "people": "Người",
+      "sum": "Khoản",
+      "tem_thousand": "Mười nghìn",
+      "unit": "Đơn vị"
+    },
+    "upload": {
+      "accept": "Hỗ trợ {0} định dạng",
+      "acceptUpload": "Chỉ có thể tải lên {0} định dạng tập tin",
+      "choose": "Chọn tập tin",
+      "del": "Xoá",
+      "download": "Tải về",
+      "fileName": "Tên tập tin",
+      "fileSize": "Kích thước tập tin",
+      "fileStatue": "Trạng thái",
+      "imgUpload": "Tải ảnh lên",
+      "legend": "Ảnh rút gọn",
+      "maxNumber": "Chỉ có thể tải lên nhiều nhất {0} tập tin",
+      "maxSize": "Một tập tin không vượt quá {0}MB",
+      "maxSizeMultiple": "Chỉ có thể tải lên tập tin không vượt quá {0}MB",
+      "operating": "Thao tác",
+      "preview": "Xem thử",
+      "reUploadFailed": "Tải lại tập tin thất bại",
+      "save": "Lưu lại",
+      "saveError": "Tải lên tập tin không thành công, không thể lưu!",
+      "saveWarn": "Vui lòng chờ tập tin tải lên thành công, lưu lại!",
+      "startUpload": "Bắt đầu tải lên",
+      "upload": "Tải lên",
+      "uploadError": "Tải lên thất bại",
+      "uploadSuccess": "Tải lên thành công",
+      "uploadWait": "Vui lòng chờ tập tin tải lên thành công trước khi tiếp tục",
+      "uploaded": "Đã tải lên",
+      "uploading": "Đang tải"
+    },
+    "verify": {
+      "dragText": "Vui lòng giữ thanh trượt và kéo",
+      "error": "Xác minh thất bại!",
+      "redoTip": "Nhấn vào hình ảnh để làm mới",
+      "successText": "Xác minh thông qua",
+      "time": "Xác minh thành công, mất {time} giây！"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": "Trùng thương hiệu"
+    }
+  }
+}

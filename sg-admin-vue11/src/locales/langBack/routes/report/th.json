@@ -1,0 +1,30 @@
+{
+  "routes": {
+    "report": {
+      "activityReport": "",
+      "agentReport": "รายงานตัวแทน",
+      "betInfo": "รายละเอียดการเดิมพัน",
+      "bettingReport": "บันทึกการเดิมพัน",
+      "comprehensiveReport": "รายงาน ที่ครอบคลุม",
+      "dailyReport": "รายงานประจำวัน",
+      "dataReport": "บอร์ดรายงานข้อมูล",
+      "firstDepositReport": "รายงานการฝากแรก",
+      "gameReport": "รายงานแพลตฟอร์ม",
+      "memberReport": "รายงานของสมาชิก",
+      "member_detail": "",
+      "oneHourInfo": "รายละเอียดรายงานรายชั่วโมง",
+      "oneHourReport": "รายงานชั่วโมง",
+      "operationalReport": "รายงานการดำเนินงาน",
+      "platformReport": "รายงานแพลตฟอร์ม",
+      "promotionReport": "รายงานการลงทะเบียนฝ่ายการตลาด",
+      "report": "การจัดการรายงาน",
+      "retainReport": "รายงานการเก็บรักษา",
+      "venueReport": "รายงานข้อมูลแพลตฟอร์ม"
+    }
+  },
+  "table": {
+    "promotion": {
+      "link_type": ""
+    }
+  }
+}

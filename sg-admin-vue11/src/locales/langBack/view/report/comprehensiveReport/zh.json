@@ -1,0 +1,20 @@
+{
+  "modalForm": {
+    "system": {
+      "app_boot_download_cfg_footer": "首页底部弹出APP下载"
+    }
+  },
+  "v": {
+    "report": {
+      "comprehensiveReport": {
+        "category_overview": "分类总览",
+        "commission_issuance": "佣金发放",
+        "deposit_classification": "存款分类",
+        "online_user_count": "在线人数",
+        "operations_overview": "运营总览",
+        "some_people": "{0}人",
+        "withdrawal_classification": "取款分类"
+      }
+    }
+  }
+}

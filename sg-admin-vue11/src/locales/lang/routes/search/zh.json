@@ -1,0 +1,17 @@
+{
+  "routes": {
+    "search": {
+      "finance": {
+        "search_refresh": "刷新"
+      }
+    }
+  },
+  "table": {
+    "discountActivity": {
+      "discountActivity_mission": "新增任务",
+      "mission_classify": "新增分类",
+      "move_activity": "移除活动",
+      "delete_activity": "删除活动"
+    }
+  }
+}

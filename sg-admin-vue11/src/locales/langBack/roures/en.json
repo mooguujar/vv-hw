@@ -1,0 +1,29 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": "Add Advertisement"
+    },
+    "finance": {
+      "pre_payment_management_1": "Proxy Payout"
+    },
+    "promotion": {
+      "ad_grouping_1": "ROI Grouping",
+      "ad_grouping_2": "ROI",
+      "month_price_roi": "Mo. Ad ROI(Stat.)",
+      "statics_channel": "Statistics",
+      "statics_code": "Statistical Code",
+      "Promotional_effectiveness": "Effectiveness",
+      "live_analysis": "Daily Analysis"
+    },
+    "system": {
+      "chatroom_sys": "Chatroom"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": "PWA (redirect to H5)"
+      }
+    }
+  }
+}

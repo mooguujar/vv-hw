@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "Detalhes relacionados",
+      "black_list": "Lista negra",
+      "fight_monitor": "Monitoramento de apostas cruzadas",
+      "high_bonus": "Explosão de alta multiplicação",
+      "link_records": "Registros relacionados",
+      "low_multiple": "Apostas de baixa multiplicação",
+      "profit_list": "Ranking de lucros",
+      "risk": "Gerenciamento de risco",
+      "win_top": "Ranking de lucros"
+    }
+  }
+}

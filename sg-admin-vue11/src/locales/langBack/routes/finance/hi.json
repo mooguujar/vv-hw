@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "कॉन्फ़िगरेशन जोड़ें",
+      "add_deposit_card": "जमा कार्ड जोड़ें",
+      "add_pre_payment_management": "भुगतान जोड़ें",
+      "commission_withdrawal": "कमीशन निकासी",
+      "company_deposit": "कंपनी जमा",
+      "currency_deposit": "क्रिप्टो जमा",
+      "currency_withdrawal": "क्रिप्टो निकासी",
+      "deposit_card_management": "जमा कार्ड",
+      "deposit_summary": "परिवर्तन सारांश",
+      "edit_deposit_card": "जमा कार्ड एडिट करें",
+      "edit_pre_payment_management": "भुगतान एडिट करें",
+      "member_account_history": "सदस्य लेन-देन इतिहास",
+      "moduleName": "वित्तीय",
+      "online_payment": "ऑनलाइन भुगतान",
+      "online_withdrawal": "ऑनलाइन निकासी",
+      "payment_management": "भुगतान प्लेटफ़ॉर्म",
+      "pre_payment_management": "भुगतान मैनेजमेंट",
+      "venue_transfer_records": "स्थानांतरण रिकॉर्ड",
+      "withdrawal_config": "भुगतान सेटिंग"
+    }
+  }
+}

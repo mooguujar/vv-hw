@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "जमा और निकासी सेटिंग्स",
+      "system_cate_des": "अधिक श्रेणियां प्रदर्शित करने के लिए, कृपया 'गेम श्रेणियां' या 'ब्रांड प्रकार' को यहां खींचें",
+      "system_min_deposit": "न्यूनतम कमीशन निकासी",
+      "system_sort_add_show": "ब्रांड दिखाएं",
+      "system_sort_sliader_side": "श्रेणी रैंकिंग",
+      "system_sort_sliader_side_all": "श्रेणी के सभी खेल",
+      "system_sort_sliader_side_all_lei": "लोकप्रिय सिफारिश (आंतरिक पृष्ठ)",
+      "system_sort_sliader_side_site_1": "ब्रांड का नाम",
+      "system_sort_sliader_side_site_2": "ब्रांड प्रकार"
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "URL कैशे क्लीनअप",
+        "blackGold": "काला सोना वर्शन",
+        "blueBlack": "नीला-काला वर्शन",
+        "cleat_warning": "डिफ़ॉल्ट रूप से, प्रत्येक खाता प्रतिदिन 10,000 URL रीफ़्रेश कर सकता है, जिसमें प्रति सबमिशन अधिकतम 1,000 URL हो सकते हैं",
+        "directory_clear": "डायरेक्टरी कैशे मेमोरी क्लियर",
+        "firstAgent": "प्राथमिक एजेंट",
+        "fresh_now": "अभी रिफ्रेश करें",
+        "url_adds": "URL पता",
+        "url_clear_tip": "कृपया रिफ्रेश करने के लिए URL दर्ज करें, प्रति पंक्ति एक URL"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "Thiết lập nạp rút tiền",
+      "system_cate_des": "Để hiển thị thêm danh mục, vui lòng kéo \"Danh mục trò chơi\" hoặc \"Loại thương hiệu\" tại đây",
+      "system_min_deposit": "Hoa hồng rút tối thiểu",
+      "system_sort_add_show": "Hiển thị thương hiệu",
+      "system_sort_sliader_side": "Xếp hạng phân loại",
+      "system_sort_sliader_side_all": "Danh mục tất cả trò chơi",
+      "system_sort_sliader_side_all_lei": "Đề xuất phổ biến",
+      "system_sort_sliader_side_site_1": "Tên thương hiệu",
+      "system_sort_sliader_side_site_2": "Hình thức thương hiệu"
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "Xóa bộ nhớ đệm URL",
+        "blackGold": "Phiên bản đen vàng",
+        "blueBlack": "Phiên bản xanh đen",
+        "cleat_warning": "Theo mặc định, mỗi tài khoản có thể làm mới 10000 URL mỗi ngày và có thể gửi tối đa 1000 URL mỗi lần.",
+        "directory_clear": "Mục lục xoá bộ nhớ đệm",
+        "firstAgent": "Đại lý cấp một",
+        "fresh_now": "Làm mới ngay",
+        "url_adds": "Địa chỉ URL",
+        "url_clear_tip": "Vui lòng nhập URL làm mới, mỗi dòng nhập một URL"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "代理管理",
+      "commissionCollect": "汇总",
+      "commissionConfig": "佣金配置",
+      "commissionDetail": "佣金明细",
+      "commissionRecord": "发放记录",
+      "commissionReview": "佣金审核"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop_1": "所有页面"
+      }
+    }
+  }
+}

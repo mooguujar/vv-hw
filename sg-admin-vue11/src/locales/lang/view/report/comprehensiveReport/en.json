@@ -1,0 +1,15 @@
+{
+  "v": {
+    "report": {
+      "comprehensiveReport": {
+        "category_overview": "Category overview",
+        "commission_issuance": "Commission distribution",
+        "deposit_classification": "Deposit category",
+        "online_user_count": "Online users",
+        "operations_overview": "Operational overview",
+        "some_people": "{0} people",
+        "withdrawal_classification": "Withdrawal category"
+      }
+    }
+  }
+}

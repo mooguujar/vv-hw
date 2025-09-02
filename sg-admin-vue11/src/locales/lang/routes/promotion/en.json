@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "",
+      "buried_point": "Page Tracking",
+      "channel_management": "Channel Management",
+      "google_management": "",
+      "promotion": "Promotion Center",
+      "race_price_roi": ""
+    }
+  }
+}

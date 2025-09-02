@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "commission": {
+      "commission": "Đại lý",
+      "commissionCollect": "Tổng hợp",
+      "commissionConfig": "Cấu hình",
+      "commissionDetail": "Chi tiết hoa hồng",
+      "commissionRecord": "Nhật ký phát",
+      "commissionReview": "Xét duyệt"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop_1": "Tất cả các trang"
+      }
+    }
+  }
+}

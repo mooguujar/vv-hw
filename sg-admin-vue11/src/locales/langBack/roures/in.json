@@ -1,0 +1,29 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": "Tambah Iklan"
+    },
+    "finance": {
+      "pre_payment_management_1": "Agen Pembayaran"
+    },
+    "promotion": {
+      "ad_grouping_1": "Pengelompokan ROI",
+      "ad_grouping_2": "Manajemen ROI",
+      "month_price_roi": "ROI Iklan Bulanan (Stat.)",
+      "statics_channel": "Statistik Saluran",
+      "statics_code": "Kode statistik",
+      "Promotional_effectiveness": "Efektivitas Promosi",
+      "live_analysis": "Analisis Aktivitas Harian"
+    },
+    "system": {
+      "chatroom_sys": "Ruang Obrolan"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": "PWA (alihkan ke H5)"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": "新增广告"
+    },
+    "finance": {
+      "pre_payment_management_1": "出款代付"
+    },
+    "promotion": {
+      "ad_grouping_1": "ROI分组",
+      "month_price_roi": "月广告ROI(统计)",
+      "statics_code": "统计代码"
+    },
+    "system": {
+      "chatroom_sys": "聊天室管理"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": "PWA(跳转H5)"
+      }
+    }
+  }
+}

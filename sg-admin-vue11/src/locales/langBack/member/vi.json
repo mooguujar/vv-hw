@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": "Trạng thái"
+    },
+    "vip": {
+      "TransactionRebate": "Giảm giá hội viên",
+      "TransactionVIPDay": "VIP lì xì ngày",
+      "TransactionVIPMonthly": "VIP lì xì tháng",
+      "TransactionVIPUpgrade": "VIP thưởng tăng cấp",
+      "TransactionVIPWeek": "VIP lì xì tuần",
+      "TransactionVIpBirthday": "VIP thưởng sinh nhật",
+      "daily_bonus": "Thưởng hàng ngày",
+      "monthly_bonus": "Thưởng hàng tháng",
+      "promotion_bonus": "Thưởng tăng cấp",
+      "rebate_configuration": "Quay lại cấu hình",
+      "weekly_bonus": "Thưởng hàng tuần"
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "Trò chơi xổ số",
+      "member_name_tip1": "Tên thật không thể là  chữ số",
+      "member_name_tip_text": "Phải lớn hơn 2 chuỗi"
+    },
+    "system": {
+      "commsision_tip_11": "Số hoa hồng mà hội viên này đóng góp cho đại lý hiện tại"
+    }
+  }
+}

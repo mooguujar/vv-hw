@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "添加支付配置",
+      "add_deposit_card": "添加入款卡",
+      "add_pre_payment_management": "添加代付",
+      "commission_withdrawal": "佣金取款",
+      "company_deposit": "公司入款",
+      "currency_deposit": "货币入款",
+      "currency_withdrawal": "货币取款",
+      "deposit_card_management": "入款卡管理",
+      "deposit_summary": "存取总汇",
+      "edit_deposit_card": "编辑入款卡",
+      "edit_pre_payment_management": "编辑代付",
+      "member_account_history": "会员账变记录",
+      "moduleName": "财务管理",
+      "online_payment": "在线支付",
+      "online_withdrawal": "线上取款",
+      "payment_management": "支付管理",
+      "pre_payment_management": "出款管理",
+      "venue_transfer_records": "场馆转账记录",
+      "withdrawal_config": "支付配置"
+    }
+  }
+}

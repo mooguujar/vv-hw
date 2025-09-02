@@ -1,0 +1,17 @@
+{
+  "table": {
+    "promotion": {
+      "apkAddress": "Alamat Unduhan APK"
+    },
+    "race_price": {
+      "form_ad_romain": "Jumlah Domain Cadangan"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "type_fs_ty": "Kategori Aktivitas"
+      }
+    }
+  }
+}

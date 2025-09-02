@@ -1,0 +1,30 @@
+{
+  "member": {
+    "inquiryMember": {
+      "state": "स्टेटस"
+    },
+    "vip": {
+      "TransactionRebate": "सदस्य कैशबैक",
+      "TransactionVIPDay": "VIP दैनिक लाल लिफाफा",
+      "TransactionVIPMonthly": "VIP मासिक लाल लिफाफा",
+      "TransactionVIPUpgrade": "VIP प्रमोशन बोनस",
+      "TransactionVIPWeek": "VIP साप्ताहिक लाल लिफाफा",
+      "TransactionVIpBirthday": "VIP जन्मदिन बोनस",
+      "daily_bonus": "दैनिक बोनस",
+      "monthly_bonus": "मासिक बोनस",
+      "promotion_bonus": "प्रमोशन बोनस",
+      "rebate_configuration": "रिटर्न कॉन्फ़िगरेशन",
+      "weekly_bonus": "साप्ताहिक बोनस"
+    }
+  },
+  "table": {
+    "member": {
+      "member_Lottery": "लॉटरी खेल",
+      "member_name_tip1": "असली नाम एक संख्या नहीं हो सकता",
+      "member_name_tip_text": "2 से अधिक अक्षर होने चाहिए"
+    },
+    "system": {
+      "commsision_tip_11": "वर्तमान सदस्य द्वारा वर्तमान एजेंट को दिया गया कमीशन"
+    }
+  }
+}

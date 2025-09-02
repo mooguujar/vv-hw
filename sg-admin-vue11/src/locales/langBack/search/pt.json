@@ -1,0 +1,19 @@
+{
+  "search": {
+    "finance": {
+      "finance_commission": "Comissão",
+      "finance_commission_choose": "Selecionar o tipo de negócio",
+      "finance_commission_choose_text": "Selecionar o tipo de negócio",
+      "finance_commission_chosen": "Selecionado",
+      "finance_commission_chosen_lenth": "Tipo de negócio",
+      "finance_discount": "Promoção",
+      "finance_refresh": "Atualizar",
+      "finance_withdraw": "Retirada"
+    }
+  },
+  "table": {
+    "advertise": {
+      "table_grouping_p_1": "Por favor, insira o nome do grupo"
+    }
+  }
+}

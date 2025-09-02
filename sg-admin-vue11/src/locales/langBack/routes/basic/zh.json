@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "basic": {
+      "errorLogList": "错误日志列表",
+      "errorNoData": "暂无数据",
+      "login": "登录"
+    }
+  }
+}

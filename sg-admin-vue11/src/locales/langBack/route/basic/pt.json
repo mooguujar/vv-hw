@@ -1,0 +1,17 @@
+{
+  "table": {
+    "promotion": {
+      "apkAddress": "Link do APK"
+    },
+    "race_price": {
+      "form_ad_romain": "Número de domínios reserva"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "type_fs_ty": "Categorias de atividades"
+      }
+    }
+  }
+}

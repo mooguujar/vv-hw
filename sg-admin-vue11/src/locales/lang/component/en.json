@@ -1,0 +1,148 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "No search results",
+      "toNavigate": "Switch",
+      "toSearch": "Confirm"
+    },
+    "banner": {
+      "alliance_center": "Affiliate program",
+      "custom": "Custom",
+      "deposit_page": "Deposit Page",
+      "entertainment_city": "Casino",
+      "physical_education": "Sports",
+      "physical_education_money": "Wallet",
+      "physical_education_vip": "VIP",
+      "physical_vip_rebate": "VIP cashback",
+      "promotions": "Promotions",
+      "promotions_kf": "Online support"
+    },
+    "countdown": {
+      "normalText": "Get verification code",
+      "sendText": "{0} seconds to reacquire"
+    },
+    "cropper": {
+      "btn_reset": "Reset",
+      "btn_rotate_left": "Rotate counterclockwise",
+      "btn_rotate_right": "Rotate clockwise",
+      "btn_scale_x": "Flip horizontally",
+      "btn_scale_y": "Flip vertically",
+      "btn_zoom_in": "Zoom in",
+      "btn_zoom_out": "Zoom out",
+      "modalTitle": "Avatar upload",
+      "okText": "Confirm and upload",
+      "preview": "Preview",
+      "selectImage": "Select image",
+      "uploadSuccess": "Upload successful"
+    },
+    "drawer": {
+      "cancelText": "Close",
+      "loadingText": "Loading...",
+      "okText": "Confirm"
+    },
+    "excel": {
+      "exportModalTitle": "Export data",
+      "fileName": "File name",
+      "fileType": "File type"
+    },
+    "form": {
+      "apiSelectNotFound": "Please wait for data to load...",
+      "maxTip": "Number of characters should be less than {0}",
+      "putAway": "Collapse",
+      "unfold": "Expand"
+    },
+    "icon": {
+      "copy": "Icon copy successful!",
+      "placeholder": "Click to select icon",
+      "search": "Search icon"
+    },
+    "menu": {
+      "search": "Menu search"
+    },
+    "modal": {
+      "cancelText": "Close",
+      "close": "Close",
+      "maximize": "Maximize",
+      "okText": "Confirm",
+      "restore": "Restore"
+    },
+    "table": {
+      "index": "Number",
+      "settingColumn": "Column settings",
+      "settingColumnShow": "Column display",
+      "settingDens": "Density",
+      "settingDensDefault": "Default",
+      "settingDensMiddle": "Medium",
+      "settingDensSmall": "Compact",
+      "settingFixedLeft": "Pin to left",
+      "settingFixedRight": "Pin to right",
+      "settingFullScreen": "Full screen",
+      "settingIndexColumnShow": "Serial column",
+      "settingSelectColumnShow": "Check column",
+      "total": "Total {total} data"
+    },
+    "time": {
+      "after": "Back",
+      "before": "Forward",
+      "days": "Days",
+      "hours": "Hours",
+      "just": "Just now",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "tree": {
+      "checkStrictly": "Level association",
+      "checkUnStrictly": "Level independence",
+      "expandAll": "Expand all",
+      "selectAll": "Select all",
+      "unExpandAll": "Collapse all",
+      "unSelectAll": "Deselect"
+    },
+    "unit": {
+      "people": "People",
+      "sum": "Entries",
+      "tem_thousand": "Ten thousand",
+      "unit": "Units"
+    },
+    "upload": {
+      "accept": "Supports {0} format",
+      "acceptUpload": "Can only upload {0} format files",
+      "choose": "Select file",
+      "del": "Delete",
+      "download": "Download",
+      "fileName": "File name",
+      "fileSize": "File size",
+      "fileStatue": "Status",
+      "imgUpload": "Image upload",
+      "legend": "Thumbnail",
+      "maxNumber": "Can only upload up to {0} files",
+      "maxSize": "Single file must not exceed {0} MB",
+      "maxSizeMultiple": "Can only upload files up to {0} MB!",
+      "operating": "Operation",
+      "preview": "Preview",
+      "reUploadFailed": "Re-upload failed files",
+      "save": "Save",
+      "saveError": "No successfully uploaded files, cannot save!",
+      "saveWarn": "Please wait for file upload before saving!",
+      "startUpload": "Start upload",
+      "upload": "Upload",
+      "uploadError": "Upload failed",
+      "uploadSuccess": "Upload successful",
+      "uploadWait": "Please wait until file upload is complete",
+      "uploaded": "Uploaded",
+      "uploading": "Uploading"
+    },
+    "verify": {
+      "dragText": "Please hold the slider and drag",
+      "error": "Verification failed!",
+      "redoTip": "Click image to refresh",
+      "successText": "Verification passed",
+      "time": "Verification succeeded in {time} seconds!"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": ""
+    }
+  }
+}

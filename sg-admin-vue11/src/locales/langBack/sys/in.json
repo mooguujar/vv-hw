@@ -1,0 +1,113 @@
+{
+  "sys": {
+    "api": {
+      "apiRequestFailed": "Permintaan gagal, silakan coba lagi nanti",
+      "apiTimeoutMessage": "Permintaan antarmuka kedaluwarsa, silakan segarkan halaman dan coba lagi!",
+      "errMsg401": "Pengguna tidak memiliki izin (token, nama pengguna, atau kata sandi salah)!",
+      "errMsg403": "Pengguna diotorisasi, tetapi akses dilarang!",
+      "errMsg404": "Kesalahan permintaan jaringan, sumber daya tidak ditemukan!",
+      "errMsg405": "Kesalahan permintaan jaringan, metode permintaan tidak diizinkan!",
+      "errMsg408": "Permintaan jaringan kedaluwarsa!",
+      "errMsg500": "Kesalahan server, silakan hubungi administrator!",
+      "errMsg501": "Jaringan belum diterapkan!",
+      "errMsg502": "Kesalahan jaringan",
+      "errMsg503": "Layanan tidak tersedia, server terlalu penuh atau sedang dalam pemeliharaan!",
+      "errMsg504": "Batas waktu jaringan",
+      "errMsg505": "Versi HTTP tidak mendukung permintaan ini!",
+      "errMsg506": "Kesalahan API",
+      "errMsgIp": "Silakan ikat IP",
+      "errorMessage": "Operasi gagal, terjadi pengecualian sistem!",
+      "errorTip": "Prompt Kesalahan",
+      "export_success": "Ekspor berhasil",
+      "export_error": "Gagal Ekspor",
+      "loginErrorTip": "Gagal masuk",
+      "networkException": "Gangguan jaringan",
+      "networkExceptionMsg": "Terjadi gangguan jaringan, silakan periksa koneksi internet Anda!",
+      "operationFailed": "Operasi gagal",
+      "operationSuccess": "Operasi berhasil",
+      "successTip": "Tampilan Berhasil",
+      "timeoutMessage": "Sesi masuk kedaluwarsa, silakan masuk kembali!"
+    },
+    "app": {
+      "logoutMessage": "Apakah Anda yakin ingin keluar dari sistem?",
+      "logoutTip": "Pengingat Ramah",
+      "menuLoading": "Memuat menu..."
+    },
+    "errorLog": {
+      "enableMessage": "Hanya berlaku jika `useErrorHandle=true` di `/src/settings/projectSetting.ts`",
+      "fireAjaxError": "Klik untuk memicu kesalahan Ajax",
+      "fireResourceError": "Klik untuk memicu kesalahan pemuatan sumber daya",
+      "fireVueError": "Klik untuk memicu kesalahan Vue",
+      "modalTitle": "Detail Kesalahan",
+      "tableActionDesc": "Rincian",
+      "tableColumnDate": "Waktu",
+      "tableColumnFile": "Berkas",
+      "tableColumnMsg": "Pesan Kesalahan",
+      "tableColumnStackMsg": "Informasi Stack",
+      "tableColumnType": "Jenis",
+      "tableTitle": "Daftar Log Kesalahan"
+    },
+    "exception": {
+      "backHome": "Kembali ke Beranda",
+      "backLogin": "Kembali ke Halaman Masuk",
+      "networkErrorSubTitle": "Maaf, koneksi jaringan Anda terputus. Silakan periksa jaringan Anda!",
+      "networkErrorTitle": "Kesalahan Jaringan",
+      "noDataTitle": "Tidak ada data pada halaman ini",
+      "subTitle403": "Maaf, Anda tidak memiliki izin untuk mengakses halaman ini.",
+      "subTitle404": "Maaf, halaman yang Anda coba akses tidak ada.",
+      "subTitle500": "Maaf, server melaporkan kesalahan.",
+      "pls_sel_save": ""
+    },
+    "lock": {
+      "alert": "Kata sandi kunci layar salah",
+      "backToLogin": "Kembali ke Halaman Masuk",
+      "entry": "Masuk ke Sistem",
+      "placeholder": "Silakan masukkan kata sandi layar kunci atau kata sandi pengguna",
+      "unlock": "Klik untuk membuka kunci"
+    },
+    "login": {
+      "accountPlaceholder": "Silakan masukkan akun",
+      "backSignIn": "Kembali",
+      "confirmPassword": "Konfirmasi Kata Sandi",
+      "diffPwd": "Kata sandi yang dimasukkan tidak cocok",
+      "email": "Email",
+      "forgetFormTitle": "Atur Ulang Kata Sandi",
+      "forgetPassword": "Lupa Kata Sandi?",
+      "loginButton": "Masuk",
+      "loginSuccessDesc": "Selamat Datang Kembali",
+      "loginSuccessTitle": "Berhasil Masuk",
+      "mobile": "Nomor ponsel",
+      "mobilePlaceholder": "",
+      "mobileSignInFormTitle": "Masuk dengan nomor telepon",
+      "otherSignIn": "Metode Masuk Lainnya",
+      "password": "Kata Sandi",
+      "policy": "Saya menyetujui Kebijakan Privasi xxx",
+      "policyPlaceholder": "Centang kotak ini sebelum mendaftar",
+      "qrSignInFormTitle": "Masuk dengan Kode QR",
+      "registerButton": "Daftar",
+      "rememberMe": "Ingat Saya",
+      "scanSign": "Pindai kode dan klik \"Konfirmasi\" untuk menyelesaikan masuk",
+      "signInDesc": "Masukkan informasi pribadi Anda untuk mulai menggunakan!",
+      "signInFormTitle": "Masuk",
+      "signInTitle": "Sistem manajemen backend siap pakai",
+      "signUpFormTitle": "Daftar",
+      "smsCode": "Kode Verifikasi SMS",
+      "smsPlaceholder": "Silakan masukkan kode verifikasi 6 digit",
+      "userName": "Akun",
+      "verification_code": "Silakan masukkan kode verifikasi Google"
+    }
+  },
+  "table": {
+    "system": {
+      "app_btn_bg": "Garis Batas Tombol"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop": "Popup Setoran Pertama",
+        "firstDepositPop_select": ""
+      }
+    }
+  }
+}

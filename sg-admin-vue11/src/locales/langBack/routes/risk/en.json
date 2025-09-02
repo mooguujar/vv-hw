@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "Related Details",
+      "black_list": "IP Blacklist",
+      "fight_monitor": "Arbitrage Mon",
+      "high_bonus": "High Payouts",
+      "link_records": "Related Records",
+      "low_multiple": "Low Bet Turnover",
+      "profit_list": "Profit Leaderboard",
+      "risk": "Risks",
+      "win_top": "Profit Leaderboard"
+    }
+  }
+}

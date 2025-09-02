@@ -1,0 +1,29 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": ""
+    },
+    "finance": {
+      "pre_payment_management_1": ""
+    },
+    "promotion": {
+      "ad_grouping_1": "",
+      "ad_grouping_2": "",
+      "month_price_roi": "",
+      "statics_channel": "",
+      "statics_code": "",
+      "Promotional_effectiveness": "",
+      "live_analysis": ""
+    },
+    "system": {
+      "chatroom_sys": ""
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": ""
+      }
+    }
+  }
+}

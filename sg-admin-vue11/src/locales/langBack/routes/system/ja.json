@@ -1,0 +1,47 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": ""
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "",
+      "account_list": "",
+      "add_announcement": "",
+      "add_banner": "",
+      "add_marquee": "",
+      "apppackaging": "",
+      "authority_management": "",
+      "banner_setting": "",
+      "brand_setting": "",
+      "chart_setting": "",
+      "commission_plan": "",
+      "customer_feedback": "",
+      "domain_name_manage": "",
+      "edit_announcement": "",
+      "game_list": "",
+      "game_manage": "",
+      "game_sort": "",
+      "information_center": "",
+      "ip_whitelist": "",
+      "login_manage": "",
+      "operate_log": "",
+      "platform_manage": "",
+      "site_announcement": "",
+      "site_config": "",
+      "site_manage": "",
+      "site_settings": "",
+      "system_manage": "",
+      "three_party_login": "",
+      "user_manage": "",
+      "website_letter": "",
+      "website_letter_info": ""
+    }
+  },
+  "sys": {
+    "login": {
+      "download": ""
+    }
+  }
+}

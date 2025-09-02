@@ -1,0 +1,43 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "Comissão"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "Restrição de área",
+      "account_list": "Lista de contas",
+      "add_announcement": "Adicionar anúncio",
+      "add_banner": "Adicionar carrossel",
+      "add_marquee": "Adicionar marquee",
+      "apppackaging": "Empacotamento de app",
+      "authority_management": "Gerenciamento de permissões",
+      "banner_setting": "Gerenciamento de banner",
+      "brand_setting": "Configuração da marca",
+      "chart_setting": "",
+      "commission_plan": "Plano de comissão",
+      "customer_feedback": "Feedback do usuário",
+      "domain_name_manage": "Gerenciamento de domínio",
+      "edit_announcement": "Editar anúncio",
+      "game_list": "Lista de jogos",
+      "game_manage": "Gerenciamento de jogos",
+      "game_sort": "Ordenação de jogos",
+      "information_center": "Centro de informações",
+      "ip_whitelist": "Lista de IPs permitidos",
+      "login_manage": "Log de login",
+      "operate_log": "Log de operações",
+      "platform_manage": "Gerenciamento de arenas",
+      "role_manage": "Gerenciamento de funções",
+      "site_announcement": "Anúncio interno",
+      "site_config": "Configuração do site",
+      "site_manage": "Gerenciamento do site",
+      "site_settings": "Configuração do site",
+      "system_manage": "Gerenciamento do sistema",
+      "three_party_login": "Login de terceiros",
+      "user_manage": "Gerenciamento de usuários",
+      "website_letter": "Enviar mensagem interna",
+      "website_letter_info": "Detalhes da mensagem interna"
+    }
+  }
+}

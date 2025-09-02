@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "Add Payment Configuration",
+      "add_deposit_card": "Add Deposit Card",
+      "add_pre_payment_management": "Add Payout",
+      "commission_withdrawal": "Commission Withdrawal",
+      "company_deposit": "Company Deposit",
+      "currency_deposit": "Currency Deposit",
+      "currency_withdrawal": "Currency Withdrawal",
+      "deposit_card_management": "Deposit Card Management",
+      "deposit_summary": "Deposit/Withdrawal Summary",
+      "edit_deposit_card": "Edit Deposit Card",
+      "edit_pre_payment_management": "Edit Payout",
+      "member_account_history": "Member Account Change Records",
+      "moduleName": "Financial Management",
+      "online_payment": "Online Payment",
+      "online_withdrawal": "Online Withdrawal",
+      "payment_management": "Payment Management",
+      "pre_payment_management": "Payout Management",
+      "venue_transfer_records": "Transfer Records",
+      "withdrawal_config": "Payment Configuration"
+    }
+  }
+}

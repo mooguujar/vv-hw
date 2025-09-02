@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "विज्ञापन समूहीकरण",
+      "buried_point": "पेज ट्रैकिंग",
+      "PromotionalManagement": "",
+      "channel_management": "चैनल",
+      "google_management": "गूगल पेज",
+      "promotion": "प्रोमो सेंटर",
+      "race_price_roi": "बीडिंग ROI(OS)"
+    }
+  }
+}

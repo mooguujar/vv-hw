@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "basic": {
+      "errorLogList": "त्रुटि लॉग सूची",
+      "errorNoData": "कोई डेटा नहीं",
+      "login": "लॉग इन"
+    }
+  }
+}

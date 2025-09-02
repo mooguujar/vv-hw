@@ -1,0 +1,113 @@
+{
+  "sys": {
+    "api": {
+      "apiRequestFailed": "Request error, please try again later",
+      "apiTimeoutMessage": "Interface request timed out, please refresh the page and try again!",
+      "errMsg401": "User does not have permission (incorrect token, username, or password)!",
+      "errMsg403": "The user is authorized, but access is forbidden!",
+      "errMsg404": "Network request error, resource not found!",
+      "errMsg405": "Network request error, request method not allowed!",
+      "errMsg408": "Network request timed out!",
+      "errMsg500": "Server error, please contact the administrator!",
+      "errMsg501": "Network not implemented!",
+      "errMsg502": "Network Error",
+      "errMsg503": "Service unavailable, server overloaded or under maintenance!",
+      "errMsg504": "Network Timeout",
+      "errMsg505": "HTTP version does not support this request!",
+      "errMsg506": "API Error",
+      "errMsgIp": "Please bind IP",
+      "errorMessage": "Operation Failed, System Exception",
+      "errorTip": "Error Prompt",
+      "export_success": "Export successful",
+      "export_error": "Export Failed",
+      "loginErrorTip": "Login Failed",
+      "networkException": "Network Exception",
+      "networkExceptionMsg": "Network error, please check if your internet connection is stable!",
+      "operationFailed": "Operation Failed",
+      "operationSuccess": "Operation Successful",
+      "successTip": "Success Prompt",
+      "timeoutMessage": "Login timed out, please log in again!"
+    },
+    "app": {
+      "logoutMessage": "Do you confirm to log out of the system?",
+      "logoutTip": "Kind Reminder",
+      "menuLoading": "Menu loading..."
+    },
+    "errorLog": {
+      "enableMessage": "Only takes effect when useErrorHandle=true in /src/settings/projectSetting.ts",
+      "fireAjaxError": "AJAX error on click",
+      "fireResourceError": "Resource load error on click",
+      "fireVueError": "Vue error on click",
+      "modalTitle": "Error Details",
+      "tableActionDesc": "Details",
+      "tableColumnDate": "Time",
+      "tableColumnFile": "File",
+      "tableColumnMsg": "Error Message",
+      "tableColumnStackMsg": "Stack Infor",
+      "tableColumnType": "Type",
+      "tableTitle": "Error Log List"
+    },
+    "exception": {
+      "backHome": "Return to Homepage",
+      "backLogin": "Return to Login",
+      "networkErrorSubTitle": "Sorry, your network connection has been lost. Please check your network!",
+      "networkErrorTitle": "Network Error",
+      "noDataTitle": "No data available on this page",
+      "subTitle403": "Sorry, you do not have permission to access this page.",
+      "subTitle404": "Sorry, the page you are looking for does not exist.",
+      "subTitle500": "Sorry, the server reported an error.",
+      "pls_sel_save": "Please select Save"
+    },
+    "lock": {
+      "alert": "Incorrect lock screen password",
+      "backToLogin": "Return to Login",
+      "entry": "Enter System",
+      "placeholder": "Please enter the lock screen password or user password",
+      "unlock": "Click to unlock"
+    },
+    "login": {
+      "accountPlaceholder": "Please enter  the account",
+      "backSignIn": "Return",
+      "confirmPassword": "Confirm Password",
+      "diffPwd": "Passwords do not match",
+      "email": "Email",
+      "forgetFormTitle": "Reset Password",
+      "forgetPassword": "Forgot Password",
+      "loginButton": "Login",
+      "loginSuccessDesc": "Welcome back",
+      "loginSuccessTitle": "Login Successful",
+      "mobile": "Telephone",
+      "mobilePlaceholder": "Please enter phone number",
+      "mobileSignInFormTitle": "Phone Login",
+      "otherSignIn": "Other Login Methods",
+      "password": "Password",
+      "policy": "I agree to the xxx Privacy Policy",
+      "policyPlaceholder": "Check this box before registering",
+      "qrSignInFormTitle": "QR Code Login",
+      "registerButton": "Register",
+      "rememberMe": "Remember Me",
+      "scanSign": "Scan and click 'Confirm' to complete the login",
+      "signInDesc": "Enter your personal details to get started!",
+      "signInFormTitle": "Login",
+      "signInTitle": "Out-of-the-box back-end management system",
+      "signUpFormTitle": "Register",
+      "smsCode": "SMS code",
+      "smsPlaceholder": "Please enter 6-digit code",
+      "userName": "Account",
+      "verification_code": "Please enter the Google 2FA"
+    }
+  },
+  "table": {
+    "system": {
+      "app_btn_bg": "Button Border"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop": "1st Dep Popup",
+        "firstDepositPop_select": "Please select 1st deposit popup"
+      }
+    }
+  }
+}

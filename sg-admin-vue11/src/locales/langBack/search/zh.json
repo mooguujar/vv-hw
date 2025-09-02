@@ -1,0 +1,19 @@
+{
+  "search": {
+    "finance": {
+      "finance_commission": "佣金",
+      "finance_commission_choose": "选择业务类型",
+      "finance_commission_choose_text": "请选择业务类型",
+      "finance_commission_chosen": "已选择",
+      "finance_commission_chosen_lenth": "项业务类型",
+      "finance_discount": "优惠",
+      "finance_refresh": "刷新",
+      "finance_withdraw": "提款"
+    }
+  },
+  "table": {
+    "advertise": {
+      "table_grouping_p_1": "请输入分组名称"
+    }
+  }
+}

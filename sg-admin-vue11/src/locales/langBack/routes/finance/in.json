@@ -1,0 +1,25 @@
+{
+  "routes": {
+    "finance": {
+      "add_Withdrawal_config": "Tambah Konfigurasi",
+      "add_deposit_card": "Tambah Kartu Setoran",
+      "add_pre_payment_management": "Tambah Pembayaran",
+      "commission_withdrawal": "Penarikan Komisi",
+      "company_deposit": "Setoran Perusahaan",
+      "currency_deposit": "Setoran Kripto",
+      "currency_withdrawal": "Penarikan Kripto",
+      "deposit_card_management": "Kartu Setoran",
+      "deposit_summary": "Ringkasan Perubahan",
+      "edit_deposit_card": "Edit Kartu Setoran",
+      "edit_pre_payment_management": "Edit Pembayaran",
+      "member_account_history": "Riwayat Transaksi Anggota",
+      "moduleName": "Keuangan",
+      "online_payment": "Pembayaran Online",
+      "online_withdrawal": "Penarikan Online",
+      "payment_management": "Platform Pembayaran",
+      "pre_payment_management": "Manajemen Pembayaran",
+      "venue_transfer_records": "Riwayat Transfer Venue",
+      "withdrawal_config": "Pengaturan Pembayaran"
+    }
+  }
+}

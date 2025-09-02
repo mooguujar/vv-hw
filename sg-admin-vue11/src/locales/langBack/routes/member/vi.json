@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "Bảng hội viên",
+      "accountChanges": "Biến động sảnh",
+      "addMoney": "Nạp/Trừ tiền",
+      "analysis": "Thêm hội viên",
+      "cardLine": "Thẻ rút tiền",
+      "create": "Hội viên mới",
+      "details": "Chi tiết hội viên",
+      "editMember": "Sửa hội viên",
+      "grade": "Cấp bậc hội viên",
+      "member": "Thành viên",
+      "memberActive": "Hội viên trực tuyến",
+      "memberList": "Danh sách hội viên",
+      "memberLog": "Lịch sử hội viên",
+      "online_detail": "Chi tiết hội viên trực tuyến",
+      "vipGrade": "Cấp bậc VIP"
+    },
+    "vip_center": "Trung tâm giảm giá"
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "Số tiền xin",
+      "member_apply_number": "Số đơn xin"
+    }
+  }
+}

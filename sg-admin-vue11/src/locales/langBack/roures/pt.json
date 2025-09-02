@@ -1,0 +1,29 @@
+{
+  "routes": {
+    "commission": {
+      "add_ad": "Adicionar anúncio"
+    },
+    "finance": {
+      "pre_payment_management_1": "Retirada Agente"
+    },
+    "promotion": {
+      "ad_grouping_1": "Grupo ROI",
+      "ad_grouping_2": "ROI",
+      "month_price_roi": "ROI mensal",
+      "statics_channel": "Estatísticas",
+      "statics_code": "Código estatístico",
+      "Promotional_effectiveness": "Eficácia",
+      "live_analysis": "Análises diárias"
+    },
+    "system": {
+      "chatroom_sys": "Sala de bate-papo"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "fix_type_1": "PWA (redirecionar para H5)"
+      }
+    }
+  }
+}

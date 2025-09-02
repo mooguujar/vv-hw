@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "广告分组",
+      "buried_point": "页面埋点",
+      "PromotionalManagement": "推广管理",
+      "channel_management": "渠道管理",
+      "google_management": "谷歌落地页",
+      "promotion": "推广中心",
+      "race_price_roi": "竞价ROI(海外)"
+    }
+  }
+}

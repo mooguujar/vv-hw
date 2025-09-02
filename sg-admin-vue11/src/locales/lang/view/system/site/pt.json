@@ -1,0 +1,30 @@
+{
+  "table": {
+    "system": {
+      "min_deposit_setting": "Configurações de depósito e retirada",
+      "system_cate_des": "",
+      "system_min_deposit": "Retirada mínima de comissão",
+      "system_sort_add_show": "",
+      "system_sort_sliader_side": "",
+      "system_sort_sliader_side_all": "",
+      "system_sort_sliader_side_all_lei": "",
+      "system_sort_sliader_side_site_1": "",
+      "system_sort_sliader_side_site_2": ""
+    }
+  },
+  "v": {
+    "sytem": {
+      "site": {
+        "URL_clear": "Limpar cache de URL",
+        "blackGold": "Versão preta e dourada",
+        "blueBlack": "Versão azul e preta",
+        "cleat_warning": "Por padrão, cada conta pode atualizar 10000 URLs por dia, com no máximo 1000 URLs por envio de cada vez",
+        "directory_clear": "Limpar cache de diretório",
+        "firstAgent": "Agente de primeiro nível",
+        "fresh_now": "Atualizar agora",
+        "url_adds": "Endereço URL",
+        "url_clear_tip": "Insira os URLs a serem atualizados, um URL por linha"
+      }
+    }
+  }
+}

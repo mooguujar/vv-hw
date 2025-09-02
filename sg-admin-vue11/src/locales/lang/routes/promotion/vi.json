@@ -1,0 +1,12 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "Phân nhóm quảng cáo",
+      "buried_point": "Trang bị chìm",
+      "channel_management": "Quản lý kênh",
+      "google_management": "Trang tải xuống Google Mall",
+      "promotion": "Quảng cáo",
+      "race_price_roi": "Thầu kênh ROI (nước ngoài)"
+    }
+  }
+}

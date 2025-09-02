@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "Lista de membros",
+      "accountChanges": "Transações locais",
+      "addMoney": "Adicionar retirada",
+      "analysis": "Adicionar membro",
+      "cardLine": "Cartão de retirada",
+      "create": "Adicionar membro",
+      "details": "Detalhes do membro",
+      "editMember": "Editar membro",
+      "grade": "Níveis de membros",
+      "member": "Membros",
+      "memberActive": "Membros online",
+      "memberList": "Lista de membros",
+      "memberLog": "Log de Membros",
+      "online_detail": "Detalhes dos membros online",
+      "vipGrade": "Nível VIP"
+    },
+    "vip_center": "Reembolsos gerais"
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "Valor da requerido",
+      "member_apply_number": "Contagem de requisições"
+    }
+  }
+}

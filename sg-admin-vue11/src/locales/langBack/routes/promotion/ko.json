@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "",
+      "buried_point": "",
+      "PromotionalManagement": "",
+      "channel_management": "",
+      "google_management": "",
+      "promotion": "",
+      "race_price_roi": ""
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "routes": {
+    "agent": {
+      "agent": "एजेंट",
+      "agentList": "एजेंट सूची",
+      "agentPlan": "एजेंट योजना",
+      "commissionList": "कमीशन सूची",
+      "recordsManagement": "रिकॉर्ड प्रबंधन"
+    }
+  },
+  "table": {
+    "promotion": {
+      "promotion_package_apk_p": "कृपया APK पता दर्ज करें"
+    },
+    "system": {
+      "longin_single": "लॉगिन गुप्त चाबी"
+    }
+  }
+}

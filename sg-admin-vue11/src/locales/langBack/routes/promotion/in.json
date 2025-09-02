@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "promotion": {
+      "ad_grouping": "Pengelompokan Iklan",
+      "buried_point": "Pelacakan Halaman",
+      "PromotionalManagement": "Manajemen Promosi",
+      "channel_management": "Manajemen Saluran",
+      "google_management": "Halaman Google",
+      "promotion": "Pusat Promo",
+      "race_price_roi": "ROI Penawaran (OS)"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "v": {
+    "report": {
+      "comprehensiveReport": {
+        "category_overview": "Visão geral da classificação",
+        "commission_issuance": "Distribuição de comissões",
+        "deposit_classification": "Classificação de depósitos",
+        "online_user_count": "Número de usuários online",
+        "operations_overview": "Visão geral de operação",
+        "some_people": "{0} pessoa(s)",
+        "withdrawal_classification": "Classificação de retiradas"
+      }
+    }
+  }
+}

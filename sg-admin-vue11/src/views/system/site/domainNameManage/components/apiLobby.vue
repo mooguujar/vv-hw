@@ -1,0 +1,52 @@
+<template>
+  <div class="flex">
+    <leftButton
+      :tableValue="props.tabValue"
+      @emit-add="emitAdd"
+      @handle-change-emit="handleChangeEmit"
+    />
+    <ApiTable class="w-0 grow" ref="childComponent" :apiMap="apiMap" />
+    <addChildModal @register="registerAddModal" />
+  </div>
+</template>
+
+<script lang="ts" setup>
+  import { ref } from 'vue';
+  import { columns, schemas } from './apiLobby.data';
+  import ApiTable from '../common/apiTable.vue';
+  import leftButton from '../common/leftButton.vue';
+  import addChildModal from '../common/modal/addChildModal.vue';
+  import { useModal } from '/@/components/Modal';
+  import {
+    getChildDomainList,
+    deleteChildDomain,
+    batchDeleteChildDomain,
+  } from '/@/api/domain/index';
+
+  const props = defineProps({
+    tabValue: {
+      type: Number,
+      default: 0,
+    },
+  });
+  const [registerAddModal, { openModal: addOpenModal }] = useModal();
+  const childComponent = ref(null as any); //子组件ref
+  const apiMap = {
+    list: getChildDomainList, // 列表
+    type: 2,
+    batchDeleteDomain: batchDeleteChildDomain, //批量删除
+    deleteList: deleteChildDomain,
+    columns,
+    schemas,
+    formHide: true, //Form搜索表单开启
+    // title: '公司入款列表',
+    // modelTitle: '入款详情',
+  };
+  function emitAdd() {
+    addOpenModal(true, { type: 2 });
+  }
+  //左边的按钮刷新列表
+  function handleChangeEmit(v) {
+    childComponent?.value?.setLoad(v);
+  }
+</script>

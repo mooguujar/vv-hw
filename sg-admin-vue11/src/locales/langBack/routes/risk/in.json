@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "Detail Terkait",
+      "black_list": "Daftar Hitam IP",
+      "fight_monitor": "Monitor Arbitrase",
+      "high_bonus": "Pembayaran Tinggi",
+      "link_records": "Catatan Terkait",
+      "low_multiple": "Turnover Taruhan Rendah",
+      "profit_list": "Papan Peringkat Keuntungan",
+      "risk": "Manajemen Risiko",
+      "win_top": "Papan Peringkat Keuntungan"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "Lista de membros",
+      "accountChanges": "",
+      "addMoney": "Adicionar ou remover fundos",
+      "analysis": "Adicionar membro",
+      "cardLine": "Gerenciamento de cartão de retirada",
+      "create": "Adicionar membro",
+      "details": "Detalhes do membro",
+      "editMember": "Editar membro",
+      "grade": "Nível de membro",
+      "member": "Gerenciamento de membros",
+      "memberActive": "Membros online",
+      "memberList": "Lista de membros",
+      "memberLog": "Registro de membros",
+      "online_detail": "Detalhes dos membros online",
+      "vipGrade": "Nível VIP"
+    }
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "Valor do pedido",
+      "member_apply_number": "Número de pedidos"
+    }
+  }
+}

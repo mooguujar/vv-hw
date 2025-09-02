@@ -1,0 +1,153 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "No search results",
+      "toNavigate": "Switch",
+      "toSearch": "Confirm"
+    },
+    "banner": {
+      "alliance_center": "Affiliate Program",
+      "banner1": "Registration Popup",
+      "banner2": "Download App Popup",
+      "banner3": "Set contact information",
+      "custom": "Custom",
+      "deposit_page": "Deposit Page",
+      "deposit_page_deposit": "Deposit Popup",
+      "entertainment_city": "Casino",
+      "physical_education": "Sports",
+      "physical_education_money": "Wallet",
+      "physical_education_vip": "VIP Interface",
+      "physical_vip_rebate": "VIP Rebate",
+      "promotions": "Promotions",
+      "promotions_kf": "Online Support",
+      "banner14": "Event Link"
+    },
+    "countdown": {
+      "normalText": "Get verification code",
+      "sendText": "{0} seconds to reacquire"
+    },
+    "cropper": {
+      "btn_reset": "Reset",
+      "btn_rotate_left": "Rotate counterclockwise",
+      "btn_rotate_right": "Rotate clockwise",
+      "btn_scale_x": "Flip horizontally",
+      "btn_scale_y": "Flip vertically",
+      "btn_zoom_in": "Zoom In",
+      "btn_zoom_out": "Zoom Out",
+      "modalTitle": "Avatar Upload",
+      "okText": "Confirm and Upload",
+      "preview": "Preview",
+      "selectImage": "Select image",
+      "uploadSuccess": "Upload successful"
+    },
+    "drawer": {
+      "cancelText": "Close",
+      "loadingText": "Loading...",
+      "okText": "Confirm"
+    },
+    "excel": {
+      "exportModalTitle": "Export Data",
+      "fileName": "File Name",
+      "fileType": "File Type"
+    },
+    "form": {
+      "apiSelectNotFound": "Please wait for data to load...",
+      "maxTip": "Number of characters should be less than {0}",
+      "putAway": "Hide",
+      "unfold": "Expand"
+    },
+    "icon": {
+      "copy": "Icon copy successful!",
+      "placeholder": "Click to select icon",
+      "search": "Search icon"
+    },
+    "menu": {
+      "search": "Menu Search"
+    },
+    "modal": {
+      "cancelText": "Close",
+      "close": "Close",
+      "maximize": "Maximize",
+      "okText": "Confirm",
+      "restore": "Restore"
+    },
+    "table": {
+      "index": "Number",
+      "settingColumn": "Column Settings",
+      "settingColumnShow": "Column Display",
+      "settingDens": "Density",
+      "settingDensDefault": "Default",
+      "settingDensMiddle": "Medium",
+      "settingDensSmall": "Compact",
+      "settingFixedLeft": "Pin to left",
+      "settingFixedRight": "Pin to right",
+      "settingFullScreen": "Full screen",
+      "settingIndexColumnShow": "Serial column",
+      "settingSelectColumnShow": "Check column",
+      "total": "Total {total} data"
+    },
+    "time": {
+      "after": "Back",
+      "before": "Forward",
+      "days": "Days",
+      "hours": "Hours",
+      "just": "Just now",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "tree": {
+      "checkStrictly": "Level Association",
+      "checkUnStrictly": "Level Independence",
+      "expandAll": "Expand All",
+      "selectAll": "Select All",
+      "unExpandAll": "Hide All",
+      "unSelectAll": "Deselect"
+    },
+    "unit": {
+      "people": "People",
+      "sum": "Transaction",
+      "tem_thousand": "Ten thousands",
+      "unit": "Units"
+    },
+    "upload": {
+      "accept": "Supports {0} format",
+      "acceptUpload": "Can only upload {0} format files",
+      "choose": "Select file",
+      "del": "Delete",
+      "download": "Download",
+      "fileName": "File Name",
+      "fileSize": "File Size",
+      "fileStatue": "Status",
+      "imgUpload": "Image upload",
+      "legend": "Thumbnail",
+      "maxNumber": "Can only upload up to {0} files",
+      "maxSize": "Single file must not exceed {0} MB",
+      "maxSizeMultiple": "Can only upload files up to {0} MB!",
+      "operating": "Operation",
+      "preview": "Preview",
+      "reUploadFailed": "Re-upload failed files",
+      "save": "Save",
+      "saveError": "No successfully uploaded files, cannot save!",
+      "saveWarn": "Please wait for file upload before saving!",
+      "startUpload": "Start upload",
+      "upload": "Upload",
+      "uploadError": "Upload failed",
+      "uploadSuccess": "Upload successful",
+      "uploadWait": "Please wait until the file upload is complete before proceeding",
+      "uploaded": "Uploaded",
+      "uploading": "Uploading"
+    },
+    "verify": {
+      "dragText": "Please hold the slider and drag",
+      "error": "Verification failed!",
+      "redoTip": "Click image to refresh",
+      "successText": "Verification passed",
+      "time": "Verification succeeded in {time} seconds!"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": "Brand Duplication"
+    }
+  }
+}

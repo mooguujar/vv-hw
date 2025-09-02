@@ -1,0 +1,153 @@
+{
+  "component": {
+    "app": {
+      "searchNotData": "Tidak Ada Hasil Pencarian",
+      "toNavigate": "Beralih",
+      "toSearch": "Konfirmasi"
+    },
+    "banner": {
+      "alliance_center": "Program Afiliasi",
+      "banner1": "Jendela Muncul  Pendaftaran",
+      "banner2": "Jendela Muncul  Unduh Aplikasi",
+      "banner3": "Tetapkan Informasi Kontak",
+      "custom": "Kustom",
+      "deposit_page": "Halaman Deposit",
+      "deposit_page_deposit": "Jendela Muncul Setoran",
+      "entertainment_city": "Kasino",
+      "physical_education": "Olahraga",
+      "physical_education_money": "Dompet",
+      "physical_education_vip": "Antarmuka VIP",
+      "physical_vip_rebate": "Cashback VIP",
+      "promotions": "Promosi",
+      "promotions_kf": "Dukungan Online",
+      "banner14": ""
+    },
+    "countdown": {
+      "normalText": "Dapatkan kode verifikasi",
+      "sendText": "{0} detik untuk mendapatkan ulang"
+    },
+    "cropper": {
+      "btn_reset": "Atur ulang",
+      "btn_rotate_left": "Putar ke kiri",
+      "btn_rotate_right": "Putar ke kanan",
+      "btn_scale_x": "Balik secara horizontal",
+      "btn_scale_y": "Balik secara vertikal",
+      "btn_zoom_in": "Perbesar",
+      "btn_zoom_out": "Perkecil",
+      "modalTitle": "Unggah avatar",
+      "okText": "Konfirmasi & Unggah",
+      "preview": "Pratinjau",
+      "selectImage": "Pilih gambar",
+      "uploadSuccess": "Unggah berhasil"
+    },
+    "drawer": {
+      "cancelText": "Tutup",
+      "loadingText": "Memuat...",
+      "okText": "Konfirmasi"
+    },
+    "excel": {
+      "exportModalTitle": "Ekspor Data",
+      "fileName": "Nama File",
+      "fileType": "Jenis File"
+    },
+    "form": {
+      "apiSelectNotFound": "Harap tunggu data dimuat...",
+      "maxTip": "Jumlah karakter harus kurang dari {0}",
+      "putAway": "Sembunyikan",
+      "unfold": "Perluas"
+    },
+    "icon": {
+      "copy": "Salin ikon berhasil!",
+      "placeholder": "Klik untuk pilih ikon",
+      "search": "Cari ikon"
+    },
+    "menu": {
+      "search": "Cari menu"
+    },
+    "modal": {
+      "cancelText": "Tutup",
+      "close": "Tutup",
+      "maximize": "Perbesar",
+      "okText": "Konfirmasi",
+      "restore": "Pulihkan"
+    },
+    "table": {
+      "index": "Nomor",
+      "settingColumn": "Pengaturan Kolom",
+      "settingColumnShow": "Tampilan Kolom",
+      "settingDens": "Kepadatan",
+      "settingDensDefault": "Default",
+      "settingDensMiddle": "Sedang",
+      "settingDensSmall": "Ringkas",
+      "settingFixedLeft": "Pin ke kiri",
+      "settingFixedRight": "Pin ke kanan",
+      "settingFullScreen": "Layar penuh",
+      "settingIndexColumnShow": "Kolom serial",
+      "settingSelectColumnShow": "Kolom centang",
+      "total": "Total {total} data"
+    },
+    "time": {
+      "after": "Kembali",
+      "before": "Sebelum",
+      "days": "Hari",
+      "hours": "Jam",
+      "just": "Baru saja",
+      "minutes": "Menit",
+      "seconds": "Detik"
+    },
+    "tree": {
+      "checkStrictly": "Hubungan Tingkat",
+      "checkUnStrictly": "Tingkat Independen",
+      "expandAll": "Perluas Semua",
+      "selectAll": "Pilih Semua",
+      "unExpandAll": "Sembunyikan Semua",
+      "unSelectAll": "Batalkan Pilihan"
+    },
+    "unit": {
+      "people": "Orang",
+      "sum": "Transaksi",
+      "tem_thousand": "Sepuluh ribu",
+      "unit": "Unit"
+    },
+    "upload": {
+      "accept": "Mendukung format {0}",
+      "acceptUpload": "Hanya dapat mengunggah file dalam format {0}",
+      "choose": "Pilih file",
+      "del": "Hapus",
+      "download": "Unduh",
+      "fileName": "Nama file",
+      "fileSize": "Ukuran file",
+      "fileStatue": "Status",
+      "imgUpload": "Unggah gambar",
+      "legend": "Gambar mini",
+      "maxNumber": "Maksimal hanya dapat mengunggah {0} file",
+      "maxSize": "Ukuran file tunggal tidak boleh melebihi {0}MB",
+      "maxSizeMultiple": "Hanya dapat mengunggah file tidak lebih dari {0}MB!",
+      "operating": "PratinjauOperasi",
+      "preview": "Pratinjau",
+      "reUploadFailed": "Unggah ulang file yang gagal",
+      "save": "Simpan",
+      "saveError": "Tidak ada file yang berhasil diunggah, tidak dapat menyimpan!",
+      "saveWarn": "Harap tunggu hingga file selesai diunggah sebelum menyimpan!",
+      "startUpload": "Mulai unggah",
+      "upload": "Unggah",
+      "uploadError": "Gagal mengunggah",
+      "uploadSuccess": "Unggahan berhasil",
+      "uploadWait": "Harap tunggu hingga unggahan selesai untuk melanjutkan",
+      "uploaded": "Telah diunggah",
+      "uploading": "Sedang mengunggah"
+    },
+    "verify": {
+      "dragText": "Tahan dan geser penggeser",
+      "error": "Verifikasi gagal!",
+      "redoTip": "Klik gambar untuk memuat ulang",
+      "successText": "Verifikasi berhasil",
+      "time": "Verifikasi berhasil dalam {time} detik!"
+    }
+  },
+  "table": {
+    "system": {
+      "sys_msg_2": "Merek duplikat"
+    }
+  }
+}

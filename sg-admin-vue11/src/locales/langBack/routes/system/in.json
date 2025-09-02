@@ -1,0 +1,47 @@
+{
+  "ModalForm": {
+    "system": {
+      "commissionCoding": "Komisi Taruhan"
+    }
+  },
+  "routes": {
+    "system": {
+      "Regional_restrictions": "Pembatasan Wilayah",
+      "account_list": "Daftar Akun",
+      "add_announcement": "Tambah Pengumuman",
+      "add_banner": "Tambah Gambar Carousel",
+      "add_marquee": "Tambah Marquee",
+      "apppackaging": "Pengemasan Aplikasi",
+      "authority_management": "Manajemen Hak Akses",
+      "banner_setting": "Pengaturan Banner",
+      "brand_setting": "Pengaturan Merek",
+      "chart_setting": "Manajemen Ruang Obrolan",
+      "commission_plan": "Skema Komisi",
+      "customer_feedback": "Masukan Pengguna",
+      "domain_name_manage": "Pengaturan Domain",
+      "edit_announcement": "Edit Pengumuman",
+      "game_list": "Daftar Game",
+      "game_manage": "Pengaturan Game",
+      "game_sort": "Pengurutan Game",
+      "information_center": "Pusat Informasi",
+      "ip_whitelist": "Daftar Putih IP",
+      "login_manage": "Log Masuk",
+      "operate_log": "Log Operasi",
+      "platform_manage": "Manajemen Venue",
+      "site_announcement": "Pengumuman Situs",
+      "site_config": "Konfigurasi Situs",
+      "site_manage": "Situs",
+      "site_settings": "Pengaturan Situs",
+      "system_manage": "Sistem",
+      "three_party_login": "Login Pihak Ketiga",
+      "user_manage": "Manajemen Pengguna",
+      "website_letter": "Pesan Internal",
+      "website_letter_info": "Detail Pesan Internal"
+    }
+  },
+  "sys": {
+    "login": {
+      "download": "Unduh"
+    }
+  }
+}

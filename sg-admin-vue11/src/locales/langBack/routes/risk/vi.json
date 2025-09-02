@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "risk": {
+      "associated_info": "Chi tiết liên kết",
+      "black_list": "Danh sách đen IP",
+      "fight_monitor": "Kiểm soát cược đôi",
+      "high_bonus": "Nổ bội số cao",
+      "link_records": "Lịch sử liên quan",
+      "low_multiple": "Bội số cược thấp",
+      "profit_list": "Bảng lợi nhuận",
+      "risk": "Rủi ro",
+      "win_top": "Bảng lợi nhuận"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "sys": {
+    "api": {
+      "apiRequestFailed": "अनुरोध त्रुटि, कृपया बाद में पुनः प्रयास करें",
+      "apiTimeoutMessage": "इंटरफ़ेस अनुरोध का समय समाप्त हो गया, कृपया पृष्ठ को ताज़ा करें और पुनः प्रयास करें!",
+      "errMsg401": "उपयोगकर्ता के पास अनुमति नहीं है (गलत टोकन, उपयोगकर्ता नाम या पासवर्ड)!",
+      "errMsg403": "उपयोगकर्ता अधिकृत है, लेकिन प्रवेश वर्जित है!",
+      "errMsg404": "नेटवर्क अनुरोध त्रुटि, संसाधन नहीं मिला!",
+      "errMsg405": "नेटवर्क अनुरोध त्रुटि, अनुरोध विधि की अनुमति नहीं!",
+      "errMsg408": "नेटवर्क अनुरोध का समय समाप्त!",
+      "errMsg500": "सर्वर त्रुटि, कृपया व्यवस्थापक से संपर्क करें!",
+      "errMsg501": "नेटवर्क कार्यान्वित नहीं हुआ!",
+      "errMsg502": "नेटवर्क त्रुटि",
+      "errMsg503": "सेवा अनुपलब्ध, सर्वर ओवरलोड या रखरखाव के अधीन!",
+      "errMsg504": "नेटवर्क टाइमआउट",
+      "errMsg505": "HTTP संस्करण इस अनुरोध का समर्थन नहीं करता है!",
+      "errMsg506": "API त्रुटि",
+      "errMsgIp": "कृपया बाइंड IP",
+      "errorMessage": "ऑपरेशन विफल, सिस्टम अपवाद",
+      "errorTip": "त्रुटि संकेत",
+      "export_success": "निर्यात सफल",
+      "export_error": "निर्यात विफल",
+      "loginErrorTip": "लॉगिन विफल",
+      "networkException": "नेटवर्क अपवाद",
+      "networkExceptionMsg": "नेटवर्क त्रुटि, कृपया जाँच लें कि आपका इंटरनेट कनेक्शन स्थिर है या नहीं!",
+      "operationFailed": "ऑपरेशन विफल",
+      "operationSuccess": "ऑपरेशन सफल",
+      "successTip": "सफलता संकेत",
+      "timeoutMessage": "लॉग इन समय समाप्त हो गया है, कृपया पुनः लॉग इन करें!"
+    },
+    "app": {
+      "logoutMessage": "क्या आप सिस्टम से लॉग आउट करने की पुष्टि करते हैं?",
+      "logoutTip": "दयालु अनुस्मारक",
+      "menuLoading": "मेनू लोड हो रहा है..."
+    },
+    "errorLog": {
+      "enableMessage": "केवल तभी प्रभावी होता है जब /src/settings/projectSetting.ts में useErrorHandle=true हो",
+      "fireAjaxError": "क्लिक करने से Ajax त्रुटि उत्पन्न हुई",
+      "fireResourceError": "क्लिक करने से संसाधन लोडिंग त्रुटि उत्पन्न हुई",
+      "fireVueError": "क्लिक करने से Vue त्रुटि उत्पन्न हुई",
+      "modalTitle": "त्रुटि विवरण",
+      "tableActionDesc": "विवरण",
+      "tableColumnDate": "समय",
+      "tableColumnFile": "फ़ाइल",
+      "tableColumnMsg": "त्रुटि संदेश",
+      "tableColumnStackMsg": "स्टैक जानकारी",
+      "tableColumnType": "प्रकार",
+      "tableTitle": "त्रुटि लॉग सूची"
+    },
+    "exception": {
+      "backHome": "होमपेज पर लौटें",
+      "backLogin": "लॉगिन पर वापस लौटें",
+      "networkErrorSubTitle": "क्षमा करें, आपका नेटवर्क कनेक्शन खो गया है। कृपया अपना नेटवर्क जांचें!",
+      "networkErrorTitle": "नेटवर्क त्रुटि",
+      "noDataTitle": "इस पृष्ठ पर कोई डेटा उपलब्ध नहीं है",
+      "subTitle403": "क्षमा करें, आपको इस पृष्ठ तक पहुंचने की अनुमति नहीं है।",
+      "subTitle404": "क्षमा करें, जिस पृष्ठ पर आप पहुँचने का प्रयास कर रहे हैं वह मौजूद नहीं है।",
+      "subTitle500": "क्षमा करें, सर्वर ने एक त्रुटि की सूचना दी है।",
+      "pls_sel_save": "कृपया सहेजें चुनें"
+    },
+    "lock": {
+      "alert": "लॉक स्क्रीन पासवर्ड ग़लत है",
+      "backToLogin": "लॉगिन पर वापस लौटें",
+      "entry": "सिस्टम में प्रवेश करें",
+      "placeholder": "कृपया लॉक स्क्रीन पासवर्ड या उपयोगकर्ता पासवर्ड दर्ज करें",
+      "unlock": "अनलॉक करने के लिए क्लिक करें"
+    },
+    "login": {
+      "accountPlaceholder": "कृपया खाता दर्ज करें",
+      "backSignIn": "वापस",
+      "confirmPassword": "पासवर्ड की पुष्टि कीजिये",
+      "diffPwd": "पासवर्ड मेल नहीं खाते",
+      "email": "ईमेल",
+      "forgetFormTitle": "पासवर्ड रीसेट",
+      "forgetPassword": "पासवर्ड भूल गए",
+      "loginButton": "लॉग इन",
+      "loginSuccessDesc": "वापसी पर स्वागत है",
+      "loginSuccessTitle": "लॉग इन सफल",
+      "mobile": "टेलीफ़ोन",
+      "mobilePlaceholder": "कृपया फ़ोन नंबर दर्ज करें",
+      "mobileSignInFormTitle": "फ़ोन लॉगिन",
+      "otherSignIn": "अन्य लॉगिन विधियाँ",
+      "password": "पासवर्ड",
+      "policy": "मैं xxx गोपनीयता नीति से सहमत हूँ",
+      "policyPlaceholder": "पंजीकरण से पहले इस बॉक्स को चेक करें",
+      "qrSignInFormTitle": "QR कोड लॉगिन",
+      "registerButton": "पंजीकरण",
+      "rememberMe": "मुझे याद रखें",
+      "scanSign": "स्कैन करें और लॉगिन पूरा करने के लिए 'पुष्टि करें' पर क्लिक करें",
+      "signInDesc": "आरंभ करने के लिए अपनी व्यक्तिगत जानकारी दर्ज करें!",
+      "signInFormTitle": "लॉग इन",
+      "signInTitle": "आउट-ऑफ-द-बॉक्स बैक-एंड मैनेजमेंट प्रणाली",
+      "signUpFormTitle": "पंजीकरण",
+      "smsCode": "SMS सत्यापन कोड",
+      "smsPlaceholder": "कृपया 6-अंकीय कोड दर्ज करें",
+      "userName": "खाता",
+      "verification_code": "कृपया Google 2FA दर्ज करें"
+    }
+  },
+  "table": {
+    "system": {
+      "app_btn_bg": "बटन बॉर्डर"
+    }
+  },
+  "v": {
+    "discount": {
+      "activity": {
+        "firstDepositPop": "प्रथम जमा पॉपअप",
+        "firstDepositPop_select": "कृपया प्रथम जमा पॉपअप का चयन करें"
+      }
+    }
+  }
+}

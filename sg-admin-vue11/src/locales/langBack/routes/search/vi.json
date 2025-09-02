@@ -1,0 +1,15 @@
+{
+  "routes": {
+    "search": {
+      "finance": {
+        "search_refresh": "Làm mới"
+      }
+    }
+  },
+  "table": {
+    "discountActivity": {
+      "discountActivity_mission": "Thêm nhiệm vụ",
+      "mission_classify": "Thêm loại hình"
+    }
+  }
+}

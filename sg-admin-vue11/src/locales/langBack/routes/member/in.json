@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "member": {
+      "Inquiry": "Daftar Anggota",
+      "accountChanges": "Transaksi Venue",
+      "addMoney": "Tambah Penarikan",
+      "analysis": "Tambah Anggota",
+      "cardLine": "Kartu Penarikan",
+      "create": "Tambah Anggota Baru",
+      "details": "Detail Anggota",
+      "editMember": "Edit Anggota",
+      "grade": "Level Anggota",
+      "member": "Anggota",
+      "memberActive": "Anggota Online",
+      "memberList": "Daftar Anggota",
+      "memberLog": "Log Anggota",
+      "online_detail": "Detail Anggota Online",
+      "vipGrade": "Level VIP"
+    },
+    "vip_center": ""
+  },
+  "table": {
+    "member": {
+      "member_apply_amount": "Jumlah Pengajuan",
+      "member_apply_number": "Jumlah Permohonan"
+    }
+  }
+}
