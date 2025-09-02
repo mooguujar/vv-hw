@@ -1,0 +1,23 @@
+{
+  "name": "@tg/tailwindcss",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "import": "./vite.tailwindcss.config.js"
+    },
+    "./tailwind-config": "./css/config.css"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.0.0",
+    "tailwindcss": "4.0.0"
+  }
+}

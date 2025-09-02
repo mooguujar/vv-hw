@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import './public.css';
+
+@theme {
+  /* 覆盖默认 z-index 比例（完全替换） */
+  --z-index-*: initial;
+
+  /* 自定义层级 */
+  --z-index-base: 0; /* 默认元素 */
+  --z-index-dropdown: 10; /* 下拉菜单 */
+  --z-index-sticky: 20; /* 粘性头部/底部 */
+  --z-index-fixed: 30; /* 固定定位元素 */
+  --z-index-overlay: 40; /* 遮罩层 */
+  --z-index-modal: 50; /* 模态框 */
+  --z-index-popover: 60; /* 弹出层/浮窗 */
+  --z-index-tooltip: 100; /* 工具提示 */
+  --z-index-max: 9999; /* 特殊顶层元素 */
+  --z-index-negative: -1; /* 背景装饰类元素 */
+}
